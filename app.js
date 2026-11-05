@@ -585,7 +585,7 @@
   if ($('heroAddr') && $('heroAddrList')) {
     attachAddressSuggest($('heroAddr'), $('heroAddrList'), function (item) {
       $('heroAddr').value = item.line;
-      window.location.href = '/book';
+      window.location.href = 'book.html';
     });
   }
   if ($('fStreet') && $('fStreetList')) {
