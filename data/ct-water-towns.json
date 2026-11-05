@@ -1,0 +1,4642 @@
+{
+  "meta": {
+    "generated": "2026-10-13",
+    "statewide": {
+      "private_wells_estimated": 321486,
+      "population_on_private_wells_estimated": 819790,
+      "share_on_private_wells": 0.23,
+      "source": "https://portal.ct.gov/-/media/water/workgroup-reports/private-well-records-report-september-2020---final.pdf",
+      "source_label": "CT Private Well Records Workgroup report, Sept 2020 (Table 1)"
+    },
+    "pfas_action_levels_ng_per_l": {
+      "PFOS": 10,
+      "PFNA": 12,
+      "PFOA": 16,
+      "HFPO-DA (GenX)": 19,
+      "PFHxS": 49,
+      "PFHxA": 240,
+      "PFBS": 760,
+      "PFBA": 1800,
+      "9Cl-PF3ONS (6:2 Cl-PFESA)": 2,
+      "11Cl-PF3OUdS (8:2 Cl-PFESA)": 5
+    },
+    "pfas_action_levels_source": "https://portal.ct.gov/dph/drinking-water/dws/per--and-polyfluoroalkyl-substances",
+    "sources": {
+      "population": "https://portal.ct.gov/-/media/departments-and-agencies/dph/population/town-pop/pop_towns2023pdf.pdf",
+      "water_systems": "https://data.epa.gov/efservice/WATER_SYSTEM/PRIMACY_AGENCY_CODE/CT/PWS_TYPE_CODE/CWS/PWS_ACTIVITY_CODE/A/POPULATION_SERVED_COUNT/>/999/CSV",
+      "towns_served": "https://data.epa.gov/efservice/GEOGRAPHIC_AREA/PRIMACY_AGENCY_CODE/CT/PWS_TYPE_CODE/CWS/PWS_ACTIVITY_CODE/A/CSV"
+    },
+    "method_notes": [
+      "Public systems = active community water systems serving 1,000+ people in EPA SDWIS; 'towns served' is EPA's city_served field.",
+      "System population is for the whole system, not the share inside each town.",
+      "Hardness and PFAS are not yet filled; see the Gaps sheet."
+    ]
+  },
+  "systems": [
+    {
+      "pwsid": "CT0930011",
+      "name": "Regional Water Authority",
+      "population_served": 418900,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Ansonia",
+        "Bethany",
+        "Branford",
+        "Cheshire",
+        "Derby",
+        "East Haven",
+        "Hamden",
+        "Meriden",
+        "Milford",
+        "New Haven",
+        "North Branford",
+        "North Haven",
+        "Orange",
+        "Prospect",
+        "Seymour",
+        "Southington",
+        "Wallingford",
+        "West Haven",
+        "Wolcott",
+        "Woodbridge"
+      ]
+    },
+    {
+      "pwsid": "CT0640011",
+      "name": "Metropolitan District Commission",
+      "population_served": 390887,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Berlin",
+        "Bloomfield",
+        "Cromwell",
+        "East Granby",
+        "East Hartford",
+        "Farmington",
+        "Glastonbury",
+        "Hartford",
+        "Manchester",
+        "Newington",
+        "Portland",
+        "Rocky Hill",
+        "South Windsor",
+        "West Hartford",
+        "Wethersfield",
+        "Windsor",
+        "Windsor Locks"
+      ]
+    },
+    {
+      "pwsid": "CT0150011",
+      "name": "Aquarion-Eastern Fairfield County",
+      "population_served": 351756,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Beacon Falls",
+        "Bridgeport",
+        "Darien",
+        "Easton",
+        "Fairfield",
+        "Greenwich",
+        "Monroe",
+        "New Canaan",
+        "Newtown",
+        "Norwalk",
+        "Redding",
+        "Ridgefield",
+        "Seymour",
+        "Shelton",
+        "Stamford",
+        "Stratford",
+        "Trumbull",
+        "Weston",
+        "Westport",
+        "Wilton"
+      ]
+    },
+    {
+      "pwsid": "CT1350011",
+      "name": "Aquarion-Stamford",
+      "population_served": 119214,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Darien",
+        "Greenwich",
+        "Stamford"
+      ]
+    },
+    {
+      "pwsid": "CT1510011",
+      "name": "Waterbury Water Department",
+      "population_served": 107271,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Middlebury",
+        "Prospect",
+        "Waterbury",
+        "Watertown",
+        "Wolcott"
+      ]
+    },
+    {
+      "pwsid": "CT0473011",
+      "name": "CTWC - Northern Region-Western System",
+      "population_served": 101313,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "East Granby",
+        "East Windsor",
+        "Ellington",
+        "Enfield",
+        "Manchester",
+        "Mansfield",
+        "South Windsor",
+        "Stafford",
+        "Suffield",
+        "Tolland",
+        "Vernon",
+        "Windsor Locks"
+      ]
+    },
+    {
+      "pwsid": "CT0890011",
+      "name": "New Britain Water Department",
+      "population_served": 73534,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Berlin",
+        "Farmington",
+        "New Britain",
+        "Newington",
+        "Plainville",
+        "West Hartford"
+      ]
+    },
+    {
+      "pwsid": "CT0340011",
+      "name": "Danbury Water Department",
+      "population_served": 62055,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Bethel",
+        "Brookfield",
+        "Danbury",
+        "Ridgefield"
+      ]
+    },
+    {
+      "pwsid": "CT0800011",
+      "name": "Meriden Water Division",
+      "population_served": 58441,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Berlin",
+        "Cheshire",
+        "Meriden",
+        "Southington",
+        "Wallingford"
+      ]
+    },
+    {
+      "pwsid": "CT0570011",
+      "name": "Aquarion-Greenwich",
+      "population_served": 53297,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Greenwich",
+        "Stamford"
+      ]
+    },
+    {
+      "pwsid": "CT0170011",
+      "name": "Bristol Water Department",
+      "population_served": 52079,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Bristol",
+        "Burlington",
+        "Plainville",
+        "Plymouth",
+        "Southington"
+      ]
+    },
+    {
+      "pwsid": "CT0770021",
+      "name": "Manchester Water Department",
+      "population_served": 51198,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Glastonbury",
+        "Manchester",
+        "South Windsor",
+        "Vernon"
+      ]
+    },
+    {
+      "pwsid": "CT1310011",
+      "name": "Southington Water Department",
+      "population_served": 43069,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Cheshire",
+        "Southington",
+        "Wolcott"
+      ]
+    },
+    {
+      "pwsid": "CT1030021",
+      "name": "South Norwalk Electric & Water",
+      "population_served": 42000,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Darien",
+        "New Canaan",
+        "Norwalk",
+        "Wilton"
+      ]
+    },
+    {
+      "pwsid": "CT0830011",
+      "name": "Middletown Water Department",
+      "population_served": 41019,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Cromwell",
+        "Middlefield",
+        "Middletown"
+      ]
+    },
+    {
+      "pwsid": "CT1030011",
+      "name": "Norwalk First Taxing District",
+      "population_served": 40256,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "New Canaan",
+        "Norwalk",
+        "Westport",
+        "Wilton"
+      ]
+    },
+    {
+      "pwsid": "CT1430011",
+      "name": "Torrington Water Company",
+      "population_served": 37915,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Harwinton",
+        "Litchfield",
+        "New Hartford",
+        "Torrington"
+      ]
+    },
+    {
+      "pwsid": "CT1480011",
+      "name": "Wallingford Water Department",
+      "population_served": 37267,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "North Haven",
+        "Wallingford"
+      ]
+    },
+    {
+      "pwsid": "CT1040011",
+      "name": "Norwich Public Utilities",
+      "population_served": 36163,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Bozrah",
+        "Franklin",
+        "Lebanon",
+        "Lisbon",
+        "Montville",
+        "Norwich",
+        "Preston"
+      ]
+    },
+    {
+      "pwsid": "CT0608011",
+      "name": "CTWC - Shoreline Region-Guilford System",
+      "population_served": 33975,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Clinton",
+        "Guilford",
+        "Madison",
+        "Old Saybrook",
+        "Westbrook"
+      ]
+    },
+    {
+      "pwsid": "CT0590011",
+      "name": "Groton Utilities",
+      "population_served": 30200,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Groton",
+        "Ledyard"
+      ]
+    },
+    {
+      "pwsid": "CT0950011",
+      "name": "New London Dept Of Public Utilities",
+      "population_served": 27620,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "New London",
+        "Waterford"
+      ]
+    },
+    {
+      "pwsid": "CT0780021",
+      "name": "University Of Connecticut - Main Campus",
+      "population_served": 27199,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Mansfield"
+      ]
+    },
+    {
+      "pwsid": "CT0880011",
+      "name": "CTWC - Naugatuck Region-Central System",
+      "population_served": 22735,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Beacon Falls",
+        "Naugatuck",
+        "Prospect",
+        "Waterbury"
+      ]
+    },
+    {
+      "pwsid": "CT1630011",
+      "name": "Windham Water Works",
+      "population_served": 21214,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Mansfield",
+        "Windham"
+      ]
+    },
+    {
+      "pwsid": "CT0350011",
+      "name": "Aquarion-Darien",
+      "population_served": 18737,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Darien",
+        "New Canaan",
+        "Norwalk",
+        "Stamford"
+      ]
+    },
+    {
+      "pwsid": "CT0490021",
+      "name": "Hazardville Water Company",
+      "population_served": 18544,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "East Windsor",
+        "Enfield",
+        "Somers"
+      ]
+    },
+    {
+      "pwsid": "CT1100011",
+      "name": "Aquarion-Plainville Regional",
+      "population_served": 18231,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Bristol",
+        "Farmington",
+        "Plainville",
+        "Southington"
+      ]
+    },
+    {
+      "pwsid": "CT1520071",
+      "name": "Waterford WPCA",
+      "population_served": 16578,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Montville",
+        "New London",
+        "Waterford"
+      ]
+    },
+    {
+      "pwsid": "CT0450011",
+      "name": "East Lyme Water & Sewer Commission",
+      "population_served": 15245,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "East Lyme"
+      ]
+    },
+    {
+      "pwsid": "CT0520011",
+      "name": "CTWC - Unionville System",
+      "population_served": 14693,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Avon",
+        "Bristol",
+        "Farmington",
+        "Plainville"
+      ]
+    },
+    {
+      "pwsid": "CT1280021",
+      "name": "Aquarion-Simsbury Regional",
+      "population_served": 14691,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "East Granby",
+        "Granby",
+        "Simsbury"
+      ]
+    },
+    {
+      "pwsid": "CT0330011",
+      "name": "Cromwell Fire District Water Department",
+      "population_served": 14316,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Berlin",
+        "Cromwell"
+      ]
+    },
+    {
+      "pwsid": "CT0960011",
+      "name": "Aquarion-New Milford Regional",
+      "population_served": 13331,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Brookfield",
+        "New Milford"
+      ]
+    },
+    {
+      "pwsid": "CT1240011",
+      "name": "Aquarion-Valley",
+      "population_served": 13080,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Ansonia",
+        "Beacon Falls",
+        "Bethany",
+        "Oxford",
+        "Seymour",
+        "Woodbridge"
+      ]
+    },
+    {
+      "pwsid": "CT0040011",
+      "name": "Avon Water Co",
+      "population_served": 11590,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Avon",
+        "Farmington",
+        "Simsbury"
+      ]
+    },
+    {
+      "pwsid": "CT1370011",
+      "name": "Aquarion-Mystic",
+      "population_served": 10788,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Groton",
+        "Ledyard",
+        "Stonington"
+      ]
+    },
+    {
+      "pwsid": "CT0900011",
+      "name": "Aquarion-New Canaan",
+      "population_served": 10097,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "New Canaan",
+        "Stamford"
+      ]
+    },
+    {
+      "pwsid": "CT1530021",
+      "name": "Watertown Water & Sewer Authority",
+      "population_served": 9972,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Middlebury",
+        "Waterbury",
+        "Watertown"
+      ]
+    },
+    {
+      "pwsid": "CT0090011",
+      "name": "Bethel Water Dept",
+      "population_served": 9507,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Bethel",
+        "Danbury"
+      ]
+    },
+    {
+      "pwsid": "CT1620011",
+      "name": "Winsted Water Works",
+      "population_served": 7784,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Barkhamsted",
+        "Winchester"
+      ]
+    },
+    {
+      "pwsid": "CT0070011",
+      "name": "Kensington Fire District",
+      "population_served": 7553,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Berlin",
+        "New Britain",
+        "Newington"
+      ]
+    },
+    {
+      "pwsid": "CT1180011",
+      "name": "Aquarion-Ridgefield",
+      "population_served": 7476,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Ridgefield"
+      ]
+    },
+    {
+      "pwsid": "CT1160011",
+      "name": "Putnam Water Pollution Control Authority",
+      "population_served": 7300,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Putnam",
+        "Thompson",
+        "Woodstock"
+      ]
+    },
+    {
+      "pwsid": "CT1300021",
+      "name": "Heritage Water Company",
+      "population_served": 7300,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Middlebury",
+        "Oxford",
+        "Southbury"
+      ]
+    },
+    {
+      "pwsid": "CT0580011",
+      "name": "Jewett City Water Company",
+      "population_served": 6840,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Griswold",
+        "Lisbon"
+      ]
+    },
+    {
+      "pwsid": "CT1530011",
+      "name": "Watertown Fire District",
+      "population_served": 6718,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Watertown"
+      ]
+    },
+    {
+      "pwsid": "CT0690011",
+      "name": "CTWC - Crystal System",
+      "population_served": 6378,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Brooklyn",
+        "Killingly"
+      ]
+    },
+    {
+      "pwsid": "CT0230011",
+      "name": "CTWC - Naugatuck Region-Collinsville System",
+      "population_served": 6324,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Avon",
+        "Burlington",
+        "Canton",
+        "New Hartford"
+      ]
+    },
+    {
+      "pwsid": "CT0970011",
+      "name": "Aquarion-Newtown Regional",
+      "population_served": 6054,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Newtown"
+      ]
+    },
+    {
+      "pwsid": "CT1110011",
+      "name": "CTWC - Naugatuck Region-Terryville System",
+      "population_served": 5607,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Plymouth"
+      ]
+    },
+    {
+      "pwsid": "CT0070021",
+      "name": "Berlin Water Control Commission",
+      "population_served": 5128,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Berlin",
+        "Middletown",
+        "Newington"
+      ]
+    },
+    {
+      "pwsid": "CT0261031",
+      "name": "CTWC - Shoreline Region-Chester System",
+      "population_served": 5030,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Chester",
+        "Deep River",
+        "Essex"
+      ]
+    },
+    {
+      "pwsid": "CT1130011",
+      "name": "Portland Water Department",
+      "population_served": 5010,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Middletown",
+        "Portland"
+      ]
+    },
+    {
+      "pwsid": "CT0280011",
+      "name": "Colchester Sewer & Water Commission",
+      "population_served": 4020,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Colchester"
+      ]
+    },
+    {
+      "pwsid": "CT1400011",
+      "name": "CTWC - Naugatuck Region-Thomaston System",
+      "population_served": 3789,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Plymouth",
+        "Thomaston"
+      ]
+    },
+    {
+      "pwsid": "CT1050732",
+      "name": "CTWC - Shoreline Region-Sound View",
+      "population_served": 3397,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Old Lyme"
+      ]
+    },
+    {
+      "pwsid": "CT0727091",
+      "name": "Ledyard WPCA - Ledyard Center",
+      "population_served": 3294,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Ledyard"
+      ]
+    },
+    {
+      "pwsid": "CT0740011",
+      "name": "Aquarion-Litchfield Regional",
+      "population_served": 3097,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Goshen",
+        "Litchfield",
+        "Torrington"
+      ]
+    },
+    {
+      "pwsid": "CT0830021",
+      "name": "Connecticut Valley Hospital",
+      "population_served": 2928,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Middletown"
+      ]
+    },
+    {
+      "pwsid": "CT0070031",
+      "name": "Worthington Fire District",
+      "population_served": 2875,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Berlin"
+      ]
+    },
+    {
+      "pwsid": "CT0970021",
+      "name": "Fairfield Hills",
+      "population_served": 2610,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Newtown"
+      ]
+    },
+    {
+      "pwsid": "CT0860011",
+      "name": "Scwa, Montville Division (MTV)",
+      "population_served": 2570,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Montville"
+      ]
+    },
+    {
+      "pwsid": "CT0720041",
+      "name": "Scwa, Tower-Ferry View Division",
+      "population_served": 2567,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Ledyard"
+      ]
+    },
+    {
+      "pwsid": "CT1661423",
+      "name": "Wolcott Water Department",
+      "population_served": 2550,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Waterbury",
+        "Wolcott"
+      ]
+    },
+    {
+      "pwsid": "CT1090031",
+      "name": "CTWC - Gallup System",
+      "population_served": 2538,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Plainfield"
+      ]
+    },
+    {
+      "pwsid": "CT0590051",
+      "name": "Groton Long Point Association",
+      "population_served": 2400,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Groton"
+      ]
+    },
+    {
+      "pwsid": "CT0490031",
+      "name": "Connecticut Correctional Institute",
+      "population_served": 2385,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Enfield",
+        "Somers"
+      ]
+    },
+    {
+      "pwsid": "CT0727051",
+      "name": "Ledyard Wpca, Gales Ferry System",
+      "population_served": 2369,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Groton",
+        "Ledyard"
+      ]
+    },
+    {
+      "pwsid": "CT0560011",
+      "name": "Salmon Brook District Water Dept",
+      "population_served": 2151,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Granby"
+      ]
+    },
+    {
+      "pwsid": "CT0590031",
+      "name": "Noank Fire District",
+      "population_served": 1947,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Groton"
+      ]
+    },
+    {
+      "pwsid": "CT1220011",
+      "name": "Aquarion-Salisbury",
+      "population_served": 1932,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Salisbury"
+      ]
+    },
+    {
+      "pwsid": "CT0672031",
+      "name": "CTWC - Hebron Center Division",
+      "population_served": 1927,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Hebron"
+      ]
+    },
+    {
+      "pwsid": "CT0920011",
+      "name": "Aquarion-New Hartford",
+      "population_served": 1872,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "New Hartford"
+      ]
+    },
+    {
+      "pwsid": "CT1020021",
+      "name": "Scwa, North Stonington Division (NST)",
+      "population_served": 1860,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "North Stonington"
+      ]
+    },
+    {
+      "pwsid": "CT1090081",
+      "name": "CTWC - Plainfield System",
+      "population_served": 1713,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Brooklyn",
+        "Killingly",
+        "Plainfield"
+      ]
+    },
+    {
+      "pwsid": "CT0380021",
+      "name": "Durham Center Division",
+      "population_served": 1601,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Durham"
+      ]
+    },
+    {
+      "pwsid": "CT1000011",
+      "name": "Aquarion-North Canaan",
+      "population_served": 1481,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "North Canaan"
+      ]
+    },
+    {
+      "pwsid": "CT1280011",
+      "name": "Tariffville Fire District Water Dept",
+      "population_served": 1477,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Simsbury"
+      ]
+    },
+    {
+      "pwsid": "CT0860021",
+      "name": "Scwa, Mohegan Division",
+      "population_served": 1428,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Montville"
+      ]
+    },
+    {
+      "pwsid": "CT0765101",
+      "name": "CTWC - Legend Hill System",
+      "population_served": 1368,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Madison"
+      ]
+    },
+    {
+      "pwsid": "CT0798013",
+      "name": "Aquarion-Marlborough",
+      "population_served": 1348,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Marlborough"
+      ]
+    },
+    {
+      "pwsid": "CT0180061",
+      "name": "Candlewood Shores Tax District",
+      "population_served": 1315,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Brookfield",
+        "New Fairfield"
+      ]
+    },
+    {
+      "pwsid": "CT0864011",
+      "name": "Montville Water Supply",
+      "population_served": 1300,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Montville",
+        "Waterford"
+      ]
+    },
+    {
+      "pwsid": "CT1423011",
+      "name": "Tolland Water Department",
+      "population_served": 1251,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Tolland"
+      ]
+    },
+    {
+      "pwsid": "CT1680011",
+      "name": "Aquarion-Woodbury",
+      "population_served": 1209,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Woodbury"
+      ]
+    },
+    {
+      "pwsid": "CT0378011",
+      "name": "Aquarion-East Derby",
+      "population_served": 1101,
+      "source": "Surface water (reservoirs/rivers)",
+      "towns": [
+        "Derby",
+        "Orange"
+      ]
+    },
+    {
+      "pwsid": "CT1410011",
+      "name": "CTWC - Thompson System",
+      "population_served": 1070,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Thompson"
+      ]
+    },
+    {
+      "pwsid": "CT1050752",
+      "name": "CTWC - Shoreline Region-Point O Woods",
+      "population_served": 1068,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Old Lyme"
+      ]
+    },
+    {
+      "pwsid": "CT1330021",
+      "name": "Sprague Water & Sewer Authority",
+      "population_served": 1058,
+      "source": "Groundwater (wells)",
+      "towns": [
+        "Sprague"
+      ]
+    }
+  ],
+  "towns": [
+    {
+      "town": "Andover",
+      "county": "Tolland",
+      "population_2023": 3144,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Ansonia",
+      "county": "New Haven",
+      "population_2023": 19008,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT1240011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Ashford",
+      "county": "Windham",
+      "population_2023": 4229,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Avon",
+      "county": "Hartford",
+      "population_2023": 18883,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "CTWC - Unionville System",
+      "largest_system_pwsid": "CT0520011",
+      "largest_system_population_total": 14693,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0520011",
+        "CT0040011",
+        "CT0230011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Barkhamsted",
+      "county": "Litchfield",
+      "population_2023": 3677,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Winsted Water Works",
+      "largest_system_pwsid": "CT1620011",
+      "largest_system_population_total": 7784,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1620011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Beacon Falls",
+      "county": "New Haven",
+      "population_2023": 6206,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT0880011",
+        "CT1240011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Berlin",
+      "county": "Hartford",
+      "population_2023": 20429,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 7,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0890011",
+        "CT0800011",
+        "CT0330011",
+        "CT0070011",
+        "CT0070021",
+        "CT0070031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bethany",
+      "county": "New Haven",
+      "population_2023": 5271,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT1240011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bethel",
+      "county": "Fairfield",
+      "population_2023": 20678,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Danbury Water Department",
+      "largest_system_pwsid": "CT0340011",
+      "largest_system_population_total": 62055,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0340011",
+        "CT0090011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bethlehem",
+      "county": "Litchfield",
+      "population_2023": 3421,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bloomfield",
+      "county": "Hartford",
+      "population_2023": 21884,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bolton",
+      "county": "Tolland",
+      "population_2023": 4834,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bozrah",
+      "county": "New London",
+      "population_2023": 2412,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Branford",
+      "county": "New Haven",
+      "population_2023": 28031,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bridgeport",
+      "county": "Fairfield",
+      "population_2023": 148028,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bridgewater",
+      "county": "Litchfield",
+      "population_2023": 1646,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Bristol",
+      "county": "Hartford",
+      "population_2023": 61601,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Bristol Water Department",
+      "largest_system_pwsid": "CT0170011",
+      "largest_system_population_total": 52079,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0170011",
+        "CT1100011",
+        "CT0520011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Brookfield",
+      "county": "Fairfield",
+      "population_2023": 17489,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Danbury Water Department",
+      "largest_system_pwsid": "CT0340011",
+      "largest_system_population_total": 62055,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0340011",
+        "CT0960011",
+        "CT0180061"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Brooklyn",
+      "county": "Windham",
+      "population_2023": 8612,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Crystal System",
+      "largest_system_pwsid": "CT0690011",
+      "largest_system_population_total": 6378,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0690011",
+        "CT1090081"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Burlington",
+      "county": "Hartford",
+      "population_2023": 9746,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Bristol Water Department",
+      "largest_system_pwsid": "CT0170011",
+      "largest_system_population_total": 52079,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0170011",
+        "CT0230011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Canaan",
+      "county": "Litchfield",
+      "population_2023": 1082,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Canterbury",
+      "county": "Windham",
+      "population_2023": 5140,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Canton",
+      "county": "Hartford",
+      "population_2023": 10146,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Naugatuck Region-Collinsville System",
+      "largest_system_pwsid": "CT0230011",
+      "largest_system_population_total": 6324,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0230011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Chaplin",
+      "county": "Windham",
+      "population_2023": 2157,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Cheshire",
+      "county": "New Haven",
+      "population_2023": 29200,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0800011",
+        "CT1310011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Chester",
+      "county": "Middlesex",
+      "population_2023": 3761,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Chester System",
+      "largest_system_pwsid": "CT0261031",
+      "largest_system_population_total": 5030,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0261031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Clinton",
+      "county": "Middlesex",
+      "population_2023": 13402,
+      "population_note": "Read from garbled PDF row 'CLINTON 13,4023 0.022 0.01'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Guilford System",
+      "largest_system_pwsid": "CT0608011",
+      "largest_system_population_total": 33975,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0608011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Colchester",
+      "county": "New London",
+      "population_2023": 15504,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Colchester Sewer & Water Commission",
+      "largest_system_pwsid": "CT0280011",
+      "largest_system_population_total": 4020,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0280011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Colebrook",
+      "county": "Litchfield",
+      "population_2023": 1368,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Columbia",
+      "county": "Tolland",
+      "population_2023": 5268,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Cornwall",
+      "county": "Litchfield",
+      "population_2023": 1575,
+      "population_note": "Read from garbled PDF row 'CORNWALL 1,5752 0.134 0.25'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Coventry",
+      "county": "Tolland",
+      "population_2023": 12308,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Cromwell",
+      "county": "Middlesex",
+      "population_2023": 14363,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0830011",
+        "CT0330011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Danbury",
+      "county": "Fairfield",
+      "population_2023": 86124,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Danbury Water Department",
+      "largest_system_pwsid": "CT0340011",
+      "largest_system_population_total": 62055,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0340011",
+        "CT0090011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Darien",
+      "county": "Fairfield",
+      "population_2023": 22020,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1350011",
+        "CT1030021",
+        "CT0350011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Deep River",
+      "county": "Middlesex",
+      "population_2023": 4454,
+      "population_note": "Read from garbled PDF row 'DEEP RIVER 4,4549 0.20-8-0.18'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Chester System",
+      "largest_system_pwsid": "CT0261031",
+      "largest_system_population_total": 5030,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0261031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Derby",
+      "county": "New Haven",
+      "population_2023": 12406,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0378011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Durham",
+      "county": "Middlesex",
+      "population_2023": 7204,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Durham Center Division",
+      "largest_system_pwsid": "CT0380021",
+      "largest_system_population_total": 1601,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0380021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Granby",
+      "county": "Hartford",
+      "population_2023": 5218,
+      "population_note": "Read from garbled PDF row 'EAST GRANBY 5,2180 0.00 38 0.73'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0473011",
+        "CT1280021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Haddam",
+      "county": "Middlesex",
+      "population_2023": 8987,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Hampton",
+      "county": "Middlesex",
+      "population_2023": 12989,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Hartford",
+      "county": "Hartford",
+      "population_2023": 50654,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Haven",
+      "county": "New Haven",
+      "population_2023": 27533,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Lyme",
+      "county": "New London",
+      "population_2023": 18929,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "East Lyme Water & Sewer Commission",
+      "largest_system_pwsid": "CT0450011",
+      "largest_system_population_total": 15245,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0450011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "East Windsor",
+      "county": "Hartford",
+      "population_2023": 11170,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011",
+        "CT0490021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Eastford",
+      "county": "Windham",
+      "population_2023": 1689,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Easton",
+      "county": "Fairfield",
+      "population_2023": 7636,
+      "population_note": "Read from garbled PDF row 'EASTON 7,6366 0.08 42 0.55'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Ellington",
+      "county": "Tolland",
+      "population_2023": 16994,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Enfield",
+      "county": "Hartford",
+      "population_2023": 40792,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011",
+        "CT0490021",
+        "CT0490031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Essex",
+      "county": "Middlesex",
+      "population_2023": 6802,
+      "population_note": "Read from garbled PDF row 'ESSEX 6,8029 0.13 43 0.64'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Chester System",
+      "largest_system_pwsid": "CT0261031",
+      "largest_system_population_total": 5030,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0261031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Fairfield",
+      "county": "Fairfield",
+      "population_2023": 63433,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Farmington",
+      "county": "Hartford",
+      "population_2023": 26798,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0890011",
+        "CT1100011",
+        "CT0520011",
+        "CT0040011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Franklin",
+      "county": "New London",
+      "population_2023": 1891,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Glastonbury",
+      "county": "Hartford",
+      "population_2023": 35204,
+      "population_note": "Read from garbled PDF row 'GLASTONBURY 35,2045 0.01 150 0.43'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0770021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Goshen",
+      "county": "Litchfield",
+      "population_2023": 3232,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Litchfield Regional",
+      "largest_system_pwsid": "CT0740011",
+      "largest_system_population_total": 3097,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0740011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Granby",
+      "county": "Hartford",
+      "population_2023": 11249,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Aquarion-Simsbury Regional",
+      "largest_system_pwsid": "CT1280021",
+      "largest_system_population_total": 14691,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1280021",
+        "CT0560011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Greenwich",
+      "county": "Fairfield",
+      "population_2023": 63574,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1350011",
+        "CT0570011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Griswold",
+      "county": "New London",
+      "population_2023": 11624,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Jewett City Water Company",
+      "largest_system_pwsid": "CT0580011",
+      "largest_system_population_total": 6840,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0580011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Groton",
+      "county": "New London",
+      "population_2023": 37878,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Groton Utilities",
+      "largest_system_pwsid": "CT0590011",
+      "largest_system_population_total": 30200,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0590011",
+        "CT1370011",
+        "CT0590051",
+        "CT0727051",
+        "CT0590031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Guilford",
+      "county": "New Haven",
+      "population_2023": 22020,
+      "population_note": "Read from garbled PDF row 'GUILFORD 22,0201 0.00-11-0.05'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Guilford System",
+      "largest_system_pwsid": "CT0608011",
+      "largest_system_population_total": 33975,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0608011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Haddam",
+      "county": "Middlesex",
+      "population_2023": 8773,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Hamden",
+      "county": "New Haven",
+      "population_2023": 60014,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Hampton",
+      "county": "Windham",
+      "population_2023": 1740,
+      "population_note": "Read from garbled PDF row 'HAMPTON 1,7402 0.12 12 0.69'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Hartford",
+      "county": "Hartford",
+      "population_2023": 119669,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Hartland",
+      "county": "Hartford",
+      "population_2023": 1912,
+      "population_note": "Read from garbled PDF row 'HARTLAND 1,9124 0.21 21 1.11'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Harwinton",
+      "county": "Litchfield",
+      "population_2023": 5612,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Torrington Water Company",
+      "largest_system_pwsid": "CT1430011",
+      "largest_system_population_total": 37915,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1430011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Hebron",
+      "county": "Tolland",
+      "population_2023": 9146,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Hebron Center Division",
+      "largest_system_pwsid": "CT0672031",
+      "largest_system_population_total": 1927,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0672031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Kent",
+      "county": "Litchfield",
+      "population_2023": 3066,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Killingly",
+      "county": "Windham",
+      "population_2023": 17945,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Crystal System",
+      "largest_system_pwsid": "CT0690011",
+      "largest_system_population_total": 6378,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0690011",
+        "CT1090081"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Killingworth",
+      "county": "Middlesex",
+      "population_2023": 6254,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Lebanon",
+      "county": "New London",
+      "population_2023": 7108,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Ledyard",
+      "county": "New London",
+      "population_2023": 15459,
+      "population_note": "Read from garbled PDF row 'LEDYARD 15,4593 0.02 123 0.80'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Groton Utilities",
+      "largest_system_pwsid": "CT0590011",
+      "largest_system_population_total": 30200,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0590011",
+        "CT1370011",
+        "CT0727091",
+        "CT0720041",
+        "CT0727051"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Lisbon",
+      "county": "New London",
+      "population_2023": 4228,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011",
+        "CT0580011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Litchfield",
+      "county": "Litchfield",
+      "population_2023": 8293,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Torrington Water Company",
+      "largest_system_pwsid": "CT1430011",
+      "largest_system_population_total": 37915,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1430011",
+        "CT0740011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Lyme",
+      "county": "New London",
+      "population_2023": 2409,
+      "population_note": "Read from garbled PDF row 'LYME 2,4098 0.33 65 2.77'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Madison",
+      "county": "New Haven",
+      "population_2023": 17498,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Shoreline Region-Guilford System",
+      "largest_system_pwsid": "CT0608011",
+      "largest_system_population_total": 33975,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0608011",
+        "CT0765101"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Manchester",
+      "county": "Hartford",
+      "population_2023": 59408,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0473011",
+        "CT0770021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Mansfield",
+      "county": "Tolland",
+      "population_2023": 25401,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011",
+        "CT0780021",
+        "CT1630011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Marlborough",
+      "county": "Hartford",
+      "population_2023": 6106,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Marlborough",
+      "largest_system_pwsid": "CT0798013",
+      "largest_system_population_total": 1348,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0798013"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Meriden",
+      "county": "New Haven",
+      "population_2023": 60111,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0800011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Middlebury",
+      "county": "New Haven",
+      "population_2023": 7936,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Waterbury Water Department",
+      "largest_system_pwsid": "CT1510011",
+      "largest_system_population_total": 107271,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1510011",
+        "CT1530021",
+        "CT1300021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Middlefield",
+      "county": "Middlesex",
+      "population_2023": 4257,
+      "population_note": "Read from garbled PDF row 'MIDDLEFIELD 4,2579 0.21-17-0.40'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Middletown Water Department",
+      "largest_system_pwsid": "CT0830011",
+      "largest_system_population_total": 41019,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0830011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Middletown",
+      "county": "Middlesex",
+      "population_2023": 47984,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "Middletown Water Department",
+      "largest_system_pwsid": "CT0830011",
+      "largest_system_population_total": 41019,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0830011",
+        "CT0070021",
+        "CT1130011",
+        "CT0830021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Milford",
+      "county": "New Haven",
+      "population_2023": 52793,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Monroe",
+      "county": "Fairfield",
+      "population_2023": 18831,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Montville",
+      "county": "New London",
+      "population_2023": 17814,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011",
+        "CT1520071",
+        "CT0860011",
+        "CT0860021",
+        "CT0864011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Morris",
+      "county": "Litchfield",
+      "population_2023": 2272,
+      "population_note": "Read from garbled PDF row 'MORRIS 2,2725 0.22 13 0.58'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Naugatuck",
+      "county": "New Haven",
+      "population_2023": 31820,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Naugatuck Region-Central System",
+      "largest_system_pwsid": "CT0880011",
+      "largest_system_population_total": 22735,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0880011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New Britain",
+      "county": "Hartford",
+      "population_2023": 74080,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "New Britain Water Department",
+      "largest_system_pwsid": "CT0890011",
+      "largest_system_population_total": 73534,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0890011",
+        "CT0070011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New Canaan",
+      "county": "Fairfield",
+      "population_2023": 20862,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1030021",
+        "CT1030011",
+        "CT0350011",
+        "CT0900011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New Fairfield",
+      "county": "Fairfield",
+      "population_2023": 13487,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Candlewood Shores Tax District",
+      "largest_system_pwsid": "CT0180061",
+      "largest_system_population_total": 1315,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0180061"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New Hartford",
+      "county": "Litchfield",
+      "population_2023": 6709,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Torrington Water Company",
+      "largest_system_pwsid": "CT1430011",
+      "largest_system_population_total": 37915,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1430011",
+        "CT0230011",
+        "CT0920011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New Haven",
+      "county": "New Haven",
+      "population_2023": 135319,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New London",
+      "county": "New London",
+      "population_2023": 27560,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "New London Dept Of Public Utilities",
+      "largest_system_pwsid": "CT0950011",
+      "largest_system_population_total": 27620,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0950011",
+        "CT1520071"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "New Milford",
+      "county": "Litchfield",
+      "population_2023": 28276,
+      "population_note": "Read from garbled PDF row 'NEW MILFORD 28,2761 0.00 94 0.33'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-New Milford Regional",
+      "largest_system_pwsid": "CT0960011",
+      "largest_system_population_total": 13331,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0960011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Newington",
+      "county": "Hartford",
+      "population_2023": 31227,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0890011",
+        "CT0070011",
+        "CT0070021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Newtown",
+      "county": "Fairfield",
+      "population_2023": 27673,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT0970011",
+        "CT0970021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Norfolk",
+      "county": "Litchfield",
+      "population_2023": 1596,
+      "population_note": "Read from garbled PDF row 'NORFOLK 1,5962 0.139 0.57'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "North Branford",
+      "county": "New Haven",
+      "population_2023": 13415,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "North Canaan",
+      "county": "Litchfield",
+      "population_2023": 3204,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-North Canaan",
+      "largest_system_pwsid": "CT1000011",
+      "largest_system_population_total": 1481,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1000011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "North Haven",
+      "county": "New Haven",
+      "population_2023": 24295,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT1480011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "North Stonington",
+      "county": "New London",
+      "population_2023": 5165,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Scwa, North Stonington Division (NST)",
+      "largest_system_pwsid": "CT1020021",
+      "largest_system_population_total": 1860,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1020021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Norwalk",
+      "county": "Fairfield",
+      "population_2023": 92458,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1030021",
+        "CT1030011",
+        "CT0350011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Norwich",
+      "county": "New London",
+      "population_2023": 39881,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Old Lyme",
+      "county": "New London",
+      "population_2023": 7696,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Shoreline Region-Sound View",
+      "largest_system_pwsid": "CT1050732",
+      "largest_system_population_total": 3397,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1050732",
+        "CT1050752"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Old Saybrook",
+      "county": "Middlesex",
+      "population_2023": 10571,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Guilford System",
+      "largest_system_pwsid": "CT0608011",
+      "largest_system_population_total": 33975,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0608011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Orange",
+      "county": "New Haven",
+      "population_2023": 14322,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0378011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Oxford",
+      "county": "New Haven",
+      "population_2023": 13125,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Aquarion-Valley",
+      "largest_system_pwsid": "CT1240011",
+      "largest_system_population_total": 13080,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1240011",
+        "CT1300021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Plainfield",
+      "county": "Windham",
+      "population_2023": 15193,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Gallup System",
+      "largest_system_pwsid": "CT1090031",
+      "largest_system_population_total": 2538,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1090031",
+        "CT1090081"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Plainville",
+      "county": "Hartford",
+      "population_2023": 17491,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "New Britain Water Department",
+      "largest_system_pwsid": "CT0890011",
+      "largest_system_population_total": 73534,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0890011",
+        "CT0170011",
+        "CT1100011",
+        "CT0520011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Plymouth",
+      "county": "Litchfield",
+      "population_2023": 11766,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Bristol Water Department",
+      "largest_system_pwsid": "CT0170011",
+      "largest_system_population_total": 52079,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0170011",
+        "CT1110011",
+        "CT1400011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Pomfret",
+      "county": "Windham",
+      "population_2023": 4313,
+      "population_note": "Read from garbled PDF row 'POMFRET 4,3136 0.14 42 0.98'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Portland",
+      "county": "Middlesex",
+      "population_2023": 9428,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT1130011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Preston",
+      "county": "New London",
+      "population_2023": 4829,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Norwich Public Utilities",
+      "largest_system_pwsid": "CT1040011",
+      "largest_system_population_total": 36163,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1040011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Prospect",
+      "county": "New Haven",
+      "population_2023": 9479,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT1510011",
+        "CT0880011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Putnam",
+      "county": "Windham",
+      "population_2023": 9312,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Putnam Water Pollution Control Authority",
+      "largest_system_pwsid": "CT1160011",
+      "largest_system_population_total": 7300,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1160011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Redding",
+      "county": "Fairfield",
+      "population_2023": 8719,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Ridgefield",
+      "county": "Fairfield",
+      "population_2023": 24931,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT0340011",
+        "CT1180011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Rocky Hill",
+      "county": "Hartford",
+      "population_2023": 20708,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Roxbury",
+      "county": "Litchfield",
+      "population_2023": 2297,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Salem",
+      "county": "New London",
+      "population_2023": 4319,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Salisbury",
+      "county": "Litchfield",
+      "population_2023": 4240,
+      "population_note": "Read from garbled PDF row 'SALISBURY 4,2401 0.02 128 3.11'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Salisbury",
+      "largest_system_pwsid": "CT1220011",
+      "largest_system_population_total": 1932,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1220011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Scotland",
+      "county": "Windham",
+      "population_2023": 1578,
+      "population_note": "Read from garbled PDF row 'SCOTLAND 1,5781 0.06 10 0.64'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Seymour",
+      "county": "New Haven",
+      "population_2023": 16953,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0150011",
+        "CT1240011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Sharon",
+      "county": "Litchfield",
+      "population_2023": 2744,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Shelton",
+      "county": "Fairfield",
+      "population_2023": 42144,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Sherman",
+      "county": "Fairfield",
+      "population_2023": 3530,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Simsbury",
+      "county": "Hartford",
+      "population_2023": 24953,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Aquarion-Simsbury Regional",
+      "largest_system_pwsid": "CT1280021",
+      "largest_system_population_total": 14691,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1280021",
+        "CT0040011",
+        "CT1280011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Somers",
+      "county": "Tolland",
+      "population_2023": 10725,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Hazardville Water Company",
+      "largest_system_pwsid": "CT0490021",
+      "largest_system_population_total": 18544,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT0490021",
+        "CT0490031"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "South Windsor",
+      "county": "Hartford",
+      "population_2023": 26773,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0473011",
+        "CT0770021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Southbury",
+      "county": "New Haven",
+      "population_2023": 20127,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Heritage Water Company",
+      "largest_system_pwsid": "CT1300021",
+      "largest_system_population_total": 7300,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1300021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Southington",
+      "county": "Hartford",
+      "population_2023": 43743,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0800011",
+        "CT0170011",
+        "CT1310011",
+        "CT1100011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Sprague",
+      "county": "New London",
+      "population_2023": 2940,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Sprague Water & Sewer Authority",
+      "largest_system_pwsid": "CT1330021",
+      "largest_system_population_total": 1058,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1330021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Stafford",
+      "county": "Tolland",
+      "population_2023": 11567,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Stamford",
+      "county": "Fairfield",
+      "population_2023": 136226,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 5,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1350011",
+        "CT0570011",
+        "CT0350011",
+        "CT0900011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Sterling",
+      "county": "Windham",
+      "population_2023": 3644,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Stonington",
+      "county": "New London",
+      "population_2023": 18431,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Mystic",
+      "largest_system_pwsid": "CT1370011",
+      "largest_system_population_total": 10788,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1370011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Stratford",
+      "county": "Fairfield",
+      "population_2023": 52454,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Suffield",
+      "county": "Hartford",
+      "population_2023": 15650,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Thomaston",
+      "county": "Litchfield",
+      "population_2023": 7501,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Naugatuck Region-Thomaston System",
+      "largest_system_pwsid": "CT1400011",
+      "largest_system_population_total": 3789,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1400011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Thompson",
+      "county": "Windham",
+      "population_2023": 9385,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Putnam Water Pollution Control Authority",
+      "largest_system_pwsid": "CT1160011",
+      "largest_system_population_total": 7300,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1160011",
+        "CT1410011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Tolland",
+      "county": "Tolland",
+      "population_2023": 14574,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011",
+        "CT1423011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Torrington",
+      "county": "Litchfield",
+      "population_2023": 35550,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Torrington Water Company",
+      "largest_system_pwsid": "CT1430011",
+      "largest_system_population_total": 37915,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1430011",
+        "CT0740011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Trumbull",
+      "county": "Fairfield",
+      "population_2023": 37269,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Union",
+      "county": "Tolland",
+      "population_2023": 797,
+      "population_note": "Read from garbled PDF row 'UNION 7974 0.50 16 2.05'; confirmed because all 169 towns sum to the DPH state total",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Vernon",
+      "county": "Tolland",
+      "population_2023": 30596,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "CTWC - Northern Region-Western System",
+      "largest_system_pwsid": "CT0473011",
+      "largest_system_population_total": 101313,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0473011",
+        "CT0770021"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Voluntown",
+      "county": "New London",
+      "population_2023": 2612,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Wallingford",
+      "county": "New Haven",
+      "population_2023": 43725,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT0800011",
+        "CT1480011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Warren",
+      "county": "Litchfield",
+      "population_2023": 1367,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Washington",
+      "county": "Litchfield",
+      "population_2023": 3685,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Waterbury",
+      "county": "New Haven",
+      "population_2023": 114990,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "Waterbury Water Department",
+      "largest_system_pwsid": "CT1510011",
+      "largest_system_population_total": 107271,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1510011",
+        "CT0880011",
+        "CT1530021",
+        "CT1661423"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Waterford",
+      "county": "New London",
+      "population_2023": 19829,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "New London Dept Of Public Utilities",
+      "largest_system_pwsid": "CT0950011",
+      "largest_system_population_total": 27620,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0950011",
+        "CT1520071",
+        "CT0864011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Watertown",
+      "county": "Litchfield",
+      "population_2023": 22274,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Waterbury Water Department",
+      "largest_system_pwsid": "CT1510011",
+      "largest_system_population_total": 107271,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1510011",
+        "CT1530021",
+        "CT1530011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "West Hartford",
+      "county": "Hartford",
+      "population_2023": 63969,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0890011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "West Haven",
+      "county": "New Haven",
+      "population_2023": 54790,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Westbrook",
+      "county": "Middlesex",
+      "population_2023": 6881,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "CTWC - Shoreline Region-Guilford System",
+      "largest_system_pwsid": "CT0608011",
+      "largest_system_population_total": 33975,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0608011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Weston",
+      "county": "Fairfield",
+      "population_2023": 10344,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Westport",
+      "county": "Fairfield",
+      "population_2023": 27470,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1030011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Wethersfield",
+      "county": "Hartford",
+      "population_2023": 27114,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Willington",
+      "county": "Tolland",
+      "population_2023": 5552,
+      "population_note": "",
+      "water_profile": "no_public_system",
+      "water_profile_label": "No large public system on record",
+      "water_profile_explainer": "No community water system serving 1,000+ people lists this town. Homes are likely on private wells or small systems.",
+      "public_system_count": 0,
+      "largest_system": "",
+      "largest_system_pwsid": "",
+      "largest_system_population_total": null,
+      "largest_system_source": "",
+      "public_system_pwsids": [],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Wilton",
+      "county": "Fairfield",
+      "population_2023": 18400,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 3,
+      "largest_system": "Aquarion-Eastern Fairfield County",
+      "largest_system_pwsid": "CT0150011",
+      "largest_system_population_total": 351756,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0150011",
+        "CT1030021",
+        "CT1030011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Winchester",
+      "county": "Litchfield",
+      "population_2023": 10236,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Winsted Water Works",
+      "largest_system_pwsid": "CT1620011",
+      "largest_system_population_total": 7784,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1620011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Windham",
+      "county": "Windham",
+      "population_2023": 23833,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Windham Water Works",
+      "largest_system_pwsid": "CT1630011",
+      "largest_system_population_total": 21214,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1630011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Windsor",
+      "county": "Hartford",
+      "population_2023": 29372,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Windsor Locks",
+      "county": "Hartford",
+      "population_2023": 12529,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Metropolitan District Commission",
+      "largest_system_pwsid": "CT0640011",
+      "largest_system_population_total": 390887,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0640011",
+        "CT0473011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Wolcott",
+      "county": "New Haven",
+      "population_2023": 16309,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 4,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT1510011",
+        "CT1310011",
+        "CT1661423"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Woodbridge",
+      "county": "New Haven",
+      "population_2023": 9021,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 2,
+      "largest_system": "Regional Water Authority",
+      "largest_system_pwsid": "CT0930011",
+      "largest_system_population_total": 418900,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT0930011",
+        "CT1240011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Woodbury",
+      "county": "Litchfield",
+      "population_2023": 9862,
+      "population_note": "",
+      "water_profile": "small_systems_only",
+      "water_profile_label": "Small public systems only",
+      "water_profile_explainer": "Only small community systems (under 3,300 people) list this town. Most homes are likely on private wells.",
+      "public_system_count": 1,
+      "largest_system": "Aquarion-Woodbury",
+      "largest_system_pwsid": "CT1680011",
+      "largest_system_population_total": 1209,
+      "largest_system_source": "Groundwater (wells)",
+      "public_system_pwsids": [
+        "CT1680011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    },
+    {
+      "town": "Woodstock",
+      "county": "Windham",
+      "population_2023": 8346,
+      "population_note": "",
+      "water_profile": "major_system",
+      "water_profile_label": "Major public system present",
+      "water_profile_explainer": "At least one community system serving 3,300+ people lists this town. Coverage within the town is not reported, so some homes may still be on wells.",
+      "public_system_count": 1,
+      "largest_system": "Putnam Water Pollution Control Authority",
+      "largest_system_pwsid": "CT1160011",
+      "largest_system_population_total": 7300,
+      "largest_system_source": "Surface water (reservoirs/rivers)",
+      "public_system_pwsids": [
+        "CT1160011"
+      ],
+      "hardness_gpg": null,
+      "hardness_source": "",
+      "pfas_ucmr5": null,
+      "pfas_source": ""
+    }
+  ]
+}

@@ -1,0 +1,3830 @@
+{
+ "generated": "2026-10-26",
+ "pfas_status": {
+  "summary": "Federal PFOA and PFOS limits are 4 ppt each. Utilities must comply by April 2029; EPA proposed in May 2026 to move that to April 2031 and to drop the limits for PFHxS, PFNA, GenX and the PFAS mixture rule (not final as of June 2026). Connecticut DPH action levels: PFOS 10, PFNA 12, PFOA 16, GenX 19, PFHxS 49, PFHxA 240, PFBS 760, PFBA 1,800 ppt.",
+  "sources": [
+   "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "https://www.ballardspahr.com/insights/alerts-and-articles/2026/06/epa-rolls-back-pfas-regulations-states-fill-the-gap",
+   "https://portal.ct.gov/dph/drinking-water/dws/per--and-polyfluoroalkyl-substances"
+  ]
+ },
+ "utilities": [
+  {
+   "id": "mdc",
+   "name": "Metropolitan District (MDC)",
+   "pwsid": "CT0640011",
+   "counties": [
+    "Hartford"
+   ],
+   "population": 400000,
+   "towns": [
+    "Berlin",
+    "Bloomfield",
+    "Cromwell",
+    "East Granby",
+    "East Hartford",
+    "Farmington",
+    "Glastonbury",
+    "Hartford",
+    "Manchester",
+    "Newington",
+    "Portland",
+    "Rocky Hill",
+    "South Windsor",
+    "West Hartford",
+    "Wethersfield",
+    "Windsor",
+    "Windsor Locks"
+   ],
+   "source_type": "EWG Tap Water Database (state-reported test data, 2021–2023; utility's 2025 report could not be retrieved)",
+   "data_years": "2021–2023 (PFAS: 2023–2024)",
+   "source_url": "https://www.ewg.org/tapwater/system.php?pws=CT0640011",
+   "water_source": "Reservoirs (Barkhamsted and Nepaug systems, treated in West Hartford area)",
+   "disinfectant": "Chlorine",
+   "fluoridated": null,
+   "hardness_gpg": null,
+   "hardness_range": null,
+   "notes": [
+    "MDC says it met all state and federal standards in 2025 (about 400,000 people, 46.7 million gallons/day).",
+    "MDC reports none of the 29 PFAS compounds in EPA's 2023 testing were detected, and the six PFAS in the 2024 federal rule were not detected.",
+    "Values below are multi-year averages from state data as compiled by EWG, not MDC's 2025 report (the PDF could not be retrieved from here)."
+   ],
+   "hardness_label": "",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 46.0,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 58,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 32.3,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 54,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.043,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 0,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.298,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 7,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.0015,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 0,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "manganese",
+     "name": "Manganese",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.00188,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2013–2023",
+     "limit": 0.05,
+     "limit_label": "Secondary standard (taste, staining — not health-based)",
+     "ct_action_level": null,
+     "pct_of_limit": 4,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "pfas_any",
+     "name": "PFAS (all tested compounds)",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0,
+     "level_type": "nd",
+     "level_label": "Not detected",
+     "range": null,
+     "year": "2023–2024",
+     "limit": null,
+     "limit_label": "",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    }
+   ]
+  },
+  {
+   "id": "ctw_northern",
+   "name": "Connecticut Water – Northern Western System",
+   "pwsid": "CT0473011",
+   "counties": [
+    "Tolland",
+    "Hartford"
+   ],
+   "population": 101313,
+   "towns": [
+    "East Granby",
+    "East Windsor",
+    "Ellington",
+    "Enfield",
+    "Mansfield",
+    "Somers",
+    "South Windsor",
+    "Stafford",
+    "Suffield",
+    "Tolland",
+    "Vernon",
+    "Windsor Locks"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (some results 2023–2024)",
+   "source_url": "https://www.ctwater.com/media/hqun0b3z/2025-northern-western-ct0473011.pdf",
+   "water_source": "Shenipsit Lake plus six well fields (Hunt, Powder Hollow, Spring Lots, Pine Knob, West Suffield, Vernon)",
+   "disinfectant": "Chlorine",
+   "fluoridated": null,
+   "hardness_gpg": null,
+   "hardness_range": null,
+   "notes": [
+    "Lead: 90th percentile 2 ppb (below the 15 ppb action level), but 3 of 170 home samples were above the action level; highest single sample 156 ppb.",
+    "TTHM: one sample reached 82.6 ppb; compliance is judged on the running annual average (61.0 ppb), which is under the 80 ppb limit.",
+    "Radon in source water up to 1,754 pCi/L (no federal standard).",
+    "Lead service line inventory completed in 2024: ctwater.com/serviceline."
+   ],
+   "hardness_label": "",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 61.0,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "16.3–82.6",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 76,
+     "pct_of_ct_level": null,
+     "highest_result": 82.6
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 20.2,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "4.0–26.0",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 34,
+     "pct_of_ct_level": null,
+     "highest_result": 26.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 2,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–156",
+     "year": "2025",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": 13,
+     "pct_of_ct_level": null,
+     "highest_result": 156.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.122,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "0.007–0.358",
+     "year": "2025",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 9,
+     "pct_of_ct_level": null,
+     "highest_result": 0.358
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 4.47,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "0.07–4.47",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 45,
+     "pct_of_ct_level": null,
+     "highest_result": 4.47
+    },
+    {
+     "key": "arsenic",
+     "name": "Arsenic",
+     "group": "Naturally occurring",
+     "units": "ppb",
+     "level": 2.9,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–2.9",
+     "year": "2023/2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 29,
+     "pct_of_ct_level": null,
+     "highest_result": 2.9
+    },
+    {
+     "key": "uranium",
+     "name": "Uranium",
+     "group": "Naturally occurring",
+     "units": "ppb",
+     "level": 4.8,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–4.8",
+     "year": "2023/2025",
+     "limit": 30,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 16,
+     "pct_of_ct_level": null,
+     "highest_result": 4.8
+    },
+    {
+     "key": "radon",
+     "name": "Radon",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 1754,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "253–1,754",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 5000,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 35,
+     "highest_result": 1754.0
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.375,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "0.014–0.375",
+     "year": "2023/2025",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 19,
+     "pct_of_ct_level": null,
+     "highest_result": 0.375
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.56,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–0.56",
+     "year": "2023/2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 14,
+     "pct_of_ct_level": null,
+     "highest_result": 0.56
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 29.7,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "12.6–29.7",
+     "year": "2023/2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 29.7
+    },
+    {
+     "key": "pfoa",
+     "name": "PFOA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 8,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–8",
+     "year": "2024–2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 16,
+     "pct_of_limit": 200,
+     "pct_of_ct_level": 50,
+     "highest_result": 8.0
+    },
+    {
+     "key": "pfos",
+     "name": "PFOS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 6,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–6",
+     "year": "2024–2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 10,
+     "pct_of_limit": 150,
+     "pct_of_ct_level": 60,
+     "highest_result": 6.0
+    },
+    {
+     "key": "pfhxs",
+     "name": "PFHxS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 3,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–3",
+     "year": "2024–2025",
+     "limit": 10,
+     "limit_label": "Federal limit set 2024; EPA proposed removing it (May 2026)",
+     "ct_action_level": 49,
+     "pct_of_limit": 30,
+     "pct_of_ct_level": 6,
+     "highest_result": 3.0
+    },
+    {
+     "key": "pfbs",
+     "name": "PFBS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 3,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–3",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "Part of federal mixture rule (proposed for removal)",
+     "ct_action_level": 760,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 0,
+     "highest_result": 3.0
+    },
+    {
+     "key": "pfhxa",
+     "name": "PFHxA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 3,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–3",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 240,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 1,
+     "highest_result": 3.0
+    },
+    {
+     "key": "pfba",
+     "name": "PFBA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 5,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–5",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 1800,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 0,
+     "highest_result": 5.0
+    }
+   ]
+  },
+  {
+   "id": "rwa",
+   "name": "Regional Water Authority (South Central CT)",
+   "pwsid": "CT0930011",
+   "counties": [
+    "New Haven"
+   ],
+   "population": 418900,
+   "towns": [
+    "Ansonia",
+    "Bethany",
+    "Branford",
+    "Cheshire",
+    "Derby",
+    "East Haven",
+    "Hamden",
+    "Meriden",
+    "Milford",
+    "New Haven",
+    "North Branford",
+    "North Haven",
+    "Orange",
+    "Prospect",
+    "Seymour",
+    "Southington",
+    "Wallingford",
+    "West Haven",
+    "Wolcott",
+    "Woodbridge"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (radon and some PFAS 2024; lead/copper 2023)",
+   "source_url": "https://www.rwater.com/docs/default-source/default-document-library/crw26701_waterqualityreport_007f-accessible-1.pdf?sfvrsn=62022bb2_11",
+   "water_source": "About 88% from 10 reservoirs, 12% from wells in Cheshire, Hamden, Derby and Seymour",
+   "disinfectant": "Chlorine",
+   "fluoridated": true,
+   "hardness_gpg": null,
+   "hardness_range": null,
+   "notes": [
+    "Manganese averaged 0.04 ppm but reached 0.27 ppm at its highest, above the 0.05 ppm secondary (taste/staining) standard.",
+    "Highest PFOS sample 10.7 ppt and PFOA 7.1 ppt; system averages were 1.4 and 0.76 ppt.",
+    "RWA completed a lead service line inventory in 2025 and is planning replacement (833-RWA-LEAD)."
+   ],
+   "hardness_label": "",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 36,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "6.0–76.5",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 45,
+     "pct_of_ct_level": null,
+     "highest_result": 76.5
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 32,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "2.9–75.5",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 53,
+     "pct_of_ct_level": null,
+     "highest_result": 75.5
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 0,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–6",
+     "year": "2023",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 6.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.27,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–0.44",
+     "year": "2023",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 21,
+     "pct_of_ct_level": null,
+     "highest_result": 0.44
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.73,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–3.82",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 7,
+     "pct_of_ct_level": null,
+     "highest_result": 3.82
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.69,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.21–1.24",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 17,
+     "pct_of_ct_level": null,
+     "highest_result": 1.24
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.076,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.005–0.272",
+     "year": "2025",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 4,
+     "pct_of_ct_level": null,
+     "highest_result": 0.272
+    },
+    {
+     "key": "radon",
+     "name": "Radon",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 554,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–1,856",
+     "year": "2024",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 5000,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 11,
+     "highest_result": 1856.0
+    },
+    {
+     "key": "manganese",
+     "name": "Manganese",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.04,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–0.27",
+     "year": "2025",
+     "limit": 0.05,
+     "limit_label": "Secondary standard (taste, staining — not health-based)",
+     "ct_action_level": null,
+     "pct_of_limit": 80,
+     "pct_of_ct_level": null,
+     "highest_result": 0.27
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 22.5,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "7.9–68.5",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 68.5
+    },
+    {
+     "key": "pfoa",
+     "name": "PFOA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0.76,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–7.1",
+     "year": "2024–2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 16,
+     "pct_of_limit": 19,
+     "pct_of_ct_level": 5,
+     "highest_result": 7.1
+    },
+    {
+     "key": "pfos",
+     "name": "PFOS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 1.4,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–10.7",
+     "year": "2024–2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 10,
+     "pct_of_limit": 35,
+     "pct_of_ct_level": 14,
+     "highest_result": 10.7
+    },
+    {
+     "key": "pfbs",
+     "name": "PFBS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0.25,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–3.5",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "Part of federal mixture rule (proposed for removal)",
+     "ct_action_level": 760,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 0,
+     "highest_result": 3.5
+    }
+   ]
+  },
+  {
+   "id": "waterbury",
+   "name": "Waterbury Water Department",
+   "pwsid": "CT1510011",
+   "counties": [
+    "New Haven"
+   ],
+   "population": 107271,
+   "towns": [
+    "Middlebury",
+    "Prospect",
+    "Waterbury",
+    "Watertown",
+    "Wolcott"
+   ],
+   "source_type": "EWG Tap Water Database (state-reported test data, 2021–2023; utility's 2025 report could not be retrieved)",
+   "data_years": "2021–2023 (PFAS 2013–2024)",
+   "source_url": "https://www.ewg.org/tapwater/system.php?pws=CT1510011",
+   "water_source": "Reservoirs",
+   "disinfectant": null,
+   "fluoridated": null,
+   "hardness_gpg": null,
+   "hardness_range": null,
+   "notes": [
+    "No health-based EPA violations since 2020 (EPA data as of Q2 2026, via TapWaterData).",
+    "Values are multi-year averages from state data as compiled by EWG; the city's 2025 report could not be retrieved."
+   ],
+   "hardness_label": "",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 45.4,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 57,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 43.4,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 72,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "cadmium",
+     "name": "Cadmium",
+     "group": "Metals",
+     "units": "ppb",
+     "level": 0.222,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 5,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 4,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.0224,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 0,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.21,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 5,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.00667,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 0,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "manganese",
+     "name": "Manganese",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.0064,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2013–2023",
+     "limit": 0.05,
+     "limit_label": "Secondary standard (taste, staining — not health-based)",
+     "ct_action_level": null,
+     "pct_of_limit": 13,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    }
+   ]
+  },
+  {
+   "id": "aquarion_efc",
+   "name": "Aquarion – Eastern Fairfield County System",
+   "pwsid": "CT0150011",
+   "counties": [
+    "Fairfield"
+   ],
+   "population": 377400,
+   "towns": [
+    "Bridgeport",
+    "Easton",
+    "Fairfield",
+    "Monroe",
+    "Newtown",
+    "Norwalk",
+    "Redding",
+    "Shelton",
+    "Stratford",
+    "Trumbull",
+    "Weston",
+    "Westport",
+    "Wilton"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025",
+   "source_url": "https://www.aquarionwater.com/docs/default-source/water-quality/water-quality-reports/ct/2025/eastern-fairfield_wqr_final.pdf?sfvrsn=515e31f4_6",
+   "water_source": "Eight reservoirs (over 96%) plus Westport and Coleytown well fields",
+   "disinfectant": "Chlorine",
+   "fluoridated": true,
+   "hardness_gpg": 3,
+   "hardness_range": "2–5",
+   "notes": [
+    "PFOA averaged 6 ppt (range 4–8) and PFOS 5 ppt (range 4–5): below Connecticut's action levels (16 and 10 ppt) but above the 4 ppt federal limit that utilities must meet by 2029 (EPA has proposed moving this to 2031).",
+    "Lead: 90th percentile 2 ppb, highest home sample 42 ppb; report footnote says two locations exceeded the lead action level."
+   ],
+   "hardness_label": "Soft to slightly hard",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 55,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "26–73",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 69,
+     "pct_of_ct_level": null,
+     "highest_result": 73.0
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 40,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "21–49",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 67,
+     "pct_of_ct_level": null,
+     "highest_result": 49.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 2,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–42",
+     "year": "2025",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": 13,
+     "pct_of_ct_level": null,
+     "highest_result": 42.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.1,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "0.005–0.153",
+     "year": "2025",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 8,
+     "pct_of_ct_level": null,
+     "highest_result": 0.153
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.127,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–1.30",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 1,
+     "pct_of_ct_level": null,
+     "highest_result": 1.3
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.71,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.48–0.96",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 18,
+     "pct_of_ct_level": null,
+     "highest_result": 0.96
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.011,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.010–0.056",
+     "year": "2024–2025",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 1,
+     "pct_of_ct_level": null,
+     "highest_result": 0.056
+    },
+    {
+     "key": "radium",
+     "name": "Radium 226 + 228",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 0,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–1.06",
+     "year": "2025",
+     "limit": 5,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 1.06
+    },
+    {
+     "key": "manganese",
+     "name": "Manganese",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.02,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–0.137",
+     "year": "2025",
+     "limit": 0.05,
+     "limit_label": "Secondary standard (taste, staining — not health-based)",
+     "ct_action_level": null,
+     "pct_of_limit": 40,
+     "pct_of_ct_level": null,
+     "highest_result": 0.137
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 19,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "16–44",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 44.0
+    },
+    {
+     "key": "pfoa",
+     "name": "PFOA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 6,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "4–8",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 16,
+     "pct_of_limit": 150,
+     "pct_of_ct_level": 38,
+     "highest_result": 8.0
+    },
+    {
+     "key": "pfos",
+     "name": "PFOS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 5,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "4–5",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 10,
+     "pct_of_limit": 125,
+     "pct_of_ct_level": 50,
+     "highest_result": 5.0
+    },
+    {
+     "key": "pfbs",
+     "name": "PFBS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 3,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "2–4",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "Part of federal mixture rule (proposed for removal)",
+     "ct_action_level": 760,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 0,
+     "highest_result": 4.0
+    },
+    {
+     "key": "pfhxa",
+     "name": "PFHxA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 2,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–5",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 240,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 1,
+     "highest_result": 5.0
+    }
+   ]
+  },
+  {
+   "id": "aquarion_stamford",
+   "name": "Aquarion – Stamford System",
+   "pwsid": "CT1350011",
+   "counties": [
+    "Fairfield"
+   ],
+   "population": 118100,
+   "towns": [
+    "Stamford",
+    "Darien",
+    "Greenwich"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (lead/copper 2024)",
+   "source_url": "https://www.aquarionwater.com/docs/default-source/water-quality/water-quality-reports/ct/2025/stamford_ct_wqr_final.pdf?sfvrsn=9681eaec_4",
+   "water_source": "Five reservoirs (Laurel and North Stamford in CT; Mill, Trinity and Siscowit in NY) plus Southwest Regional Pipeline wells",
+   "disinfectant": "Chlorine",
+   "fluoridated": true,
+   "hardness_gpg": 3,
+   "hardness_range": "2–4",
+   "notes": [
+    "Highest TTHM location averaged 64 ppb, with single samples up to 87 ppb (limit 80, judged on the running annual average). HAA5 highest location 53 ppb (limit 60).",
+    "Report footnote mentions two locations exceeding the lead action level, though the listed results (90th percentile ND, max 3 ppb) do not show it — worth confirming with Aquarion."
+   ],
+   "hardness_label": "Soft to slightly hard",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 64,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "29–87",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 80,
+     "pct_of_ct_level": null,
+     "highest_result": 87.0
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 53,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "29–66",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 88,
+     "pct_of_ct_level": null,
+     "highest_result": 66.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 0,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–3",
+     "year": "2024",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 3.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.17,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "0.02–0.27",
+     "year": "2024",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 13,
+     "pct_of_ct_level": null,
+     "highest_result": 0.27
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.65,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–0.79",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 6,
+     "pct_of_ct_level": null,
+     "highest_result": 0.79
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.71,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.65–0.80",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 18,
+     "pct_of_ct_level": null,
+     "highest_result": 0.8
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.016,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.010–0.021",
+     "year": "2025",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 1,
+     "pct_of_ct_level": null,
+     "highest_result": 0.021
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 35,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "16–44",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 44.0
+    },
+    {
+     "key": "pfoa",
+     "name": "PFOA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–4.3",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 16,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 4.3
+    },
+    {
+     "key": "pfhxa",
+     "name": "PFHxA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–3",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 240,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 3.0
+    }
+   ]
+  },
+  {
+   "id": "torrington",
+   "name": "Torrington Water (Aquarion) – Torrington Regional",
+   "pwsid": "CT1430011",
+   "counties": [
+    "Litchfield"
+   ],
+   "population": 29500,
+   "towns": [
+    "Torrington",
+    "Harwinton",
+    "Burlington",
+    "Norfolk",
+    "New Hartford",
+    "Litchfield",
+    "Morris",
+    "Bristol",
+    "Winchester",
+    "Barkhamsted",
+    "Goshen",
+    "Plymouth"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (PFAS 2024)",
+   "source_url": "https://www.aquarionwater.com/docs/default-source/water-quality/water-quality-reports/ct/torrington/torrington-wqr2025_final.pdf?sfvrsn=1f319a6a_8",
+   "water_source": "Four reservoirs: Reuben Hart, Allen Dam, North Pond, Whist Pond",
+   "disinfectant": "Chlorine",
+   "fluoridated": true,
+   "hardness_gpg": 1,
+   "hardness_range": "1",
+   "notes": [
+    "PFAS not detected (2024 testing).",
+    "Highest TTHM location averaged 61 ppb; one sample reached 86 ppb (limit 80, judged on the running annual average)."
+   ],
+   "hardness_label": "Soft to slightly hard",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 61,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "12–86",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 76,
+     "pct_of_ct_level": null,
+     "highest_result": 86.0
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 40,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "2–52",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 67,
+     "pct_of_ct_level": null,
+     "highest_result": 52.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 0,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–2",
+     "year": "2025",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 2.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.19,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "0.02–0.39",
+     "year": "2025",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 15,
+     "pct_of_ct_level": null,
+     "highest_result": 0.39
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.73,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.52–1.04",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 18,
+     "pct_of_ct_level": null,
+     "highest_result": 1.04
+    },
+    {
+     "key": "radium",
+     "name": "Radium 226 + 228",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 2.98,
+     "level_type": "single",
+     "level_label": "Single result",
+     "range": "2.98",
+     "year": "2025",
+     "limit": 5,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 60,
+     "pct_of_ct_level": null,
+     "highest_result": 2.98
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.008,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.008",
+     "year": "2025",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 0,
+     "pct_of_ct_level": null,
+     "highest_result": 0.008
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 11,
+     "level_type": "single",
+     "level_label": "Single result",
+     "range": "11",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 11.0
+    },
+    {
+     "key": "pfas_any",
+     "name": "PFAS (all tested compounds)",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0,
+     "level_type": "nd",
+     "level_label": "Not detected",
+     "range": null,
+     "year": "2024",
+     "limit": null,
+     "limit_label": "",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    }
+   ]
+  },
+  {
+   "id": "litchfield",
+   "name": "Aquarion – Litchfield Regional System",
+   "pwsid": "CT0740011",
+   "counties": [
+    "Litchfield"
+   ],
+   "population": 2170,
+   "towns": [
+    "Litchfield",
+    "Goshen",
+    "Torrington"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (some 2023)",
+   "source_url": "https://www.aquarionwater.com/docs/default-source/water-quality/water-quality-reports/ct/2025/litchfield_ct_wqr_final.pdf?sfvrsn=e82cf274_11",
+   "water_source": "Goshen and Hamill well fields (about 29%) plus water bought from Torrington",
+   "disinfectant": "Chlorine",
+   "fluoridated": true,
+   "hardness_gpg": 8,
+   "hardness_range": "1–16",
+   "notes": [
+    "Hardest water of the systems reviewed: average 8 grains per gallon, up to 16.",
+    "Uranium and radium detected at low levels (well water). PFAS not detected in 2024."
+   ],
+   "hardness_label": "Hard",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 63,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "31–78",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 79,
+     "pct_of_ct_level": null,
+     "highest_result": 78.0
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 25,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "17–33",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 42,
+     "pct_of_ct_level": null,
+     "highest_result": 33.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 0,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–2",
+     "year": "2025",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 2.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.16,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "0.02–0.41",
+     "year": "2025",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 12,
+     "pct_of_ct_level": null,
+     "highest_result": 0.41
+    },
+    {
+     "key": "uranium",
+     "name": "Uranium",
+     "group": "Naturally occurring",
+     "units": "ppb",
+     "level": 1.4,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–5.8",
+     "year": "2023/2025",
+     "limit": 30,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 5,
+     "pct_of_ct_level": null,
+     "highest_result": 5.8
+    },
+    {
+     "key": "radium",
+     "name": "Radium 226 + 228",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 2.2,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–3",
+     "year": "2023/2025",
+     "limit": 5,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 44,
+     "pct_of_ct_level": null,
+     "highest_result": 3.0
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.106,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–0.889",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 1,
+     "pct_of_ct_level": null,
+     "highest_result": 0.889
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.47,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–0.66",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 12,
+     "pct_of_ct_level": null,
+     "highest_result": 0.66
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 23,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "11–64",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 64.0
+    },
+    {
+     "key": "pfas_any",
+     "name": "PFAS (all tested compounds)",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0,
+     "level_type": "nd",
+     "level_label": "Not detected",
+     "range": null,
+     "year": "2024",
+     "limit": null,
+     "limit_label": "",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    }
+   ]
+  },
+  {
+   "id": "ctw_guilford",
+   "name": "Connecticut Water – Guilford System (Shoreline)",
+   "pwsid": "CT0608011",
+   "counties": [
+    "New Haven",
+    "Middlesex"
+   ],
+   "population": 33975,
+   "towns": [
+    "Clinton",
+    "Guilford",
+    "Madison",
+    "Old Saybrook",
+    "Westbrook"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (lead/copper 2024; PFAS 2024–2025)",
+   "source_url": "https://www.ctwater.com/media/0enaknif/2025-guilford-ct0608011.pdf",
+   "water_source": "Guilford and Chester reservoir systems, seven well fields, and an interconnection with the Regional Water Authority",
+   "disinfectant": "Chlorine",
+   "fluoridated": null,
+   "hardness_gpg": null,
+   "hardness_range": null,
+   "notes": [
+    "Highest PFOS result 12 ppt — above Connecticut's 10 ppt action level and the 4 ppt federal limit for a single sample (compliance is based on averages).",
+    "Sodium up to 81.6 ppm, the highest of the systems reviewed.",
+    "Coliform bacteria found in routine samples in May 2025; the required assessment and corrective actions were completed."
+   ],
+   "hardness_label": "",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 40.4,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "17.0–37.5",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 50,
+     "pct_of_ct_level": null,
+     "highest_result": 37.5
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 23.5,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "11.8–34.0",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 39,
+     "pct_of_ct_level": null,
+     "highest_result": 34.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 1,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–6",
+     "year": "2024",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": 7,
+     "pct_of_ct_level": null,
+     "highest_result": 6.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.298,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "0.01–0.469",
+     "year": "2024",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 23,
+     "pct_of_ct_level": null,
+     "highest_result": 0.469
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 3.82,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–3.82",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 38,
+     "pct_of_ct_level": null,
+     "highest_result": 3.82
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 1.24,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–1.24",
+     "year": "2023/2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 31,
+     "pct_of_ct_level": null,
+     "highest_result": 1.24
+    },
+    {
+     "key": "uranium",
+     "name": "Uranium",
+     "group": "Naturally occurring",
+     "units": "ppb",
+     "level": 2.1,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–2.1",
+     "year": "2025",
+     "limit": 30,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 7,
+     "pct_of_ct_level": null,
+     "highest_result": 2.1
+    },
+    {
+     "key": "radon",
+     "name": "Radon",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 1856,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–1,856",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 5000,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 37,
+     "highest_result": 1856.0
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 81.6,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "7.9–81.6",
+     "year": "2023/2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 81.6
+    },
+    {
+     "key": "pfoa",
+     "name": "PFOA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 7.8,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–7.8",
+     "year": "2024–2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 16,
+     "pct_of_limit": 195,
+     "pct_of_ct_level": 49,
+     "highest_result": 7.8
+    },
+    {
+     "key": "pfos",
+     "name": "PFOS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 12,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–12",
+     "year": "2024–2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+     "ct_action_level": 10,
+     "pct_of_limit": 300,
+     "pct_of_ct_level": 120,
+     "highest_result": 12.0
+    },
+    {
+     "key": "pfna",
+     "name": "PFNA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 2.3,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–2.3",
+     "year": "2024–2025",
+     "limit": 10,
+     "limit_label": "Federal limit set 2024; EPA proposed removing it (May 2026)",
+     "ct_action_level": 12,
+     "pct_of_limit": 23,
+     "pct_of_ct_level": 19,
+     "highest_result": 2.3
+    },
+    {
+     "key": "pfhxs",
+     "name": "PFHxS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 4,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–4",
+     "year": "2024–2025",
+     "limit": 10,
+     "limit_label": "Federal limit set 2024; EPA proposed removing it (May 2026)",
+     "ct_action_level": 49,
+     "pct_of_limit": 40,
+     "pct_of_ct_level": 8,
+     "highest_result": 4.0
+    },
+    {
+     "key": "pfbs",
+     "name": "PFBS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 5,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–5",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "Part of federal mixture rule (proposed for removal)",
+     "ct_action_level": 760,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 1,
+     "highest_result": 5.0
+    },
+    {
+     "key": "pfhxa",
+     "name": "PFHxA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 3.2,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–3.2",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 240,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 1,
+     "highest_result": 3.2
+    },
+    {
+     "key": "pfba",
+     "name": "PFBA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 6,
+     "level_type": "max",
+     "level_label": "Highest result",
+     "range": "ND–6",
+     "year": "2024–2025",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 1800,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 0,
+     "highest_result": 6.0
+    }
+   ]
+  },
+  {
+   "id": "aquarion_mystic",
+   "name": "Aquarion – Mystic System",
+   "pwsid": "CT1370011",
+   "counties": [
+    "New London"
+   ],
+   "population": 11740,
+   "towns": [
+    "Groton",
+    "Ledyard",
+    "Stonington"
+   ],
+   "source_type": "2025 annual water quality report (Consumer Confidence Report)",
+   "data_years": "2025 (lead/copper 2024)",
+   "source_url": "https://www.aquarionwater.com/docs/default-source/water-quality/water-quality-reports/ct/2025/mystic_ct_wqr_final.pdf?sfvrsn=f8fc4bd6_7",
+   "water_source": "Palmer and Dean's Mill reservoirs (about 84%), Lantern Hill Well, and water bought from Groton",
+   "disinfectant": "Chlorine",
+   "fluoridated": true,
+   "hardness_gpg": 2,
+   "hardness_range": "1–2",
+   "notes": [
+    "Only PFAS detected was PFBS, at up to 4 ppt (Connecticut action level 760 ppt)."
+   ],
+   "hardness_label": "Soft to slightly hard",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 53,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "14–84",
+     "year": "2025",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 66,
+     "pct_of_ct_level": null,
+     "highest_result": 84.0
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 35,
+     "level_type": "lraa",
+     "level_label": "Highest location's annual average",
+     "range": "14–47",
+     "year": "2025",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 58,
+     "pct_of_ct_level": null,
+     "highest_result": 47.0
+    },
+    {
+     "key": "lead",
+     "name": "Lead",
+     "group": "Metals from plumbing",
+     "units": "ppb",
+     "level": 1,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–7",
+     "year": "2024",
+     "limit": 15,
+     "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+     "ct_action_level": null,
+     "pct_of_limit": 7,
+     "pct_of_ct_level": null,
+     "highest_result": 7.0
+    },
+    {
+     "key": "copper",
+     "name": "Copper",
+     "group": "Metals from plumbing",
+     "units": "ppm",
+     "level": 0.21,
+     "level_type": "90th",
+     "level_label": "90th percentile of homes",
+     "range": "ND–0.37",
+     "year": "2024",
+     "limit": 1.3,
+     "limit_label": "Federal action level (90th percentile)",
+     "ct_action_level": null,
+     "pct_of_limit": 16,
+     "pct_of_ct_level": null,
+     "highest_result": 0.37
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.087,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.064–0.257",
+     "year": "2025",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 1,
+     "pct_of_ct_level": null,
+     "highest_result": 0.257
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.71,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "0.60–0.86",
+     "year": "2025",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 18,
+     "pct_of_ct_level": null,
+     "highest_result": 0.86
+    },
+    {
+     "key": "sodium",
+     "name": "Sodium",
+     "group": "Minerals",
+     "units": "ppm",
+     "level": 26,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "24–40",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "No federal limit; CT notification level",
+     "ct_action_level": null,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 40.0
+    },
+    {
+     "key": "pfbs",
+     "name": "PFBS",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": "ND–4",
+     "year": "2025",
+     "limit": null,
+     "limit_label": "Part of federal mixture rule (proposed for removal)",
+     "ct_action_level": 760,
+     "pct_of_limit": null,
+     "pct_of_ct_level": null,
+     "highest_result": 4.0
+    }
+   ]
+  },
+  {
+   "id": "windham",
+   "name": "Windham Water Works",
+   "pwsid": "CT1630011",
+   "counties": [
+    "Windham"
+   ],
+   "population": 21214,
+   "towns": [
+    "Windham",
+    "Mansfield"
+   ],
+   "source_type": "EWG Tap Water Database (state-reported test data, 2021–2023; utility's 2025 report could not be retrieved)",
+   "data_years": "2021–2023 (PFAS 2018–2024)",
+   "source_url": "https://www.ewg.org/tapwater/system.php?pws=CT1630011",
+   "water_source": "Surface water",
+   "disinfectant": null,
+   "fluoridated": null,
+   "hardness_gpg": null,
+   "hardness_range": null,
+   "notes": [
+    "Values are multi-year averages from state data as compiled by EWG; Windham's 2025 report could not be retrieved."
+   ],
+   "hardness_label": "",
+   "contaminants": [
+    {
+     "key": "tthm",
+     "name": "Total trihalomethanes (TTHM)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 45.4,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 80,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 57,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "haa5",
+     "name": "Haloacetic acids (HAA5)",
+     "group": "Disinfection byproducts",
+     "units": "ppb",
+     "level": 17.8,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 60,
+     "limit_label": "Federal limit (running annual average)",
+     "ct_action_level": null,
+     "pct_of_limit": 30,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "chlorite",
+     "name": "Chlorite",
+     "group": "Disinfection byproducts",
+     "units": "ppm",
+     "level": 0.495,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 1.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 50,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "arsenic",
+     "name": "Arsenic",
+     "group": "Naturally occurring",
+     "units": "ppb",
+     "level": 0.183,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 2,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "radium",
+     "name": "Radium 226 + 228",
+     "group": "Naturally occurring",
+     "units": "pCi/L",
+     "level": 1.24,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2018–2023",
+     "limit": 5,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 25,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "nitrate",
+     "name": "Nitrate",
+     "group": "Nutrients",
+     "units": "ppm",
+     "level": 0.107,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 10,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 1,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "fluoride",
+     "name": "Fluoride",
+     "group": "Additives",
+     "units": "ppm",
+     "level": 0.217,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 4.0,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 5,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "barium",
+     "name": "Barium",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.00783,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2021–2023",
+     "limit": 2,
+     "limit_label": "Federal limit",
+     "ct_action_level": null,
+     "pct_of_limit": 0,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "manganese",
+     "name": "Manganese",
+     "group": "Naturally occurring",
+     "units": "ppm",
+     "level": 0.00564,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2013–2023",
+     "limit": 0.05,
+     "limit_label": "Secondary standard (taste, staining — not health-based)",
+     "ct_action_level": null,
+     "pct_of_limit": 11,
+     "pct_of_ct_level": null,
+     "highest_result": null
+    },
+    {
+     "key": "pfhxa",
+     "name": "PFHxA",
+     "group": "PFAS (\"forever chemicals\")",
+     "units": "ppt",
+     "level": 0.85,
+     "level_type": "avg",
+     "level_label": "Average",
+     "range": null,
+     "year": "2018–2024",
+     "limit": null,
+     "limit_label": "No federal limit",
+     "ct_action_level": 240,
+     "pct_of_limit": null,
+     "pct_of_ct_level": 0,
+     "highest_result": null
+    }
+   ]
+  }
+ ],
+ "town_to_utilities": {
+  "Berlin": [
+   "mdc"
+  ],
+  "Bloomfield": [
+   "mdc"
+  ],
+  "Cromwell": [
+   "mdc"
+  ],
+  "East Granby": [
+   "mdc",
+   "ctw_northern"
+  ],
+  "East Hartford": [
+   "mdc"
+  ],
+  "Farmington": [
+   "mdc"
+  ],
+  "Glastonbury": [
+   "mdc"
+  ],
+  "Hartford": [
+   "mdc"
+  ],
+  "Manchester": [
+   "mdc"
+  ],
+  "Newington": [
+   "mdc"
+  ],
+  "Portland": [
+   "mdc"
+  ],
+  "Rocky Hill": [
+   "mdc"
+  ],
+  "South Windsor": [
+   "mdc",
+   "ctw_northern"
+  ],
+  "West Hartford": [
+   "mdc"
+  ],
+  "Wethersfield": [
+   "mdc"
+  ],
+  "Windsor": [
+   "mdc"
+  ],
+  "Windsor Locks": [
+   "mdc",
+   "ctw_northern"
+  ],
+  "East Windsor": [
+   "ctw_northern"
+  ],
+  "Ellington": [
+   "ctw_northern"
+  ],
+  "Enfield": [
+   "ctw_northern"
+  ],
+  "Mansfield": [
+   "ctw_northern",
+   "windham"
+  ],
+  "Somers": [
+   "ctw_northern"
+  ],
+  "Stafford": [
+   "ctw_northern"
+  ],
+  "Suffield": [
+   "ctw_northern"
+  ],
+  "Tolland": [
+   "ctw_northern"
+  ],
+  "Vernon": [
+   "ctw_northern"
+  ],
+  "Ansonia": [
+   "rwa"
+  ],
+  "Bethany": [
+   "rwa"
+  ],
+  "Branford": [
+   "rwa"
+  ],
+  "Cheshire": [
+   "rwa"
+  ],
+  "Derby": [
+   "rwa"
+  ],
+  "East Haven": [
+   "rwa"
+  ],
+  "Hamden": [
+   "rwa"
+  ],
+  "Meriden": [
+   "rwa"
+  ],
+  "Milford": [
+   "rwa"
+  ],
+  "New Haven": [
+   "rwa"
+  ],
+  "North Branford": [
+   "rwa"
+  ],
+  "North Haven": [
+   "rwa"
+  ],
+  "Orange": [
+   "rwa"
+  ],
+  "Prospect": [
+   "rwa",
+   "waterbury"
+  ],
+  "Seymour": [
+   "rwa"
+  ],
+  "Southington": [
+   "rwa"
+  ],
+  "Wallingford": [
+   "rwa"
+  ],
+  "West Haven": [
+   "rwa"
+  ],
+  "Wolcott": [
+   "rwa",
+   "waterbury"
+  ],
+  "Woodbridge": [
+   "rwa"
+  ],
+  "Middlebury": [
+   "waterbury"
+  ],
+  "Waterbury": [
+   "waterbury"
+  ],
+  "Watertown": [
+   "waterbury"
+  ],
+  "Bridgeport": [
+   "aquarion_efc"
+  ],
+  "Easton": [
+   "aquarion_efc"
+  ],
+  "Fairfield": [
+   "aquarion_efc"
+  ],
+  "Monroe": [
+   "aquarion_efc"
+  ],
+  "Newtown": [
+   "aquarion_efc"
+  ],
+  "Norwalk": [
+   "aquarion_efc"
+  ],
+  "Redding": [
+   "aquarion_efc"
+  ],
+  "Shelton": [
+   "aquarion_efc"
+  ],
+  "Stratford": [
+   "aquarion_efc"
+  ],
+  "Trumbull": [
+   "aquarion_efc"
+  ],
+  "Weston": [
+   "aquarion_efc"
+  ],
+  "Westport": [
+   "aquarion_efc"
+  ],
+  "Wilton": [
+   "aquarion_efc"
+  ],
+  "Stamford": [
+   "aquarion_stamford"
+  ],
+  "Darien": [
+   "aquarion_stamford"
+  ],
+  "Greenwich": [
+   "aquarion_stamford"
+  ],
+  "Torrington": [
+   "torrington",
+   "litchfield"
+  ],
+  "Harwinton": [
+   "torrington"
+  ],
+  "Burlington": [
+   "torrington"
+  ],
+  "Norfolk": [
+   "torrington"
+  ],
+  "New Hartford": [
+   "torrington"
+  ],
+  "Litchfield": [
+   "torrington",
+   "litchfield"
+  ],
+  "Morris": [
+   "torrington"
+  ],
+  "Bristol": [
+   "torrington"
+  ],
+  "Winchester": [
+   "torrington"
+  ],
+  "Barkhamsted": [
+   "torrington"
+  ],
+  "Goshen": [
+   "torrington",
+   "litchfield"
+  ],
+  "Plymouth": [
+   "torrington"
+  ],
+  "Clinton": [
+   "ctw_guilford"
+  ],
+  "Guilford": [
+   "ctw_guilford"
+  ],
+  "Madison": [
+   "ctw_guilford"
+  ],
+  "Old Saybrook": [
+   "ctw_guilford"
+  ],
+  "Westbrook": [
+   "ctw_guilford"
+  ],
+  "Groton": [
+   "aquarion_mystic"
+  ],
+  "Ledyard": [
+   "aquarion_mystic"
+  ],
+  "Stonington": [
+   "aquarion_mystic"
+  ],
+  "Windham": [
+   "windham"
+  ]
+ },
+ "contaminants": {
+  "tthm": {
+   "name": "Total trihalomethanes (TTHM)",
+   "group": "Disinfection byproducts",
+   "units": "ppb",
+   "limit": 80,
+   "limit_label": "Federal limit (running annual average)",
+   "ct_action_level": null,
+   "what_it_is": "Formed when chlorine reacts with natural organic matter in reservoir water.",
+   "health": "EPA: years of drinking water above the limit may cause liver, kidney or nervous system problems and raise cancer risk.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": [
+    "liver",
+    "kidneys",
+    "nervous",
+    "cancer"
+   ]
+  },
+  "haa5": {
+   "name": "Haloacetic acids (HAA5)",
+   "group": "Disinfection byproducts",
+   "units": "ppb",
+   "limit": 60,
+   "limit_label": "Federal limit (running annual average)",
+   "ct_action_level": null,
+   "what_it_is": "Another family of chlorine disinfection byproducts.",
+   "health": "EPA: years of drinking water above the limit may raise cancer risk.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": [
+    "cancer"
+   ]
+  },
+  "chlorite": {
+   "name": "Chlorite",
+   "group": "Disinfection byproducts",
+   "units": "ppm",
+   "limit": 1.0,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Byproduct of chlorine dioxide disinfection.",
+   "health": null,
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis",
+   "body": []
+  },
+  "lead": {
+   "name": "Lead",
+   "group": "Metals from plumbing",
+   "units": "ppb",
+   "limit": 15,
+   "limit_label": "Federal action level (90th percentile of homes; drops to 10 ppb Nov 2027)",
+   "ct_action_level": null,
+   "what_it_is": "Comes mostly from lead service lines, solder and older faucets inside homes, not from the treatment plant.",
+   "health": "EPA: can cause developmental delays and learning problems in children, and kidney problems and high blood pressure in adults. EPA's health goal for lead is zero.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Certified point-of-use filters, reverse osmosis",
+   "body": [
+    "brain",
+    "kidneys",
+    "heart",
+    "development"
+   ]
+  },
+  "copper": {
+   "name": "Copper",
+   "group": "Metals from plumbing",
+   "units": "ppm",
+   "limit": 1.3,
+   "limit_label": "Federal action level (90th percentile)",
+   "ct_action_level": null,
+   "what_it_is": "Corrosion of household copper pipes.",
+   "health": "EPA: short-term stomach upset; long-term exposure above the action level may cause liver or kidney damage.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis",
+   "body": [
+    "stomach",
+    "liver",
+    "kidneys"
+   ]
+  },
+  "nitrate": {
+   "name": "Nitrate",
+   "group": "Nutrients",
+   "units": "ppm",
+   "limit": 10,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Fertilizer runoff, septic systems and natural deposits.",
+   "health": "EPA: infants under six months who drink water above the limit can become seriously ill (\"blue baby\" syndrome).",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis",
+   "body": [
+    "infants"
+   ]
+  },
+  "fluoride": {
+   "name": "Fluoride",
+   "group": "Additives",
+   "units": "ppm",
+   "limit": 4.0,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Mostly added at the treatment plant for dental health (target about 0.7 ppm).",
+   "health": "EPA: long-term exposure above 4 ppm can cause bone disease; children can get mottled teeth.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis",
+   "body": [
+    "bones",
+    "teeth"
+   ]
+  },
+  "arsenic": {
+   "name": "Arsenic",
+   "group": "Naturally occurring",
+   "units": "ppb",
+   "limit": 10,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Dissolves into groundwater from certain Connecticut bedrock.",
+   "health": "EPA: long-term exposure above the limit can cause skin damage and circulatory problems and may raise cancer risk.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis, specialty arsenic media",
+   "body": [
+    "skin",
+    "heart",
+    "cancer"
+   ]
+  },
+  "uranium": {
+   "name": "Uranium",
+   "group": "Naturally occurring",
+   "units": "ppb",
+   "limit": 30,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Naturally present in some Connecticut granites and gneisses.",
+   "health": "EPA: long-term exposure above the limit raises cancer risk and can harm the kidneys.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis, anion exchange",
+   "body": [
+    "kidneys",
+    "cancer"
+   ]
+  },
+  "radium": {
+   "name": "Radium 226 + 228",
+   "group": "Naturally occurring",
+   "units": "pCi/L",
+   "limit": 5,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Natural radioactive element from rock.",
+   "health": "EPA: long-term exposure above the limit raises cancer risk.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Water softener (cation exchange), reverse osmosis",
+   "body": [
+    "cancer"
+   ]
+  },
+  "radon": {
+   "name": "Radon",
+   "group": "Naturally occurring",
+   "units": "pCi/L",
+   "limit": null,
+   "limit_label": "No federal limit",
+   "ct_action_level": 5000,
+   "what_it_is": "Radioactive gas from bedrock that dissolves in groundwater and escapes into the air during showers and laundry.",
+   "health": "CT DPH: radon released from water into indoor air raises lung cancer risk; drinking it raises stomach cancer risk. CT recommends action at 5,000 pCi/L.",
+   "health_source": "https://portal.ct.gov/-/media/Departments-and-Agencies/DPH/dph/environmental_health/radon/2021/Radon-in-Your-Well--Water-2021.pdf",
+   "reduced_by": "Aeration or carbon (radon-specific system)",
+   "body": [
+    "lungs",
+    "stomach",
+    "cancer"
+   ]
+  },
+  "barium": {
+   "name": "Barium",
+   "group": "Naturally occurring",
+   "units": "ppm",
+   "limit": 2,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Natural deposits and industrial discharge.",
+   "health": "EPA: long-term exposure above the limit may increase blood pressure.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Water softener, reverse osmosis",
+   "body": [
+    "heart"
+   ]
+  },
+  "cadmium": {
+   "name": "Cadmium",
+   "group": "Metals",
+   "units": "ppb",
+   "limit": 5,
+   "limit_label": "Federal limit",
+   "ct_action_level": null,
+   "what_it_is": "Corrosion of galvanized pipes and natural deposits.",
+   "health": null,
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Reverse osmosis",
+   "body": []
+  },
+  "manganese": {
+   "name": "Manganese",
+   "group": "Naturally occurring",
+   "units": "ppm",
+   "limit": 0.05,
+   "limit_label": "Secondary standard (taste, staining — not health-based)",
+   "ct_action_level": null,
+   "what_it_is": "Natural mineral common in Connecticut groundwater; causes black staining and metallic taste.",
+   "health": null,
+   "health_source": null,
+   "reduced_by": "Iron/manganese filter, water softener",
+   "body": []
+  },
+  "sodium": {
+   "name": "Sodium",
+   "group": "Minerals",
+   "units": "ppm",
+   "limit": null,
+   "limit_label": "No federal limit; CT notification level",
+   "ct_action_level": null,
+   "what_it_is": "Natural salts, road salt runoff and some treatment chemicals.",
+   "health": "Relevant mainly for people on a low-sodium diet; talk to your doctor.",
+   "health_source": null,
+   "reduced_by": "Reverse osmosis",
+   "body": []
+  },
+  "pfoa": {
+   "name": "PFOA",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": 4.0,
+   "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+   "ct_action_level": 16,
+   "what_it_is": "Industrial chemical that doesn't break down; from manufacturing, firefighting foam and consumer products.",
+   "health": "EPA: linked to liver, immune and heart effects, developmental effects in infants and children, and higher risk of kidney and testicular cancer.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": [
+    "liver",
+    "immune",
+    "heart",
+    "development",
+    "kidneys",
+    "cancer"
+   ]
+  },
+  "pfos": {
+   "name": "PFOS",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": 4.0,
+   "limit_label": "Federal limit (compliance by 2029; EPA proposed 2031)",
+   "ct_action_level": 10,
+   "what_it_is": "Industrial chemical that doesn't break down; from manufacturing, firefighting foam and consumer products.",
+   "health": "EPA: linked to liver, immune and heart effects, developmental effects, and higher risk of liver cancer.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": [
+    "liver",
+    "immune",
+    "heart",
+    "development",
+    "cancer"
+   ]
+  },
+  "pfhxs": {
+   "name": "PFHxS",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": 10,
+   "limit_label": "Federal limit set 2024; EPA proposed removing it (May 2026)",
+   "ct_action_level": 49,
+   "what_it_is": "A PFAS chemical.",
+   "health": "EPA: linked to immune, thyroid and liver effects and developmental effects.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": [
+    "immune",
+    "thyroid",
+    "liver",
+    "development"
+   ]
+  },
+  "pfna": {
+   "name": "PFNA",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": 10,
+   "limit_label": "Federal limit set 2024; EPA proposed removing it (May 2026)",
+   "ct_action_level": 12,
+   "what_it_is": "A PFAS chemical.",
+   "health": "EPA: linked to higher cholesterol, immune and liver effects and developmental effects.",
+   "health_source": "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations",
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": [
+    "heart",
+    "immune",
+    "liver",
+    "development"
+   ]
+  },
+  "pfbs": {
+   "name": "PFBS",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": null,
+   "limit_label": "Part of federal mixture rule (proposed for removal)",
+   "ct_action_level": 760,
+   "what_it_is": "A shorter-chain PFAS chemical.",
+   "health": null,
+   "health_source": null,
+   "reduced_by": "Carbon filtration, reverse osmosis",
+   "body": []
+  },
+  "pfhxa": {
+   "name": "PFHxA",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": null,
+   "limit_label": "No federal limit",
+   "ct_action_level": 240,
+   "what_it_is": "A shorter-chain PFAS chemical.",
+   "health": null,
+   "health_source": null,
+   "reduced_by": "Reverse osmosis",
+   "body": []
+  },
+  "pfba": {
+   "name": "PFBA",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": null,
+   "limit_label": "No federal limit",
+   "ct_action_level": 1800,
+   "what_it_is": "A shorter-chain PFAS chemical.",
+   "health": null,
+   "health_source": null,
+   "reduced_by": "Reverse osmosis",
+   "body": []
+  },
+  "pfas_any": {
+   "name": "PFAS (all tested compounds)",
+   "group": "PFAS (\"forever chemicals\")",
+   "units": "ppt",
+   "limit": null,
+   "limit_label": "",
+   "ct_action_level": null,
+   "what_it_is": "Tested and none detected.",
+   "health": null,
+   "health_source": null,
+   "reduced_by": "",
+   "body": []
+  }
+ },
+ "private_wells": {
+  "headline": "About 23% of Connecticut residents rely on private wells, which no utility tests.",
+  "findings": [
+   {
+    "what": "Arsenic above the 10 ppb federal limit",
+    "value": "about 3.9% of wells",
+    "detail": "Spatially weighted estimate from more than 2,000 private bedrock wells sampled 2013–2018.",
+    "source": "Gross & Brown (2020), USGS Open-File Report 2020–1111",
+    "url": "https://www.usgs.gov/publications/arsenic-and-uranium-occurrence-private-wells-connecticut-2013-18-a-spatially-weighted"
+   },
+   {
+    "what": "Uranium above the 30 ppb federal limit",
+    "value": "about 4.7% of wells",
+    "detail": "Same study. Uranium of at least 1 ppb is present across about 45% of the state.",
+    "source": "Gross & Brown (2020), USGS Open-File Report 2020–1111",
+    "url": "https://www.usgs.gov/publications/arsenic-and-uranium-occurrence-private-wells-connecticut-2013-18-a-spatially-weighted"
+   },
+   {
+    "what": "Arsenic or uranium above a federal limit",
+    "value": "nearly 1 in 15 wells",
+    "detail": "674 private wells sampled 2013–2015. Highest arsenic 470 ppb (a well in Oxford); highest uranium 766 ppb (a well in Brookfield). Levels vary widely even between neighboring wells.",
+    "source": "Flanagan & Brown (2017), USGS Open-File Report 2017–1046, with CT DPH",
+    "url": "https://pubs.usgs.gov/of/2017/1046/ofr20171046.pdf"
+   },
+   {
+    "what": "Radon in well water",
+    "value": "CT action level 5,000 pCi/L",
+    "detail": "CT DPH recommends every well owner test for radon in both water and air.",
+    "source": "CT DPH, Radon in Your Well Water (2021)",
+    "url": "https://portal.ct.gov/-/media/Departments-and-Agencies/DPH/dph/environmental_health/radon/2021/Radon-in-Your-Well--Water-2021.pdf"
+   }
+  ],
+  "advice": "CT DPH advises private well owners to test at least once for arsenic and uranium — they are not part of routine well tests, so you have to ask for them.",
+  "advice_source": "https://www.usgs.gov/news/new-usgs-report-shows-high-levels-arsenic-and-uranium-some-connecticut-wells"
+ },
+ "gaps": [
+  {
+   "item": "MDC (Hartford) 2025 report",
+   "note": "The report PDF could not be retrieved from this workspace. MDC's 2025 figures (lead, hardness, sodium) need to be read from themdc.org/wp-content/uploads/2026/06/2025-Water-Quality-Report.pdf. Values used are EWG's 2021–2023 averages."
+  },
+  {
+   "item": "Waterbury and Windham 2025 reports",
+   "note": "Not retrieved; EWG 2021–2023 averages used instead."
+  },
+  {
+   "item": "Middletown Water Department (Middlesex County)",
+   "note": "The 2025 report page returned a server error; the 2024 report's data tables were not readable. Middlesex coverage currently comes from the Guilford shoreline system only."
+  },
+  {
+   "item": "Norwich Public Utilities (New London County)",
+   "note": "The site blocks automated access. New London coverage currently comes from Aquarion's Mystic system."
+  },
+  {
+   "item": "Hardness",
+   "note": "Only Aquarion reports publish hardness. Connecticut Water and RWA reports reviewed here do not list it."
+  },
+  {
+   "item": "Lead footnotes (Aquarion Eastern Fairfield and Stamford)",
+   "note": "Both reports say two locations exceeded the lead action level, but Stamford's listed results don't show it. Confirm with Aquarion before quoting."
+  }
+ ],
+ "method": [
+  "Largest public water systems in each Connecticut county; 2025 annual water quality reports where retrievable, otherwise EWG Tap Water Database averages of state-reported data (marked).",
+  "'Highest location's annual average' is the number federal compliance is judged on for disinfection byproducts.",
+  "Lead and copper are judged on the 90th percentile of home tap samples; individual homes can be higher.",
+  "A utility listing a town does not mean every home in that town is on that utility."
+ ],
+ "towns": {
+  "Andover": {
+   "county": "Tolland",
+   "profile": "N"
+  },
+  "Ansonia": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Ashford": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Avon": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Barkhamsted": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Beacon Falls": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Berlin": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Bethany": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Bethel": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Bethlehem": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Bloomfield": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Bolton": {
+   "county": "Tolland",
+   "profile": "N"
+  },
+  "Bozrah": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Branford": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Bridgeport": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Bridgewater": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Bristol": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Brookfield": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Brooklyn": {
+   "county": "Windham",
+   "profile": "M"
+  },
+  "Burlington": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Canaan": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Canterbury": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Canton": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Chaplin": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Cheshire": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Chester": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Clinton": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Colchester": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Colebrook": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Columbia": {
+   "county": "Tolland",
+   "profile": "N"
+  },
+  "Cornwall": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Coventry": {
+   "county": "Tolland",
+   "profile": "N"
+  },
+  "Cromwell": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Danbury": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Darien": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Deep River": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Derby": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Durham": {
+   "county": "Middlesex",
+   "profile": "S"
+  },
+  "East Granby": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "East Haddam": {
+   "county": "Middlesex",
+   "profile": "N"
+  },
+  "East Hampton": {
+   "county": "Middlesex",
+   "profile": "N"
+  },
+  "East Hartford": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "East Haven": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "East Lyme": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "East Windsor": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Eastford": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Easton": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Ellington": {
+   "county": "Tolland",
+   "profile": "M"
+  },
+  "Enfield": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Essex": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Fairfield": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Farmington": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Franklin": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Glastonbury": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Goshen": {
+   "county": "Litchfield",
+   "profile": "S"
+  },
+  "Granby": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Greenwich": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Griswold": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Groton": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Guilford": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Haddam": {
+   "county": "Middlesex",
+   "profile": "N"
+  },
+  "Hamden": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Hampton": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Hartford": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Hartland": {
+   "county": "Hartford",
+   "profile": "N"
+  },
+  "Harwinton": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Hebron": {
+   "county": "Tolland",
+   "profile": "S"
+  },
+  "Kent": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Killingly": {
+   "county": "Windham",
+   "profile": "M"
+  },
+  "Killingworth": {
+   "county": "Middlesex",
+   "profile": "N"
+  },
+  "Lebanon": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Ledyard": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Lisbon": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Litchfield": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Lyme": {
+   "county": "New London",
+   "profile": "N"
+  },
+  "Madison": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Manchester": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Mansfield": {
+   "county": "Tolland",
+   "profile": "M"
+  },
+  "Marlborough": {
+   "county": "Hartford",
+   "profile": "S"
+  },
+  "Meriden": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Middlebury": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Middlefield": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Middletown": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Milford": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Monroe": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Montville": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Morris": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Naugatuck": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "New Britain": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "New Canaan": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "New Fairfield": {
+   "county": "Fairfield",
+   "profile": "S"
+  },
+  "New Hartford": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "New Haven": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "New London": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "New Milford": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Newington": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Newtown": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Norfolk": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "North Branford": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "North Canaan": {
+   "county": "Litchfield",
+   "profile": "S"
+  },
+  "North Haven": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "North Stonington": {
+   "county": "New London",
+   "profile": "S"
+  },
+  "Norwalk": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Norwich": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Old Lyme": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Old Saybrook": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Orange": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Oxford": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Plainfield": {
+   "county": "Windham",
+   "profile": "S"
+  },
+  "Plainville": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Plymouth": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Pomfret": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Portland": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Preston": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Prospect": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Putnam": {
+   "county": "Windham",
+   "profile": "M"
+  },
+  "Redding": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Ridgefield": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Rocky Hill": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Roxbury": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Salem": {
+   "county": "New London",
+   "profile": "N"
+  },
+  "Salisbury": {
+   "county": "Litchfield",
+   "profile": "S"
+  },
+  "Scotland": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Seymour": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Sharon": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Shelton": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Sherman": {
+   "county": "Fairfield",
+   "profile": "N"
+  },
+  "Simsbury": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Somers": {
+   "county": "Tolland",
+   "profile": "M"
+  },
+  "South Windsor": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Southbury": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Southington": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Sprague": {
+   "county": "New London",
+   "profile": "S"
+  },
+  "Stafford": {
+   "county": "Tolland",
+   "profile": "M"
+  },
+  "Stamford": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Sterling": {
+   "county": "Windham",
+   "profile": "N"
+  },
+  "Stonington": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Stratford": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Suffield": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Thomaston": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Thompson": {
+   "county": "Windham",
+   "profile": "M"
+  },
+  "Tolland": {
+   "county": "Tolland",
+   "profile": "M"
+  },
+  "Torrington": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Trumbull": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Union": {
+   "county": "Tolland",
+   "profile": "N"
+  },
+  "Vernon": {
+   "county": "Tolland",
+   "profile": "M"
+  },
+  "Voluntown": {
+   "county": "New London",
+   "profile": "N"
+  },
+  "Wallingford": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Warren": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Washington": {
+   "county": "Litchfield",
+   "profile": "N"
+  },
+  "Waterbury": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Waterford": {
+   "county": "New London",
+   "profile": "M"
+  },
+  "Watertown": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "West Hartford": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "West Haven": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Westbrook": {
+   "county": "Middlesex",
+   "profile": "M"
+  },
+  "Weston": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Westport": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Wethersfield": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Willington": {
+   "county": "Tolland",
+   "profile": "N"
+  },
+  "Wilton": {
+   "county": "Fairfield",
+   "profile": "M"
+  },
+  "Winchester": {
+   "county": "Litchfield",
+   "profile": "M"
+  },
+  "Windham": {
+   "county": "Windham",
+   "profile": "M"
+  },
+  "Windsor": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Windsor Locks": {
+   "county": "Hartford",
+   "profile": "M"
+  },
+  "Wolcott": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Woodbridge": {
+   "county": "New Haven",
+   "profile": "M"
+  },
+  "Woodbury": {
+   "county": "Litchfield",
+   "profile": "S"
+  },
+  "Woodstock": {
+   "county": "Windham",
+   "profile": "M"
+  }
+ }
+}

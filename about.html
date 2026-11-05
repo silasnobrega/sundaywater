@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About — Sunday Water Co.</title>
+  <meta name="description" content="Sunday makes water treatment straightforward for Connecticut homeowners. 10% of annual profits goes toward clean drinking water for communities in need, beginning in Africa.">
+  <style>
+    .about-copy { max-width: 740px; margin: 0 auto; }
+    .about-copy p { font-size: 18px; line-height: 1.6; color: #3D564C; margin: 0 0 16px; }
+    .about-copy h2 { font-size: clamp(28px, 4vw, 44px); margin: 40px 0 14px; }
+    .about-copy strong { color: #1C3F36; font-weight: 800; }
+    .about-sign { color: #1C3F36; font-weight: 800; margin-top: 8px; }
+    .about-lines { list-style: none; margin: 0 0 16px; padding: 0; }
+    .about-lines li { color: #1C3F36; font-size: 18px; line-height: 1.4; font-weight: 700; margin: 0 0 8px; }
+    .about-purpose-break { display: none; }
+    @media (max-width: 720px) {
+      .about-purpose-break { display: inline; }
+    }
+  </style>
+  <meta name="theme-color" content="#1C3F36">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
+  <link rel="stylesheet" href="styles.css?v=65">
+  <script src="app.js?v=20" defer></script>
+</head>
+<body>
+
+  <div class="utility-bar clear-caps">
+    <p>Community driven<span class="utility-extra"><span class="utility-dot" aria-hidden="true">·</span>Connecticut</span><span class="utility-extra"><span class="utility-dot" aria-hidden="true">·</span>Free in-home water test</span></p>
+    <a href="tel:+14752414486">475-241-4486</a>
+  </div>
+
+  <header style="position: relative; z-index: 20; background: #1C3F36; color: #F6EBD8">
+    <nav aria-label="Main" style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px">
+      <a href="index.html" class="sunday-mark" aria-label="Sunday Water Co."><img src="assets/sunday-wordmark.png?v=2" alt="" width="141" height="64"></a>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <div class="clear-navlinks clear-caps" style="display: flex; align-items: center; gap: 26px; font-size: 16px; margin-right: 10px">
+          <a href="index.html#map" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Water map</a>
+          <a href="index.html#filtration" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Filtration</a>
+          <a href="index.html#pricing" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Systems</a>
+          <a href="about.html" class="clear-navlink" aria-current="page" style="text-decoration: none; color: #fff; min-height: 44px; display: inline-flex; align-items: center">About</a>
+        </div>
+        <a href="book.html" class="clear-caps clear-btn clear-navbook" style="text-decoration: none; background: #14244D; color: #fff; padding: 0 22px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; font-size: 16px">Test my water</a>
+        <button type="button" id="menuBtn" class="clear-menubtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" style="width: 48px; height: 48px; border: 2px solid #1C3F36; border-radius: 999px; background: #F6EBD8; color: #1C3F36; cursor: pointer; padding: 0; box-shadow: 3px 3px 0 #1C3F36">
+          <svg id="iconOpen" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 6h12M3 12h12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <svg id="iconClose" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" hidden><path d="M4.5 4.5l9 9M13.5 4.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="menu" class="clear-menusheet clear-sticker clear-caps" hidden style="position: absolute; left: 16px; right: 16px; top: calc(100% + 10px); background: #F6EBD8; color: #1C3F36; border-radius: 22px; padding: 10px; gap: 4px; font-size: 20px">
+      <a href="index.html#map" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Water map</a>
+      <a href="index.html#filtration" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Filtration</a>
+      <a href="index.html#pricing" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Systems</a>
+      <a href="about.html" aria-current="page" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px; background: #14244D; color: #fff">About</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 4px 4px">
+        <a href="book.html" style="flex: 1 1 140px; text-decoration: none; background: #1C3F36; color: #F6EBD8; border-radius: 999px; min-height: 50px; display: flex; align-items: center; justify-content: center; font-size: 16px">Test my water</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="clear-sec" style="position: relative; padding: 64px 20px 40px">
+      <div class="about-copy">
+        <div class="clear-caps" style="font-size: 14px; color: #3E8F74">About Sunday</div>
+        <h1 class="clear-display" style="font-size: clamp(36px, 5vw, 68px); margin: 12px 0 22px">Clean water shouldn't be complicated.</h1>
+        <p>Sunday started with a simple frustration: why should homeowners have to question whether the water coming out of their own faucets is safe to drink?</p>
+        <p>As a Connecticut resident, I've experienced that uncertainty myself. You turn on the tap, fill a glass, and wonder what's actually in it. Is it safe? Should I be filtering it? What kind of system do I even need?</p>
+        <p>And when you start looking for answers, things only seem to get more complicated.</p>
+        <p>Between confusing water quality reports, countless filtration products, technical terminology, and expensive systems, it's difficult to know who to trust or where to begin.</p>
+        <p>I started Sunday because I believe there should be a better way.</p>
+
+        <h2 class="clear-display">A simpler approach to clean water</h2>
+        <p>My goal was to build a company that makes water treatment straightforward, affordable, and accessible to everyday homeowners.</p>
+        <ul class="about-lines">
+          <li>No confusing explanations.</li>
+          <li>No unnecessary equipment.</li>
+          <li>No high-pressure sales tactics.</li>
+        </ul>
+        <p>Just honest answers, easy-to-understand solutions, and quality systems installed by professionals who care about doing the job right.</p>
+        <p>Whether you're concerned about contaminants, unpleasant tastes and odors, hard water, or simply want to better understand what's coming out of your faucet, we're here to help you make an informed decision.</p>
+        <p>Because you shouldn't need to become a water treatment expert to feel confident about the water in your home.</p>
+
+        <h2 class="clear-display">More than a water company</h2>
+        <p>From the beginning, I've wanted Sunday to stand for something greater than the products we install.</p>
+        <p>I believe businesses have an opportunity to do real good—not only for their customers, but for their employees and the communities around them.</p>
+        <p>I want Sunday to be a place where people are challenged to grow, equipped with valuable skills, and encouraged to become leaders. A company that doesn't simply create jobs, but creates opportunities.</p>
+        <p>My Christian faith has shaped much of that vision. I believe that what we're given comes with a responsibility to steward it well, serve others, and use our success for something beyond ourselves.</p>
+        <p>That's also why we're building a commitment to dedicate <strong>10% of our annual profits toward bringing clean drinking water to communities in need</strong>, beginning in Africa.</p>
+        <p>While we help families here in Connecticut enjoy better water at home, I want our work to help families across the world gain access to something so many of us take for granted.</p>
+
+        <h2 class="clear-display">Building something that lasts</h2>
+        <p>I have big ambitions for Sunday. I want to build a company known throughout New England for exceptional service, honest business practices, and a team that genuinely cares about the people we serve.</p>
+        <p>But I don't believe success is measured by revenue or size alone.</p>
+        <p>I believe it's measured by the trust we earn, the people we develop, and the good we're able to do along the way.</p>
+        <p>That's the kind of company I'm setting out to build.</p>
+        <p>And it all starts with something as simple as a glass of water.</p>
+        <p class="about-sign">— Founder, Sunday</p>
+      </div>
+    </section>
+
+    <section class="clear-sec" style="position: relative; padding: 10px 20px 100px">
+      <div class="clear-sticker" style="max-width: 740px; margin: 0 auto; background: #1C3F36; color: #F6EBD8; border-radius: 28px; padding: 42px 28px; text-align: center; box-shadow: 8px 8px 0 #1C3F36">
+        <p class="clear-display" style="color: #F6EBD8; font-size: clamp(26px, 3.4vw, 36px); line-height: 1.08; margin: 0">Good water.<br>Straight answers.<br>A company<span class="about-purpose-break"><br></span> with purpose.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="clear-foot" style="position: relative; background: #1C3F36; color: #F6EBD8; padding: 40px 28px 28px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+      <a href="index.html" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Back to Sunday</a>
+      <span style="color: rgba(255,246,234,.7); display: inline-flex; align-items: center; min-height: 44px">© 2026 Sunday</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Your water plan — Sunday Water Co.</title>
+  <meta name="description" content="A water plan for your Connecticut address, built from your town's utility report or from what private wells in the state tend to show.">
+  <meta name="theme-color" content="#1C3F36">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
+  <link rel="stylesheet" href="styles.css?v=57">
+  <script>location.replace('/book');</script>
+</head>
+<body>
+
+  <header style="position: relative; z-index: 20; background: #1C3F36; color: #F6EBD8">
+    <nav aria-label="Main" style="width: 100%; max-width: 1240px; margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) 20px 18px; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px">
+      <a href="/" class="sunday-mark" aria-label="Sunday Water Co."><img src="assets/sunday-wordmark.png?v=2" alt="" width="141" height="64"></a>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <div class="clear-navlinks clear-caps" style="display: flex; align-items: center; gap: 26px; font-size: 16px; margin-right: 10px">
+          <a href="index.html#map" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Water map</a>
+          <a href="index.html#filtration" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Filtration</a>
+          <a href="index.html#pricing" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Systems</a>
+          <a href="about.html" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">About</a>
+        </div>
+        <a href="book.html" class="clear-caps clear-btn clear-navbook" style="text-decoration: none; background: #14244D; color: #fff; padding: 0 22px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; font-size: 16px">Test my water</a>
+        <button type="button" id="menuBtn" class="clear-menubtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" style="width: 48px; height: 48px; border: 2px solid #1C3F36; border-radius: 999px; background: #F6EBD8; color: #1C3F36; cursor: pointer; padding: 0; box-shadow: 3px 3px 0 #1C3F36">
+          <svg id="iconOpen" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 6h12M3 12h12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <svg id="iconClose" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" hidden><path d="M4.5 4.5l9 9M13.5 4.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="menu" class="clear-menusheet clear-sticker clear-caps" hidden style="position: absolute; left: 16px; right: 16px; top: calc(100% + 10px); background: #F6EBD8; color: #1C3F36; border-radius: 22px; padding: 10px; gap: 4px; font-size: 20px">
+      <a href="index.html#map" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Water map</a>
+      <a href="index.html#filtration" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Filtration</a>
+      <a href="index.html#pricing" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Systems</a>
+      <a href="about.html" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">About</a>
+      <a href="/" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Home</a>
+    </div>
+  </header>
+
+  <main class="plan-page" id="planRoot">
+    <p class="plan-lead"><a href="/book">Book a free water test</a></p>
+  </main>
+</body>
+</html>
