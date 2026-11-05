@@ -11,10 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=65">
+  <link rel="stylesheet" href="styles.css?v=82">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
-  <script src="app.js?v=24" defer></script>
+  <script src="app.js?v=26" defer></script>
 </head>
 <body>
 
@@ -72,38 +72,47 @@
         <a href="/book" class="clear-caps clear-btn" style="flex: 0 0 auto; background: #1C3F36; color: #F6EBD8; border: 0; border-radius: 999px; font-size: 17px; padding: 12px 28px; cursor: pointer; min-height: 52px; display: inline-flex; align-items: center; text-decoration: none">Check my water</a>
       </form>
     </div>
-    <a class="hero-scroll clear-caps" href="#why"><span>Scroll down</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6.2 8 11l5-4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="hero-scroll clear-caps" href="#problem"><span>Scroll down</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6.2 8 11l5-4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </section>
 
   <main>
-  <!-- ================= WHY THIS MATTERS ================= -->
-  <section id="why" class="clear-sec" style="position: relative; padding: 36px 20px 20px">
-    <div style="max-width: 1200px; margin: 0 auto">
-      <div class="clear-caps" style="font-size: 14px; color: #3E8F74">Why this matters</div>
-      <h2 class="clear-display" style="font-size: clamp(34px, 4.8vw, 68px); margin: 12px 0 16px; max-width: 16ch">You already know something's off with your water</h2>
-      <p style="font-size: 18px; line-height: 1.5; color: #3D564C; margin: 0 0 28px; max-width: 640px">Most people don't call because they read a water quality report. They call because of one of these four things.</p>
-      <div class="why-spread">
-        <article class="why-line">
-          <span class="why-num clear-display" aria-hidden="true">01</span>
-          <h3 class="clear-display"><span class="why-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 2.5l1.6 5.2 5.4.2-4.3 3.4 1.5 5.2L11 13.4 6.8 16.5l1.5-5.2L4 7.9l5.4-.2L11 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>Spots on everything</h3>
-          <p>Glasses come out of the dishwasher cloudy. Shower doors film over days after you clean them. That's dissolved calcium left behind when hard water evaporates.</p>
-        </article>
-        <article class="why-line">
-          <span class="why-num clear-display" aria-hidden="true">02</span>
-          <h3 class="clear-display"><span class="why-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 3.2c3.2 3.6 5.2 6.2 5.2 9a5.2 5.2 0 1 1-10.4 0c0-2.8 2-5.4 5.2-9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>Skin and hair feel wrong</h3>
-          <p>Soap doesn't rinse off properly in hard water, so it sits on your skin. Dry, itchy skin and flat, brittle hair are the most common complaints we hear.</p>
-        </article>
-        <article class="why-line">
-          <span class="why-num clear-display" aria-hidden="true">03</span>
-          <h3 class="clear-display"><span class="why-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 2.8c.4 2.2 2.2 3.4 2.2 5.6a2.2 2.2 0 0 1-4.4 0c0-1 .6-1.7 1-2.3.2 1 .9 1.5 1.4 1.2C11.2 5.6 11 4 11 2.8zM6.2 12.2h9.6M7.4 12.2v4.2a3.6 3.6 0 0 0 7.2 0v-4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Your water heater is dying early</h3>
-          <p>Scale builds up on the heating element and insulates it, so the heater burns more energy to do less. Hard water can take years off its life.</p>
-        </article>
-        <article class="why-line">
-          <span class="why-num clear-display" aria-hidden="true">04</span>
-          <h3 class="clear-display"><span class="why-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M5 8.5h8.4v.6a3.6 3.6 0 0 1-3.6 3.6H8.6A3.6 3.6 0 0 1 5 9.1V8.5zM13.4 9.6h1.5a2 2 0 0 1 0 4h-1.5M7.2 16.8h5.6M8.4 6.4c.5-.8.5-1.5 0-2.3M11.2 6.4c.5-.8.5-1.5 0-2.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>It tastes like a pool</h3>
-          <p>Chlorine is added to keep city water safe on the way to your house. It does its job. It just doesn't taste good in coffee.</p>
-        </article>
-      </div>
+  <!-- ================= THE PROBLEM ================= -->
+  <section id="problem" class="problem">
+    <div class="problem-pin">
+    <h2 class="clear-display problem-title">The Problem</h2>
+    <div class="problem-meter" aria-hidden="true"><span id="problemFill"></span></div>
+    <div class="problem-rows">
+      <article class="problem-point">
+        <div class="problem-figure">
+          <p class="problem-stat">10–100x</p>
+          <p class="problem-caption">Legal limits vs. health guidelines</p>
+        </div>
+        <div class="problem-copy">
+          <h3 class="problem-heading">Your tap water isn't as clean as you think</h3>
+          <p class="problem-body"><span class="problem-em">Nearly every</span> U.S. water system tested had at least one contaminant above recommended <span class="cite-keep">guidelines<sup><a href="sources.html#source-1" aria-label="Source 1">1</a></sup>.</span> Federal legal limits can be <span class="problem-em">10 to 100 times higher</span> than what health researchers consider <span class="cite-keep">safe<sup><a href="sources.html#source-2" aria-label="Source 2">2</a></sup>.</span></p>
+        </div>
+      </article>
+      <article class="problem-point">
+        <div class="problem-figure">
+          <p class="problem-stat">$1T+</p>
+          <p class="problem-caption">To repair aging water infrastructure</p>
+        </div>
+        <div class="problem-copy">
+          <h3 class="problem-heading">The pipes are falling apart</h3>
+          <p class="problem-body">Much of America's water infrastructure dates back to the <span class="problem-em">early 1900s</span>. Repairing and replacing it is projected to cost <span class="problem-em">more than $1 trillion</span> over 25 <span class="cite-keep">years<sup><a href="sources.html#source-3" aria-label="Source 3">3</a></sup>.</span></p>
+        </div>
+      </article>
+      <article class="problem-point">
+        <div class="problem-figure">
+          <p class="problem-stat">200M+</p>
+          <p class="problem-caption">Americans who may have PFAS in their water</p>
+        </div>
+        <div class="problem-copy">
+          <h3 class="problem-heading">A daily dose of forever chemicals</h3>
+          <p class="problem-body">An estimated <span class="problem-em">200+ million Americans</span> may have PFAS ("forever chemicals") in their tap <span class="cite-keep">water<sup><a href="sources.html#source-4" aria-label="Source 4">4</a></sup>.</span> Exposure has been <span class="problem-em">linked to decreased fertility, weakened immune systems and </span><span class="cite-keep"><span class="problem-em">cancers</span><sup><a href="sources.html#source-5" aria-label="Source 5">5</a></sup>.</span></p>
+        </div>
+      </article>
+    </div>
     </div>
   </section>
 
@@ -393,6 +402,7 @@
           <a href="#pricing" class="clear-navlink" style="text-decoration: none">Systems</a>
           <a href="#faq" class="clear-navlink" style="text-decoration: none">FAQ</a>
           <a href="about.html" class="clear-navlink" style="text-decoration: none">About</a>
+          <a href="sources.html" class="clear-navlink" style="text-decoration: none">Sources</a>
           <a href="book.html" class="clear-navlink" style="text-decoration: none">Test my water</a>
         </div>
         <div style="flex: 0 1 280px; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: rgba(255,246,234,.9)">

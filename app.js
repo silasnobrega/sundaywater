@@ -22,6 +22,58 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) { setMenu(false); menuBtn.focus(); } });
   }
 
+  /* ---------------- The Problem ---------------- */
+  /* The section stays pinned while scrolling steps through the three points. */
+  var problemSection = document.getElementById('problem');
+  var problemPoints = Array.prototype.slice.call(document.querySelectorAll('.problem-point'));
+  var problemMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (problemSection && problemPoints.length && problemSection.querySelector('.problem-pin') && !problemMotion.matches) {
+    var problemPin = problemSection.querySelector('.problem-pin');
+    var problemFill = $('problemFill');
+    var problemIndex = -1;
+    problemSection.classList.add('problem-step');
+    function setProblem(i) {
+      problemIndex = i;
+      problemPoints.forEach(function (el, j) {
+        var on = j === i;
+        el.classList.toggle('is-active', on);
+        if (on) el.removeAttribute('inert');
+        else el.setAttribute('inert', '');
+      });
+      if (problemFill) problemFill.style.width = (((i + 1) / problemPoints.length) * 100) + '%';
+    }
+    function problemFromScroll() {
+      if (problemMotion.matches) return;
+      var travel = problemSection.offsetHeight - problemPin.offsetHeight;
+      if (travel <= 0) return;
+      var progress = (window.scrollY - problemSection.offsetTop) / travel;
+      if (progress < 0) progress = 0;
+      if (progress > 1) progress = 1;
+      var i = Math.min(problemPoints.length - 1, Math.floor(progress * problemPoints.length));
+      if (i !== problemIndex) setProblem(i);
+    }
+    function problemRelease() {
+      problemSection.classList.remove('problem-step');
+      problemPoints.forEach(function (el) {
+        el.classList.remove('is-active');
+        el.removeAttribute('inert');
+      });
+      problemIndex = -1;
+    }
+    setProblem(0);
+    window.addEventListener('scroll', problemFromScroll, { passive: true });
+    window.addEventListener('resize', problemFromScroll);
+    if (problemMotion.addEventListener) {
+      problemMotion.addEventListener('change', function () {
+        if (problemMotion.matches) problemRelease();
+        else {
+          problemSection.classList.add('problem-step');
+          problemFromScroll();
+        }
+      });
+    }
+  }
+
   /* ---------------- Filtration stages ---------------- */
   var STAGES = [
     { name: 'Sediment', body: 'Catches grit before it reaches your pipes, fixtures and appliances.', removes: 'sand, rust, silt' },
