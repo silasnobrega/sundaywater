@@ -52,7 +52,7 @@ A mobile-first intake quiz modeled on the Hims & Hers "assessment" funnel, built
 ```mermaid
 flowchart TD
   I[Intro] --> N[First name]
-  N --> Q1["Q1 What brought you here? (6 answers, weight 3)"]
+  N --> Q1["Q1 What brought you here? (7 answers, weight 3)"]
   Q1 --> Q2["Q2 When something isn't right, you… (5 answers, weight 2)"]
   Q2 --> R{{"Sort: highest total wins"}}
   R --> REV["Reveal: '{name}, you're a Scrutinizer.' identity + shift"]

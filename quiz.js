@@ -477,7 +477,7 @@
       html = '<p class="sq-eyebrow clear-caps">' + (s.eyebrow ? rich(s.eyebrow) : questionLabel()) + '</p>' +
         '<h2 class="sq-q clear-display">' + rich(s.q) + '</h2>' +
         (s.help ? '<p class="sq-help">' + rich(s.help) + '</p>' : '') +
-        '<ul class="sq-opts' + (s.opts.length >= 4 && s.kind === 'single' ? ' sq-grid-2' : '') + '" role="' + (s.kind === 'multi' ? 'group' : 'radiogroup') + '">' +
+        '<ul class="sq-opts' + (s.kind === 'single' && s.opts.length >= 4 && s.opts.every(function (o) { return o.t.length <= 28; }) ? ' sq-grid-2' : '') + '" role="' + (s.kind === 'multi' ? 'group' : 'radiogroup') + '">' +
         s.opts.map(function (o) {
           var on = s.kind === 'multi' ? (state.a[s.key] || []).indexOf(o.v) !== -1 : state.a[s.key] === o.v;
           return '<li><button type="button" class="sq-opt" data-v="' + esc(o.v) + '" role="' + (s.kind === 'multi' ? 'checkbox' : 'radio') + '" aria-checked="' + on + '"><span class="sq-opt-ic" aria-hidden="true">' + esc(o.g || '') + '</span><span class="sq-opt-txt">' + esc(o.t) + (o.s ? '<span class="sq-opt-sub">' + esc(o.s) + '</span>' : '') + '</span><span class="sq-opt-tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6.2l2.6 2.6L10 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>';
