@@ -136,6 +136,8 @@
     if (progress > 1) progress = 1;
     var i = Math.min(STAGES.length - 1, Math.floor(progress * STAGES.length));
     if (i !== stageIndex) setStage(i);
+    // drop.js draws the frame for this progress (same quarters, so card and drop never disagree).
+    try { window.dispatchEvent(new CustomEvent('sunday:stage', { detail: { progress: progress } })); } catch (err) {}
   }
   function goToStage(i) {
     if (motionQuery.matches) { setStage(i); return; }
@@ -607,7 +609,14 @@
         var r = bookSec.getBoundingClientRect();
         nearForm = r.top < window.innerHeight * 0.6 && r.bottom > 0;
       }
-      var on = past && !nearForm;
+      // Stay out of the way while the filtration section is pinned; the drop animation fills the screen there.
+      var pinned = false;
+      var stageSec = document.getElementById('filtration');
+      if (stageSec) {
+        var sr = stageSec.getBoundingClientRect();
+        pinned = sr.top <= 8 && sr.bottom >= window.innerHeight - 8;
+      }
+      var on = past && !nearForm && !pinned;
       stickyCta.classList.toggle('is-on', on);
       stickyCta.setAttribute('aria-hidden', String(!on));
     };

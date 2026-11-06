@@ -1142,3 +1142,62 @@ li > span.clear-display { color: #fff; }
 
 /* Keep last so it beats the display rules above */
 [hidden] { display: none !important; }
+
+/* ---------- Filtration: the drop animation ---------- */
+/* Desktop budget inside the 100dvh pin: head ≈ 96, meter+cards ≈ 190, padding ≈ 44. The canvas takes what is left. */
+.stage-pin-inner { display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 50px 20px 24px; gap: 16px; }
+.stage-head { display: flex; justify-content: center; margin: 0; }
+.stage-head-copy { text-align: center; max-width: 820px; }
+.stage-head h2 { font-size: clamp(28px, 3.3vw, 46px); margin: 8px 0 8px; }
+.stage-head p { font-size: 16px; line-height: 1.45; color: rgba(255,246,234,.9); margin: 0; }
+.drop-stage {
+  position: relative;
+  /* The one flexible item in the pinned column: it takes whatever height is left, never more than its full-width aspect. */
+  flex: 1 1 auto;
+  min-height: 140px;
+  max-height: calc(min(1200px, 100vw - 40px) * 940 / 2200);
+  aspect-ratio: 2200 / 940;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #336C54;
+  box-shadow: 8px 8px 0 var(--navy);
+}
+.stage-head, .stage-pin .stage-meter, .stage-pin .clear-rail { flex: 0 0 auto; }
+.drop-stage .drop-poster, .drop-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.drop-stage .drop-poster { object-fit: contain; object-position: center; background: #336C54; }
+.drop-stage canvas { opacity: 0; transition: opacity .25s; }
+.drop-stage.is-ready canvas { opacity: 1; }
+.drop-stage.is-ready .drop-poster { visibility: hidden; }
+.stage-pin .stage-meter { margin-bottom: 0 !important; }
+.stage-pin .stage-card { min-height: 0; padding: 16px 18px 14px; }
+.stage-pin .stage-name { font-size: 20px; margin: 10px 0 6px; }
+.stage-pin .stage-body { font-size: 14px; line-height: 1.45; }
+.stage-pin .stage-tag { padding-top: 10px; }
+@media (max-width: 720px) {
+  .stage-pin-inner { gap: 12px; justify-content: flex-start; padding-top: max(52px, calc(env(safe-area-inset-top) + 48px)) !important; }
+  .stage-head { justify-content: flex-start; }
+  .stage-head-copy { text-align: left; }
+  .drop-stage { flex: 0 0 auto; height: clamp(180px, 38dvh, 340px); max-height: none; width: 100%; aspect-ratio: auto; border-radius: 16px; box-shadow: 4px 4px 0 var(--navy); }
+  .drop-stage .drop-poster { object-fit: cover; object-position: left center; }
+  .stage-pin .stage-meter { margin-bottom: 0 !important; }
+}
+/* Short desktop viewports (laptops): the cards lose their body copy and the heading tightens so the illustration keeps its size. */
+@media (max-height: 820px) and (min-width: 721px) {
+  .stage-head h2 { font-size: clamp(26px, 2.8vw, 36px); margin: 6px 0 4px; }
+  .stage-head p { font-size: 15px; }
+  .stage-pin .stage-body { display: none; }
+  .stage-pin .stage-card { padding: 12px 16px 12px; flex-direction: row; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .stage-pin .stage-name { margin: 0; font-size: 18px; flex: 1 1 auto; }
+  .stage-pin .stage-tag { flex: 1 1 100%; padding-top: 6px; margin-top: 0; }
+}
+@media (max-height: 640px) and (min-width: 721px) {
+  .stage-head p { display: none; }
+  .stage-pin .stage-tag { display: none; }
+}
+@media (max-width: 720px) and (max-height: 720px) {
+  .stage-pin h2 { font-size: 28px !important; }
+  .stage-pin .stage-body { display: none; }
+  .drop-stage { height: clamp(160px, 32dvh, 260px); }
+}

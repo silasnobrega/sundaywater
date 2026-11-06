@@ -74,6 +74,29 @@ flowchart TD
 
 **Editing copy:** change `quiz_map.json`. `*word*` renders in the script face; `{name}` and `{town}` are replaced. Keep the `tags` and `w` (weights) on each answer; the engine reads them. Add an archetype by adding it to `archetypes` and giving it a `branches` entry and at least one opener answer that weights toward it.
 
+## The drop animation (home page, "Follow a drop through your home")
+
+The filtration section scrubs a frame sequence on a `<canvas>` as the page scrolls, so the drop moves through the house in step with the four stage cards. The section's existing scroll math in `app.js` fires a `sunday:stage` event with the pinned progress (0–1); `drop.js` maps that to a frame. The mapping is piecewise so each quarter of scroll covers exactly the frames where the drop is in that stage (`data-keys` on `#dropStage`: the frame where each stage starts, then the last frame).
+
+| File | What it is |
+|---|---|
+| `drop.js` | Loads the frames in two phases (every 6th first, the rest when the section is a viewport away), draws them, pans on phones so the drop stays in view, shows the final frame for reduced-motion and headless capture. |
+| `assets/drop-frames/d/` | 108 WebP frames, 1200px wide, for desktop. |
+| `assets/drop-frames/m/` | 108 WebP frames, 800px wide, for phones. |
+| `assets/drop-frames/poster.jpg` | First frame, shown until the canvas is ready (and as the `alt` carrier). |
+
+**Source video:** `sundaywater hero animation1.mp4` (2200×940, 24 fps, 15 s). It is not in the repo; keep it with the brand files. The motion ends at 12 s, so frames are cut there (the last 3 s hold on the glass).
+
+**Regenerate the frames** (ffmpeg; the SkyShield repo has `ffmpeg-static` under `node_modules` if you don't have one installed):
+
+```bash
+ffmpeg -i "sundaywater hero animation1.mp4" -t 12 -vf "fps=9,scale=1200:-2" -c:v libwebp -quality 64 assets/drop-frames/d/frame_%03d.webp
+ffmpeg -i "sundaywater hero animation1.mp4" -t 12 -vf "fps=9,scale=800:-2"  -c:v libwebp -quality 70 assets/drop-frames/m/frame_%03d.webp
+ffmpeg -i "sundaywater hero animation1.mp4" -frames:v 1 -vf "scale=1400:-2" -q:v 5 assets/drop-frames/poster.jpg
+```
+
+If the clip changes, update `data-frames` (count) and `data-keys` on `#dropStage` in `index.html`. At 9 fps the current keys are `0,18,45,68,107`: rust caught at tank 1 by 2 s, chlorine at tank 2 by 5 s, minerals at tank 3 by 7.5 s, then the climb to the sink and the pour.
+
 ## Brand
 
 - Navy `#14244D` · Cream `#FFF6EA` · Sun `#FFD978` · Blue `#2350D8`

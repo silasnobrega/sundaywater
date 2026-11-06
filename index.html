@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=85">
+  <link rel="stylesheet" href="styles.css?v=87">
   <link rel="stylesheet" href="quiz.css?v=4">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
@@ -24,7 +24,8 @@
       } catch (e) {}
     })();
   </script>
-  <script src="app.js?v=29" defer></script>
+  <script src="app.js?v=31" defer></script>
+  <script src="drop.js?v=1" defer></script>
 </head>
 <body>
 
@@ -219,12 +220,17 @@
   <section id="filtration" class="stage-scroll clear-sec">
     <div class="stage-pin">
       <div class="stage-pin-inner">
-        <div class="mascot-filtration" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 36px; max-width: 980px; margin: 0 auto 36px">
-          <div style="text-align: center; flex: 1 1 420px; min-width: 0">
+        <div class="mascot-filtration stage-head">
+          <div class="stage-head-copy">
             <div class="clear-caps" style="font-size: 14px; color: #F6EBD8">How filtration works</div>
-            <h2 class="clear-display" style="font-size: clamp(34px, 5vw, 68px); margin: 12px 0 16px; text-shadow: 0.035em 0.035em 0 #1C3F36">Follow a <span class="clear-script" style="color: #fff; font-size: 1.15em; text-shadow: 3px 3px 0 #14244D">drop</span> through your home.</h2>
-            <p style="font-size: 18px; line-height: 1.5; color: rgba(255,246,234,.9); margin: 0">Each stage solves a different problem. Scroll to move through them.</p>
+            <h2 class="clear-display" style="text-shadow: 0.035em 0.035em 0 #1C3F36">Follow a <span class="clear-script" style="color: #fff; font-size: 1.15em; text-shadow: 3px 3px 0 #14244D">drop</span> through your home.</h2>
+            <p>Each stage catches something different. Scroll, and watch what gets left behind.</p>
           </div>
+        </div>
+        <!-- Scroll-scrubbed frame sequence (drop.js). Keys: frame where each stage starts, then the last frame. -->
+        <div id="dropStage" class="drop-stage clear-sticker" data-frames="108" data-keys="0,18,45,68,107" data-bg="#336C54">
+          <img class="drop-poster" src="assets/drop-frames/poster.jpg" width="1400" height="598" alt="Cross-section of a Connecticut house: water comes in from the main carrying rust, chlorine and minerals, passes a sediment filter, a carbon filter and a softener, then reverse osmosis under the kitchen sink, and ends up clear in a glass.">
+          <canvas id="dropCanvas" aria-hidden="true"></canvas>
         </div>
         <div class="stage-meter" style="height: 18px; border-radius: 999px; margin-bottom: 26px; padding: 3px; background: rgba(255,246,234,.18); border: 2px solid #1C3F36" aria-hidden="true">
           <div id="progressFill" class="progress-fill"></div>
