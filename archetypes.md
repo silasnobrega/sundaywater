@@ -96,13 +96,13 @@ Each archetype has:
 ## `standard` — The Standard-Setter
 *"You read the labels on your food."*
 
-**Identity.** You read labels. You notice when something's off and you don't pretend it isn't. You've been buying bottled because the tap doesn't meet your standard, and you know that's a workaround, not a fix.
+**Identity.** You read labels. You notice when something's off and you don't pretend it isn't. Whether it's the taste or what you can't taste, the tap hasn't met your standard, and buying bottled is a workaround, not a fix. This is also the door for the health-conscious visitor with no single symptom ("I care what goes in my body. I just know it's not good").
 
 **The shift.** Standard-Setters don't work around it. They raise the tap to the standard.
 
 **Voice.** Discerning, a little aesthetic, quality-minded. Talks about taste and coffee and cooking. Responds to "standard," "every glass," "the workaround," "bottled."
 
-**Pain points.** Chlorine / pool taste on city water. Metallic or rotten-egg taste on well water. Cases of bottled water every week. A fridge filter that's past its date.
+**Pain points.** Not trusting what they can't taste (PFAS, lead). Chlorine / pool taste on city water. Metallic or rotten-egg taste on well water. Cases of bottled water every week. A fridge filter that's past its date.
 
 **Lean.** Essential (whole-house carbon) for chlorine taste on every faucet → Kitchen tap RO if it's really about the glass → Complete for both.
 
@@ -112,7 +112,7 @@ Each archetype has:
 
 Two openers. Each answer carries weights toward one or two archetypes. Highest total wins; a tie goes to the first question's answer.
 
-1. **"What brought you here?"** — six answers, one per archetype, weight 3.
+1. **"What brought you here?"** — seven answers, weight 3: one per archetype, plus a health-conscious door ("I care what goes in my body") that routes to the Standard-Setter.
 2. **"When something in the house isn't right, you…"** — five answers about *how they handle things*, weight 2 (plus a 1 toward a related archetype). This is the identity question; it also breaks ties and shades the reveal.
 
 After the sort, the visitor sees the **reveal** (identity + shift), then the town step and town report (shared), then the archetype's branch: three multiple-choice questions and one open question in the archetype's voice, then contact, then the result written for that archetype.
