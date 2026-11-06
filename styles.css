@@ -180,10 +180,10 @@ option { color: var(--navy); background: #FFFFFF; }
   width: 100%;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   align-items: center !important;
   text-align: center;
-  padding: 56px 24px 0 !important;
+  padding: 24px 24px 96px !important;
   box-sizing: border-box;
 }
 .sunday-hero h1 {
