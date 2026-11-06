@@ -1,0 +1,250 @@
+{
+  "version": 2,
+  "notes": "Copy for the Sunday water check. *text* inside q/help/identity/shift renders in the script face. {name} and {town} are replaced. Every option on a branch carries tags that the recommendation reads; every opener option carries weights toward archetypes. Archetype ids come from archetypes.md.",
+
+  "archetypes": {
+    "scrutinizer": {
+      "name": "The Scrutinizer",
+      "tag": "You don't take anyone's word for it.",
+      "glyph": "🔎",
+      "identity": "You're on a well, and you know what that means: nobody is checking this water but you. You don't take the inspector's word, the neighbor's word, or \"it's always been fine.\" You want to see it.",
+      "shift": "Scrutinizers don't guess. They *test.* Then they decide.",
+      "resultHead": "Scrutinizers test first. Here's what the test is *for.*",
+      "resultLead": "Nobody tests a private well but the owner. The free test puts numbers on bacteria, arsenic, hardness and iron. You decide from there.",
+      "lean": "test"
+    },
+    "protector": {
+      "name": "The Protector",
+      "tag": "You check everything that touches your kid.",
+      "glyph": "🛡️",
+      "identity": "Car seat, crib, the paint, the food. You've checked it all. Water is the one thing in the house you can't see, so it's the one thing you haven't.",
+      "shift": "Protectors don't hope it's fine. They *make sure.*",
+      "resultHead": "Protectors make sure. *Here's how.*",
+      "resultLead": "The water in the bottle is the one thing in the house you can't check by looking. The test does, and the system handles what it finds.",
+      "lean": "sink"
+    },
+    "fixer": {
+      "name": "The Fixer",
+      "tag": "You don't live with a problem you can solve.",
+      "glyph": "🔧",
+      "identity": "Spots on the glasses, the shower door, the water heater working too hard. You've scrubbed it, vinegared it, and you're done managing it. You'd rather fix the cause.",
+      "shift": "Fixers fix the *cause,* not the symptom.",
+      "resultHead": "Fixers fix the cause. *Here's yours.*",
+      "resultLead": "Scale, spots and dry skin are one problem with one cause: hard water. You fix it once, at the main line, for every faucet.",
+      "lean": "soft"
+    },
+    "investigator": {
+      "name": "The Investigator",
+      "tag": "You've read the report. You want the numbers.",
+      "glyph": "📊",
+      "identity": "You pulled the utility report. You know what TTHM and PFAS are. What you don't have is the number from your own kitchen tap, and you know a plant report isn't that.",
+      "shift": "Investigators don't settle for the plant's numbers. They get *their own.*",
+      "resultHead": "Investigators get their own numbers. *Here's the plan.*",
+      "resultLead": "The utility reports on the plant. The test reports on your tap. Those are different numbers, and only one of them is yours.",
+      "lean": "test"
+    },
+    "freshstart": {
+      "name": "The Fresh Start",
+      "tag": "New house. Do it right from day one.",
+      "glyph": "🔑",
+      "identity": "You just took the keys. You're the kind of person who finds out what you inherited before it becomes a problem: the roof, the furnace, and the water.",
+      "shift": "Fresh Starts don't inherit someone else's shortcuts. They set *their own baseline.*",
+      "resultHead": "Fresh Starts set a baseline. *Here's yours.*",
+      "resultLead": "One test, one written report, and you know exactly what this house's water is on day one. Everything after that is a decision, not a guess.",
+      "lean": "test"
+    },
+    "standard": {
+      "name": "The Standard-Setter",
+      "tag": "You read the labels on your food.",
+      "glyph": "✨",
+      "identity": "You read labels. You notice when something's off and you don't pretend it isn't. You've been buying bottled because the tap doesn't meet your standard, and you know that's a workaround, not a fix.",
+      "shift": "Standard-Setters don't work around it. They *raise the tap* to the standard.",
+      "resultHead": "Standard-Setters raise the tap. *Here's how.*",
+      "resultLead": "Bottled water is a workaround with a weekly bill. The fix is at the tap, and it's the last time you think about it.",
+      "lean": "essential"
+    }
+  },
+
+  "openers": [
+    {
+      "id": "why", "kind": "single",
+      "eyebrow": "First things first",
+      "q": "What brought you *here today?*",
+      "help": "Pick the one that's closest.",
+      "opts": [
+        { "v": "well",   "t": "We're on a well and nobody's ever tested it", "s": "Not since the inspection, if then", "g": "🪣", "w": { "scrutinizer": 3 }, "tags": ["well", "own", "untested"] },
+        { "v": "baby",   "t": "There's a baby in the house, or one coming",   "s": "Formula, bottles, the whole thing", "g": "🍼", "w": { "protector": 3 },   "tags": ["baby", "health"] },
+        { "v": "scale",  "t": "Spots, scale, dry skin. I'm done with it",     "s": "Shower door, glasses, the heater",   "g": "💧", "w": { "fixer": 3 },       "tags": ["hard"] },
+        { "v": "report", "t": "I read the utility report. I have questions",  "s": "PFAS, TTHM, the legal limit",        "g": "📄", "w": { "investigator": 3 },"tags": ["city", "research"] },
+        { "v": "moved",  "t": "We just moved in. What did we inherit?",        "s": "New house, unknown water",           "g": "📦", "w": { "freshstart": 3 },  "tags": ["own"] },
+        { "v": "taste",  "t": "It tastes bad. We buy bottled",                 "s": "Pool, metal, or rotten egg",         "g": "🫗", "w": { "standard": 3 },    "tags": ["taste", "bottled"] }
+      ]
+    },
+    {
+      "id": "style", "kind": "single",
+      "eyebrow": "Last one before we sort you",
+      "q": "When something in the house *isn't right,* you…",
+      "help": "Be honest. There's no wrong answer, just a type.",
+      "opts": [
+        { "v": "lookup", "t": "Look it up until I understand it",         "s": "Reports, forums, the actual numbers",  "g": "🔎", "w": { "investigator": 2, "scrutinizer": 1 } },
+        { "v": "fixit",  "t": "Fix it. I don't live with problems",        "s": "Find the cause, handle it, move on",   "g": "🔧", "w": { "fixer": 2, "standard": 1 } },
+        { "v": "safe",   "t": "Ask one question: is it safe for the kids?","s": "Everything else is second",            "g": "🛡️", "w": { "protector": 2 } },
+        { "v": "list",   "t": "Make a list. New house, new rules",         "s": "Baseline everything, then decide",     "g": "📋", "w": { "freshstart": 2, "scrutinizer": 1 } },
+        { "v": "labels", "t": "Hold it to a standard. I read labels",      "s": "If it's off, I notice",                "g": "✨", "w": { "standard": 2, "investigator": 1 } }
+      ]
+    }
+  ],
+
+  "branches": {
+    "scrutinizer": [
+      { "id": "tested", "kind": "single", "q": "When was the well *last tested?*", "help": "Most people have to think about this one.",
+        "opts": [
+          { "v": "never",  "t": "Never, as far as I know",         "s": "That's most wells in Connecticut", "g": "🤷", "tags": ["untested"] },
+          { "v": "insp",   "t": "At the inspection, years ago",     "s": "A basic panel, once",              "g": "📋", "tags": ["untested"] },
+          { "v": "recent", "t": "Within the last year",             "s": "Good. We'll compare.",             "g": "✅", "tags": ["tested"] }
+        ] },
+      { "id": "see", "kind": "multi", "q": "What do you actually *see* at the tap?", "help": "Tap everything that's true.",
+        "opts": [
+          { "v": "stain", "t": "Orange or brown staining",      "s": "Tubs, toilets, the laundry",     "g": "🟠", "tags": ["sed"] },
+          { "v": "egg",   "t": "Rotten-egg smell",              "s": "Worse on hot water",              "g": "🥚", "tags": ["taste", "sulfur"] },
+          { "v": "spots", "t": "Spots and scale",               "s": "Glasses, faucets, the heater",    "g": "💧", "tags": ["hard"] },
+          { "v": "none",  "t": "Nothing. That's what bothers me","s": "Clear water can still fail a test","g": "🫥", "tags": ["none"], "solo": true }
+        ] },
+      { "id": "words", "kind": "open", "q": "In your own words: what *don't you trust* about this water?", "help": "One line is plenty. This goes to the technician who tests it.", "placeholder": "e.g. The previous owner said it was fine but never showed me a test." },
+      { "id": "who", "kind": "single", "q": "Who's *drinking it?*", "help": "Kids drink more water per pound than adults. It matters.",
+        "opts": [
+          { "v": "me",     "t": "Just me",                    "g": "🧍", "tags": [] },
+          { "v": "couple", "t": "Me and a partner",           "g": "👫", "tags": [] },
+          { "v": "kids",   "t": "Kids at home",               "g": "🧒", "tags": ["kids", "health"] },
+          { "v": "baby",   "t": "A baby, or one on the way",  "g": "🍼", "tags": ["baby", "health"] }
+        ] }
+    ],
+
+    "protector": [
+      { "id": "bottle", "kind": "single", "q": "What goes in the *bottle* right now?", "help": "No judgment. This is the question that matters.",
+        "opts": [
+          { "v": "tap",     "t": "Straight from the tap",            "s": "Boiled or not",                        "g": "🚰", "tags": ["health"] },
+          { "v": "pitcher", "t": "A pitcher or fridge filter",        "s": "Brita, the fridge, that kind of thing","g": "🫙", "tags": ["pitcher", "health"] },
+          { "v": "bottled", "t": "Bottled water",                     "s": "Cases of it",                          "g": "🧴", "tags": ["bottled", "health"] },
+          { "v": "formula", "t": "Formula mixed with tap water",      "s": "The one we'd never skip",              "g": "🍼", "tags": ["formula", "health", "baby"] }
+        ] },
+      { "id": "source", "kind": "single", "q": "City water, or *a well?*", "help": "They need different things. We can tell from the address if you're not sure.",
+        "opts": [
+          { "v": "city",   "t": "City or public water", "s": "You get a water bill",       "g": "🏙️", "tags": ["city"] },
+          { "v": "well",   "t": "A private well",       "s": "Nobody tests it but you",    "g": "🪣", "tags": ["well"] },
+          { "v": "unsure", "t": "Not sure",             "s": "We'll check the address",    "g": "🤷", "tags": [] }
+        ] },
+      { "id": "words", "kind": "open", "q": "What's the one thing you'd want to know is *not* in it?", "help": "Lead, PFAS, nitrates, bacteria, \"everything.\" Say it your way.", "placeholder": "e.g. PFAS. I keep reading about it and nobody can tell me." },
+      { "id": "own", "kind": "single", "q": "Do you *own* the home?", "help": "A kitchen-tap system works either way. Whole-house needs the owner's OK.",
+        "opts": [
+          { "v": "own",    "t": "I own it",     "g": "🏡", "tags": ["own"] },
+          { "v": "buying", "t": "Buying soon",  "s": "Under contract or shopping", "g": "🔑", "tags": ["own"] },
+          { "v": "rent",   "t": "I rent",       "g": "📝", "tags": ["rent"] }
+        ] }
+    ],
+
+    "fixer": [
+      { "id": "where", "kind": "multi", "q": "Where's it *showing up?*", "help": "Tap all of them. We've seen every combination.",
+        "opts": [
+          { "v": "glass",  "t": "Shower doors and glasses",       "s": "Spots that come right back",      "g": "🚿", "tags": ["hard"] },
+          { "v": "heater", "t": "Water heater or dishwasher",      "s": "Working harder, dying sooner",     "g": "🔥", "tags": ["hard", "appliances"] },
+          { "v": "skin",   "t": "Skin, hair, laundry",             "s": "Dry, stiff, dull",                 "g": "🧴", "tags": ["hard", "skin"] },
+          { "v": "stain",  "t": "Orange staining too",             "s": "That's iron on top of hardness",   "g": "🟠", "tags": ["sed"] }
+        ] },
+      { "id": "tried", "kind": "single", "q": "What have you *tried?*", "help": "So we don't suggest what you've already done.",
+        "opts": [
+          { "v": "nothing",  "t": "Nothing yet. Just scrubbing",        "s": "Vinegar and elbow grease",            "g": "🧽", "tags": [] },
+          { "v": "softener", "t": "There's a softener. It's not cutting it", "s": "Came with the house, probably",  "g": "🧂", "tags": ["softener"] },
+          { "v": "filter",   "t": "A filter or pitcher",                "s": "Helps the taste, not the scale",      "g": "🫙", "tags": ["pitcher"] }
+        ] },
+      { "id": "words", "kind": "open", "q": "What finally made you *look this up?*", "help": "The thing that tipped it. One line.", "placeholder": "e.g. Replaced the water heater for the second time in six years." },
+      { "id": "own", "kind": "single", "q": "Do you *own* the home?", "help": "A softener is a whole-house install, so this decides the route.",
+        "opts": [
+          { "v": "own",    "t": "I own it",     "g": "🏡", "tags": ["own"] },
+          { "v": "buying", "t": "Buying soon",  "s": "Under contract or shopping", "g": "🔑", "tags": ["own"] },
+          { "v": "rent",   "t": "I rent",       "g": "📝", "tags": ["rent"] }
+        ] }
+    ],
+
+    "investigator": [
+      { "id": "flag", "kind": "multi", "q": "What in the report got *your attention?*", "help": "Tap everything you flagged.",
+        "opts": [
+          { "v": "pfas",  "t": "PFAS",                                 "s": "Forever chemicals",                      "g": "🧪", "tags": ["health", "pfas"] },
+          { "v": "tthm",  "t": "TTHM or disinfection byproducts",      "s": "Chlorine's leftovers",                   "g": "⚗️", "tags": ["health", "taste"] },
+          { "v": "lead",  "t": "Lead or copper",                        "s": "Usually the pipes, not the plant",       "g": "🔩", "tags": ["health", "lead"] },
+          { "v": "hard",  "t": "Hardness",                              "s": "Grains per gallon",                      "g": "💧", "tags": ["hard"] },
+          { "v": "none",  "t": "Nothing specific. I want my own numbers","s": "The plant's report isn't my tap",       "g": "📏", "tags": ["research"], "solo": true }
+        ] },
+      { "id": "want", "kind": "single", "q": "What do you want *from us?*", "help": "Straight answer gets a straight answer.",
+        "opts": [
+          { "v": "numbers", "t": "Numbers from my tap. Then we'll talk", "s": "A measurement, not a pitch",     "g": "📏", "tags": ["research"] },
+          { "v": "system",  "t": "A system that handles what I found",   "s": "I've done the reading",          "g": "⚙️", "tags": ["now"] },
+          { "v": "second",  "t": "A second opinion on the report",       "s": "Tell me what it actually means", "g": "🗣️", "tags": ["research"] }
+        ] },
+      { "id": "words", "kind": "open", "q": "What's your *read* on your town's water so far?", "help": "Your take, in a line. The technician reads this before the visit.", "placeholder": "e.g. TTHM is at 60% of the limit and the limit is too high anyway." },
+      { "id": "own", "kind": "single", "q": "Do you *own* the home?", "help": "Decides whether whole-house is on the table.",
+        "opts": [
+          { "v": "own",    "t": "I own it",     "g": "🏡", "tags": ["own"] },
+          { "v": "buying", "t": "Buying soon",  "s": "Under contract or shopping", "g": "🔑", "tags": ["own"] },
+          { "v": "rent",   "t": "I rent",       "g": "📝", "tags": ["rent"] }
+        ] }
+    ],
+
+    "freshstart": [
+      { "id": "inherited", "kind": "multi", "q": "What came *with the house?*", "help": "Tap what you know about. \"No idea\" is a real answer.",
+        "opts": [
+          { "v": "softener", "t": "A softener in the basement",      "s": "Salt bags, maybe",                 "g": "🧂", "tags": ["softener"] },
+          { "v": "sink",     "t": "Some filter under the sink",       "s": "Unknown age, unknown type",        "g": "🚰", "tags": ["pitcher"] },
+          { "v": "well",     "t": "A well",                            "s": "So it's on you to test",           "g": "🪣", "tags": ["well", "untested"] },
+          { "v": "noidea",   "t": "No idea",                           "s": "That's the honest answer for most", "g": "🤷", "tags": ["untested"], "solo": true }
+        ] },
+      { "id": "noticed", "kind": "single", "q": "First thing you *noticed?*", "help": "Usually there's one.",
+        "opts": [
+          { "v": "taste", "t": "Taste or smell",        "s": "Pool, metal, rotten egg",        "g": "👃", "tags": ["taste"] },
+          { "v": "spots", "t": "Spots and scale",       "s": "Glasses, shower door",           "g": "💧", "tags": ["hard"] },
+          { "v": "stain", "t": "Staining",              "s": "Orange tubs, grit in the tank",  "g": "🟠", "tags": ["sed"] },
+          { "v": "none",  "t": "Nothing yet",           "s": "Which is why you're setting a baseline", "g": "✅", "tags": ["none"] }
+        ] },
+      { "id": "words", "kind": "open", "q": "What would make this house feel *done?*", "help": "The water part of the list. One line.", "placeholder": "e.g. Knowing what's in it so I can stop thinking about it." },
+      { "id": "who", "kind": "single", "q": "Who's *in the house?*", "help": "Changes what the test looks for.",
+        "opts": [
+          { "v": "me",     "t": "Just me",                    "g": "🧍", "tags": [] },
+          { "v": "couple", "t": "Me and a partner",           "g": "👫", "tags": [] },
+          { "v": "kids",   "t": "Kids",                       "g": "🧒", "tags": ["kids", "health"] },
+          { "v": "baby",   "t": "A baby, or one on the way",  "g": "🍼", "tags": ["baby", "health"] }
+        ] }
+    ],
+
+    "standard": [
+      { "id": "taste", "kind": "single", "q": "What does it *taste like?*", "help": "Each one points somewhere different.",
+        "opts": [
+          { "v": "pool",  "t": "Chlorine. Like a pool",        "s": "City water, usually",              "g": "🏊", "tags": ["taste", "chlorine", "city"] },
+          { "v": "metal", "t": "Metallic",                      "s": "Iron, or the pipes",               "g": "🔩", "tags": ["taste", "sed"] },
+          { "v": "egg",   "t": "Rotten egg",                    "s": "Sulfur. Well water, usually",      "g": "🥚", "tags": ["taste", "sulfur", "well"] },
+          { "v": "flat",  "t": "Just off. Flat, stale",         "s": "You can't name it but you notice", "g": "🫗", "tags": ["taste"] }
+        ] },
+      { "id": "bottled", "kind": "single", "q": "How much *bottled* are you buying?", "help": "This is the workaround we're replacing.",
+        "opts": [
+          { "v": "none",   "t": "None. I just put up with it",    "g": "😐", "tags": [] },
+          { "v": "some",   "t": "A case a week",                   "s": "Drinking and coffee",            "g": "📦", "tags": ["bottled"] },
+          { "v": "lots",   "t": "A lot. Cooking too",              "s": "It adds up",                     "g": "🛒", "tags": ["bottled", "both"] },
+          { "v": "fridge", "t": "We use the fridge filter",        "s": "When someone remembers to change it", "g": "🧊", "tags": ["pitcher"] }
+        ] },
+      { "id": "words", "kind": "open", "q": "What would *good water* taste like to you?", "help": "Seriously. It helps us pick the stage that matters.", "placeholder": "e.g. Like nothing. Like the water at my sister's place in Vermont." },
+      { "id": "own", "kind": "single", "q": "Do you *own* the home?", "help": "Whole-house carbon needs the owner. A kitchen-tap system doesn't.",
+        "opts": [
+          { "v": "own",    "t": "I own it",     "g": "🏡", "tags": ["own"] },
+          { "v": "buying", "t": "Buying soon",  "s": "Under contract or shopping", "g": "🔑", "tags": ["own"] },
+          { "v": "rent",   "t": "I rent",       "g": "📝", "tags": ["rent"] }
+        ] }
+    ]
+  },
+
+  "plans": {
+    "essential": { "name": "Essential", "detail": "Whole-house sediment + carbon filter. Every faucet.", "image": "assets/price-essential.png", "alt": "A blue sediment filter beside two whole-house tanks", "interest": "Whole-house filter" },
+    "soft":      { "name": "Soft", "detail": "Whole-house water softener. Stops scale, softens laundry, skin and hair.", "image": "assets/price-soft.png", "alt": "A water softener tank beside a brine tank", "interest": "Water softener", "flag": "Most popular" },
+    "complete":  { "name": "Complete", "detail": "Softener for the whole house + reverse osmosis at the kitchen tap.", "image": "assets/price-complete.png", "alt": "Filters, a softener, and a brine tank together", "interest": "Drinking water (RO)" },
+    "sink":      { "name": "Kitchen tap", "detail": "Reverse osmosis at the sink. Clean drinking, cooking and formula water, no changes to the rest of the house.", "image": "", "alt": "", "interest": "Drinking water (RO)" },
+    "test":      { "name": "Free test first", "detail": "A technician tests the tap, walks you through the results, and leaves. The system comes after you see your water.", "image": "", "alt": "", "interest": "Not sure yet" }
+  }
+}

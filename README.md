@@ -37,21 +37,42 @@ To open it on your phone: make sure the phone is on the same Wi-Fi, find the com
 
 ## The water check (`start.html`)
 
-A mobile-first intake quiz modeled on the Hims & Hers "assessment" funnel: one question per screen, big tap targets, auto-advance on single answers, progress bar, an information break that shows the town's real water data, contact capture right before the result, then one personalized recommendation and the booking handoff.
+A mobile-first intake quiz modeled on the Hims & Hers "assessment" funnel, built around **identity archetypes**: two questions sort the visitor into one of six types, the quiz names the type back to them (the identity shift), then asks that type's own follow-ups in its own voice, shows the town's real water data, captures contact, and writes the recommendation *for that type*. The product is framed as what someone like them does, not as a pitch.
 
 | File | What it is |
 |---|---|
-| `start.html` | The page. Loads `quiz.css` + `quiz.js` and the town water data. |
-| `quiz.js` | Question bank, branching, scoring, the town report, the result, and the lead handoff. All copy lives here. |
+| `archetypes.md` | The six archetypes: identity, the shift line, voice, pain points, product lean. **Read this first.** |
+| `quiz_map.json` | Every question, answer, branch, archetype weight and tag, plus the archetype copy and the plan cards. All copy lives here; edit it without touching code. |
+| `quiz.js` | The engine: loads the map, runs the sort, renders each screen, builds the recommendation from the archetype + tags, hands off to `book.html`. |
 | `quiz.css` | Scoped under `.sq` so it can't restyle the rest of the site. Also holds the phone sticky bar on the home page. |
+| `start.html` | The page. Loads `quiz.css` + `quiz.js` and the town water data. |
 
-**Flow:** intro → first name → symptoms (multi) → well or city → town → *town report* → who drinks it → own/rent → existing treatment → what to fix → timeline → *building your plan* → phone + email → result (Essential / Soft / Complete / Kitchen tap RO / Free test first) → `book.html` prefilled.
+**The map:**
 
-**Entry points:** hero address bar on the home page, the "Find my system" buttons, and a phone-only sticky bar that slides up once the hero scrolls away. Deep links: `start.html#address=...`, `start.html#town=Guilford`, `start.html#source=well`, add `&restart=1` to clear a saved session. Hashes, not `?query=`, because Vercel's `cleanUrls` redirect drops a query string.
+```mermaid
+flowchart TD
+  I[Intro] --> N[First name]
+  N --> Q1["Q1 What brought you here? (6 answers, weight 3)"]
+  Q1 --> Q2["Q2 When something isn't right, you… (5 answers, weight 2)"]
+  Q2 --> R{{"Sort: highest total wins"}}
+  R --> REV["Reveal: '{name}, you're a Scrutinizer.' identity + shift"]
+  REV --> T[Town] --> TR[Town water report]
+  TR --> S[Scrutinizer: last tested / what you see / in your words / who drinks it]
+  TR --> P[Protector: what's in the bottle / city or well / in your words / own or rent]
+  TR --> F[Fixer: where it shows / what you tried / in your words / own or rent]
+  TR --> V[Investigator: what you flagged / what you want / in your words / own or rent]
+  TR --> FS[Fresh Start: what came with the house / first thing noticed / in your words / who's in the house]
+  TR --> ST[Standard-Setter: what it tastes like / how much bottled / in your words / own or rent]
+  S & P & F & V & FS & ST --> B[Building your plan] --> C[Phone + email] --> RES["Result written for the archetype → plan card → book.html prefilled"]
+```
 
-**Leads:** every finished quiz is stored in the browser under `localStorage["sunday_quiz_leads"]` (open DevTools → Application → Local Storage to see them while testing). To send them somewhere real, set `window.SUNDAY_LEAD_ENDPOINT` in `start.html` to a Formspree, Zapier catch-hook, Supabase or CRM URL; the quiz POSTs one JSON object per lead (`name, phone, email, town, street, answers, recommended`). The booking form on `book.html` also receives the quiz answers in the URL hash and a hidden `quiz_plan` field.
+**Archetypes and leans:** `scrutinizer` → test first · `protector` → kitchen-tap RO · `fixer` → Soft · `investigator` → test first (a measurement, not a pitch) · `freshstart` → test first (a baseline) · `standard` → Essential. Branch answers carry tags (`hard`, `health`, `taste`, `sed`, `well`, `rent`, `softener`, …) that can override the lean; renters always get the kitchen tap. The rules are `recommend()` in `quiz.js`.
 
-**Knobs in `quiz.js` → `CONFIG`:** `showPrices` (off until the plan prices are set; fill the `$[X,XXX]` placeholders in `PLANS`), `phone`, `bookUrl`. The recommendation rules are in `recommend()`, the question order is the `steps` array.
+**Entry points:** hero address bar on the home page, the "Find my system" buttons, a phone-only sticky bar that slides up once the hero scrolls away, and on phones `/` itself lands on the quiz (skipped for hash deep links, crawlers, and after the visitor leaves the quiz via its logo). Deep links: `start.html#address=...`, `start.html#town=Guilford`, `start.html#source=well`, add `&restart=1` to clear a saved session. Hashes, not `?query=`, because Vercel's `cleanUrls` redirect drops a query string.
+
+**Leads:** every finished quiz is stored in the browser under `localStorage["sunday_quiz_leads"]` with the archetype, every answer, the open-text answers (`in_their_words`), the tags and the recommendation. To send them somewhere real, set `window.SUNDAY_LEAD_ENDPOINT` in `start.html` to a Formspree, Zapier catch-hook, Supabase or CRM URL; the quiz POSTs one JSON object per lead. The booking form on `book.html` also receives the answers in the URL hash plus hidden `quiz_plan` and `quiz_archetype` fields.
+
+**Editing copy:** change `quiz_map.json`. `*word*` renders in the script face; `{name}` and `{town}` are replaced. Keep the `tags` and `w` (weights) on each answer; the engine reads them. Add an archetype by adding it to `archetypes` and giving it a `branches` entry and at least one opener answer that weights toward it.
 
 ## Brand
 

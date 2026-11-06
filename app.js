@@ -661,6 +661,9 @@
         var hid = document.createElement('input');
         hid.type = 'hidden'; hid.name = 'quiz_plan'; hid.value = plan || '';
         $('bookForm').appendChild(hid);
+        var arch = document.createElement('input');
+        arch.type = 'hidden'; arch.name = 'quiz_archetype'; arch.value = qp.get('archetype') || '';
+        $('bookForm').appendChild(arch);
       }
     } catch (err) {}
   }
