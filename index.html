@@ -12,9 +12,19 @@
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
   <link rel="stylesheet" href="styles.css?v=85">
+  <link rel="stylesheet" href="quiz.css?v=1">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
-  <script src="app.js?v=27" defer></script>
+  <script>
+    // Phones land on the water check first (start.html). Skipped for a hash deep link (/#map), after the
+    // visitor leaves the quiz for the site via its logo (session flag set in quiz.js), and for crawlers/headless capture.
+    (function () {
+      try {
+        if (window.innerWidth <= 720 && !location.hash && !navigator.webdriver && !sessionStorage.getItem("sunday_home") && !/bot|crawl|spider|slurp/i.test(navigator.userAgent)) location.replace("start.html");
+      } catch (e) {}
+    })();
+  </script>
+  <script src="app.js?v=28" defer></script>
 </head>
 <body>
 
@@ -65,12 +75,13 @@
         <p class="hero-lede">You read the labels on your food. You care about what goes into your home. Why should your water be any different?</p>
         <p class="hero-lede hero-promise">Simple, dependable water filtration for Connecticut families who want to feel good about every glass.</p>
       </div>
-      <form id="heroForm" action="book.html" method="get" class="clear-search clear-sticker sunday-in-3" style="position: relative; z-index: 30; width: min(620px, 100%); display: flex; flex-wrap: wrap; gap: 8px; padding: 8px; border-radius: 999px; background: #F6EBD8; box-shadow: 6px 6px 0 #1C3F36">
+      <form id="heroForm" action="start.html" method="get" class="clear-search clear-sticker sunday-in-3" style="position: relative; z-index: 30; width: min(620px, 100%); display: flex; flex-wrap: wrap; gap: 8px; padding: 8px; border-radius: 999px; background: #F6EBD8; box-shadow: 6px 6px 0 #1C3F36">
         <label for="heroAddr" class="visually-hidden">Street address and town</label>
         <input id="heroAddr" name="address" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="heroAddrList" autocomplete="off" spellcheck="false" placeholder="123 Main St, Glastonbury" style="flex: 1 1 220px; min-width: 0; border: 0; outline: none; font: inherit; font-weight: 600; font-size: 17px; padding: 12px 20px; color: #1C3F36; background: transparent; min-height: 50px; border-radius: 999px">
         <ul id="heroAddrList" class="addr-suggest" role="listbox" aria-label="Address suggestions" hidden></ul>
-        <a href="book.html" class="clear-caps clear-btn" style="flex: 0 0 auto; background: #1C3F36; color: #F6EBD8; border: 0; border-radius: 999px; font-size: 17px; padding: 12px 28px; cursor: pointer; min-height: 52px; display: inline-flex; align-items: center; text-decoration: none">Check my water</a>
+        <button type="submit" class="clear-caps clear-btn" style="flex: 0 0 auto; background: #1C3F36; color: #F6EBD8; border: 0; border-radius: 999px; font: inherit; font-size: 17px; padding: 12px 28px; cursor: pointer; min-height: 52px; display: inline-flex; align-items: center; text-decoration: none">Check my water</button>
       </form>
+      <p class="sunday-in-3" style="position: relative; z-index: 20; margin: 12px 0 0; font-size: 14px; color: rgba(255,255,255,.85)">90 seconds. Nine taps. Then the one system that fits your tap.</p>
     </div>
     <a class="hero-scroll clear-caps" href="#problem"><span>Scroll down</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6.2 8 11l5-4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </section>
@@ -380,12 +391,18 @@
       <h2 class="clear-display" style="font-size: clamp(40px, 6.4vw, 92px); margin: 0 auto; max-width: 1000px; text-shadow: 0.035em 0.035em 0 #1C3F36">Your water has a story.</h2>
       <div class="clear-script" style="font-size: clamp(50px, 6.4vw, 92px); color: #fff; margin: -0.05em 0 22px; transform: rotate(-4deg); text-shadow: 4px 4px 0 #14244D">Read it.</div>
       <div class="clear-cta-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
-        <a href="#map" class="clear-caps clear-btn" style="background: #1C3F36; color: #F6EBD8; text-decoration: none; padding: 0 30px; border-radius: 999px; min-height: 56px; display: inline-flex; align-items: center; font-size: 17px">Check my town</a>
+        <a href="start.html" class="clear-caps clear-btn" style="background: #1C3F36; color: #F6EBD8; text-decoration: none; padding: 0 30px; border-radius: 999px; min-height: 56px; display: inline-flex; align-items: center; font-size: 17px">Find my system</a>
         <a href="book.html" class="clear-caps clear-btn" style="background: #14244D; color: #fff; text-decoration: none; padding: 0 30px; border-radius: 999px; min-height: 56px; display: inline-flex; align-items: center; font-size: 17px">Test my water</a>
       </div>
     </div>
   </section>
   </main>
+
+  <!-- Phone-only sticky bar: slides up once the hero is scrolled past (see app.js) -->
+  <div id="stickyCta" class="sq-stickybar clear-caps" aria-hidden="true">
+    <a href="start.html" class="sq-sb-main">Find my system &rarr;</a>
+    <a href="tel:+14752414486" class="sq-sb-call" aria-label="Call 475-241-4486"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 3h3l1.5 4-2 1.2a10 10 0 0 0 4.8 4.8L13 11l4 1.5v3a1.5 1.5 0 0 1-1.6 1.5A14 14 0 0 1 3 4.6 1.5 1.5 0 0 1 4.5 3z" fill="currentColor"/></svg></a>
+  </div>
 
   <!-- ================= FOOTER ================= -->
   <footer class="clear-foot" style="position: relative; background: #1C3F36; color: #F6EBD8; padding: 64px 28px 28px">

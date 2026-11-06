@@ -451,9 +451,12 @@
   $('zoomReset').addEventListener('click', function () { state.zoom = 1; render(); });
 
   /* ---------------- Hero address check ---------------- */
-  $('heroForm').addEventListener('submit', function () {
+  $('heroForm').addEventListener('submit', function (e) {
+    e.preventDefault();
     var field = $('heroAddr');
     field.value = (field.value || '').trim();
+    // Hash instead of ?address= so the value survives the clean-URL redirect on Vercel.
+    window.location.href = 'start.html' + (field.value ? '#address=' + encodeURIComponent(field.value) : '');
   });
   render();
   }
@@ -585,8 +588,31 @@
   if ($('heroAddr') && $('heroAddrList')) {
     attachAddressSuggest($('heroAddr'), $('heroAddrList'), function (item) {
       $('heroAddr').value = item.line;
-      window.location.href = 'book.html';
+      window.location.href = 'start.html#address=' + encodeURIComponent(item.line);
     });
+  }
+
+  /* ---------------- Phone sticky CTA (home page) ---------------- */
+  var stickyCta = $('stickyCta');
+  if (stickyCta) {
+    document.body.classList.add('sq-has-stickybar');
+    var hero = document.getElementById('top');
+    var stickyTick = false;
+    var stickyPaint = function () {
+      stickyTick = false;
+      var past = hero ? window.scrollY > hero.offsetHeight - 80 : window.scrollY > 400;
+      var nearForm = false;
+      var bookSec = document.getElementById('book');
+      if (bookSec) {
+        var r = bookSec.getBoundingClientRect();
+        nearForm = r.top < window.innerHeight * 0.6 && r.bottom > 0;
+      }
+      var on = past && !nearForm;
+      stickyCta.classList.toggle('is-on', on);
+      stickyCta.setAttribute('aria-hidden', String(!on));
+    };
+    window.addEventListener('scroll', function () { if (!stickyTick) { stickyTick = true; requestAnimationFrame(stickyPaint); } }, { passive: true });
+    stickyPaint();
   }
   if ($('fStreet') && $('fStreetList')) {
     attachAddressSuggest($('fStreet'), $('fStreetList'), function (item) {
@@ -600,13 +626,42 @@
     var asked = 'Hartford';
     try {
       var fromLink = new URLSearchParams(window.location.search).get('town');
-      var fromHash = (window.location.hash || '').replace(/^#town=/, '');
+      var fromHash = new URLSearchParams((window.location.hash || '').replace(/^#/, '')).get('town');
       if (fromLink) asked = fromLink;
-      if (fromHash) asked = decodeURIComponent(fromHash);
+      if (fromHash) asked = fromHash;
     } catch (err) {}
     var townSel = $('fTown');
     for (var ti = 0; ti < townSel.options.length; ti++) {
       if (townSel.options[ti].value === asked) { townSel.value = asked; break; }
     }
+  }
+
+  /* ---------------- Prefill from the water check (start.html hands off here) ---------------- */
+  if ($('bookForm')) {
+    try {
+      var qp = new URLSearchParams((window.location.hash || '').replace(/^#/, ''));
+      new URLSearchParams(window.location.search).forEach(function (v, k) { if (!qp.has(k)) qp.set(k, v); });
+      var fill = function (id, key) { var v = qp.get(key); if (v && $(id) && !$(id).value) $(id).value = v; };
+      fill('fName', 'name'); fill('fPhone', 'phone'); fill('fEmail', 'email'); fill('fStreet', 'street');
+      var pressChip = function (wrapId, label, single) {
+        if (!label || !$(wrapId)) return;
+        Array.prototype.slice.call($(wrapId).querySelectorAll('.chip')).forEach(function (b) {
+          var hit = b.textContent.trim() === label;
+          if (hit) b.setAttribute('aria-pressed', 'true');
+          else if (single) b.setAttribute('aria-pressed', 'false');
+        });
+      };
+      pressChip('interests', qp.get('interest'), false);
+      pressChip('slots', qp.get('slot'), true);
+      if (qp.get('src') === 'quiz') {
+        var h = document.querySelector('.book-title');
+        var nm = (qp.get('name') || '').split(' ')[0];
+        if (h && nm) h.innerHTML = 'Last step, ' + nm.replace(/[&<>"']/g, '') + '. <span class="clear-script" style="color: #3E8F74; font-size: 1.15em">Pick a time.</span>';
+        var plan = qp.get('plan');
+        var hid = document.createElement('input');
+        hid.type = 'hidden'; hid.name = 'quiz_plan'; hid.value = plan || '';
+        $('bookForm').appendChild(hid);
+      }
+    } catch (err) {}
   }
 })();

@@ -24,6 +24,35 @@ Everything works offline except the Google Fonts, which load from the internet.
 | `data/ct-towns.geojson` | Same towns as real lat/lng GeoJSON with water-profile properties — use this for Mapbox |
 | `data/ct-water-towns.json` | Full town dataset: population, public water systems, sources and method notes |
 
+## Run it locally (phone + desktop)
+
+```bash
+npm install        # once
+npm run dev        # serves the folder at http://localhost:3000
+```
+
+No Node? `python3 -m http.server 3000` from this folder does the same job.
+
+To open it on your phone: make sure the phone is on the same Wi-Fi, find the computer's LAN address (`ipconfig getifaddr en0` on a Mac, `ipconfig` on Windows), and visit `http://<that-address>:3000/start.html` on the phone. Chrome DevTools device mode (Cmd/Ctrl+Shift+M, pick "iPhone") is the quick alternative.
+
+## The water check (`start.html`)
+
+A mobile-first intake quiz modeled on the Hims & Hers "assessment" funnel: one question per screen, big tap targets, auto-advance on single answers, progress bar, an information break that shows the town's real water data, contact capture right before the result, then one personalized recommendation and the booking handoff.
+
+| File | What it is |
+|---|---|
+| `start.html` | The page. Loads `quiz.css` + `quiz.js` and the town water data. |
+| `quiz.js` | Question bank, branching, scoring, the town report, the result, and the lead handoff. All copy lives here. |
+| `quiz.css` | Scoped under `.sq` so it can't restyle the rest of the site. Also holds the phone sticky bar on the home page. |
+
+**Flow:** intro → first name → symptoms (multi) → well or city → town → *town report* → who drinks it → own/rent → existing treatment → what to fix → timeline → *building your plan* → phone + email → result (Essential / Soft / Complete / Kitchen tap RO / Free test first) → `book.html` prefilled.
+
+**Entry points:** hero address bar on the home page, the "Find my system" buttons, and a phone-only sticky bar that slides up once the hero scrolls away. Deep links: `start.html#address=...`, `start.html#town=Guilford`, `start.html#source=well`, add `&restart=1` to clear a saved session. Hashes, not `?query=`, because Vercel's `cleanUrls` redirect drops a query string.
+
+**Leads:** every finished quiz is stored in the browser under `localStorage["sunday_quiz_leads"]` (open DevTools → Application → Local Storage to see them while testing). To send them somewhere real, set `window.SUNDAY_LEAD_ENDPOINT` in `start.html` to a Formspree, Zapier catch-hook, Supabase or CRM URL; the quiz POSTs one JSON object per lead (`name, phone, email, town, street, answers, recommended`). The booking form on `book.html` also receives the quiz answers in the URL hash and a hidden `quiz_plan` field.
+
+**Knobs in `quiz.js` → `CONFIG`:** `showPrices` (off until the plan prices are set; fill the `$[X,XXX]` placeholders in `PLANS`), `phone`, `bookUrl`. The recommendation rules are in `recommend()`, the question order is the `steps` array.
+
 ## Brand
 
 - Navy `#14244D` · Cream `#FFF6EA` · Sun `#FFD978` · Blue `#2350D8`
