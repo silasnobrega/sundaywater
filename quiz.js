@@ -284,7 +284,7 @@
       if (has('chlorine') || has('sulfur') || has('sed')) plan = hard ? P.complete : P.essential;
       else plan = has('both') ? P.essential : P.sink;
       if (plan === P.essential || plan === P.complete) why.push('The taste you’re describing is at every faucet, so the fix goes at the main line. Carbon takes chlorine and odor out of the water you drink, cook with and shower in.');
-      if (plan === P.sink) why.push('Flat or off tastes are usually a drinking-water problem, so we start where you drink it: reverse osmosis at the kitchen tap.');
+      if (plan === P.sink && taste) why.push('Flat or off tastes are usually a drinking-water problem, so we start where you drink it: reverse osmosis at the kitchen tap.');
       if (health && !taste) why.push('You can\u2019t taste PFAS, lead or nitrates. Reverse osmosis is the stage that takes them out, and the test tells you whether they\u2019re there to begin with.');
       if (has('bottled')) why.push('A case a week is the workaround. The system is the fix, and it’s the last time you think about it.');
       if (has('sulfur')) alt = 'Rotten egg is sulfur, and it’s usually a well. The test confirms the level, because the treatment stage depends on it.';
