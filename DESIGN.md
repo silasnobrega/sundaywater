@@ -7,15 +7,21 @@ Googie signage, Saul Bass restraint, a New England town's water-company brochure
 domestic, a little proud. The site should feel **printed**, not rendered.
 
 ## Paper and ink
-- **Paper** is warm cream (`--paper #FBF6EE`, `--cream #F6EBD8`) with faint grain. No grid, no gradients-for-depth.
-- **Ink** is forest green (`--ink #1C3F36`), never black. Hairline rules (1–1.5px) do the structural work.
+- **Paper** is cream `#F3EDDC` with faint grain. Cards sit a shade lighter (`--card #FAF6EA`). No grid, no gradients-for-depth.
+- **Ink** is black-teal `#0E2E2C`, never black. Hairline rules (1–1.5px) do the structural work.
 - Dark panels get a **halftone dot screen** at low alpha. Light panels get grain.
 
-## Color
-- **Seafoam** (`--seafoam #3E8F74`) is the brand color: section fields, the plate, large panels. Mint (`--mint #A9D4C4`) is its tint.
-- **Butter yellow** (`--butter #F2D06B`) is *emphasis*: the active card, the primary button, a highlight, a starburst. Used like a highlighter — one place per view.
-- **Tomato** (`--tomato #D9593D`) is the rust villain's color. Alerts and at most one accent per page.
-- Navy is retired. If something needs to be dark, it's ink.
+## Color (the brand palette)
+| Role | Name | Hex |
+|---|---|---|
+| Brand / paint | Seafoam | `#8FC9B5` (big fields; the truck goes brighter) |
+| Background / paper | Cream | `#F3EDDC` |
+| Text / ink / dark panels | Black-teal | `#0E2E2C` |
+| Accent / CTA | Brick red | `#B6432F` |
+
+- **Brick** is the only accent: the primary button, the active card, the selected answer, the starburst, the progress fill. Anything on brick reads in cream.
+- **Seafoam** is paint, not text. For labels and script accents on cream use the deeper `--seafoam-deep #3E8F74` so it stays legible.
+- Map data colors (mint / straw / coral) are categorical and stay as they are.
 
 ## Type
 - **Headlines:** Archivo, condensed (`font-stretch: 75%`), 800, caps, letterspaced `.02em`. Poster/ad headlines. Big.

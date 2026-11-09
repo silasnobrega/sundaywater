@@ -196,7 +196,7 @@
         return '<p class="sq-eyebrow clear-caps">Your town</p>' +
           '<h2 class="sq-q clear-display">Which Connecticut town is the <span class="clear-script">home in?</span></h2>' +
           '<p class="sq-help">We’ll pull what’s on record for that town’s water before you go any further.</p>' +
-          '<div class="sq-field"><label for="sqTown" class="clear-caps">Town</label><div class="sq-selwrap"><select id="sqTown">' + opts + '</select><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="#1C3F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="sq-err">Pick the town to keep going.</span></div>';
+          '<div class="sq-field"><label for="sqTown" class="clear-caps">Town</label><div class="sq-selwrap"><select id="sqTown">' + opts + '</select><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="#0E2E2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="sq-err">Pick the town to keep going.</span></div>';
       },
       valid: function () { return !!state.a.town; },
       read: function () { state.a.town = $('sqTown').value; },
@@ -373,7 +373,7 @@
       '<div class="sq-town-head">' + esc(lead) + '</div>' +
       '<p class="sq-town-body">' + esc(well ? 'No community system reports on a private well. The only numbers that exist for your water are the ones a test produces at your tap.' : prof.body) + '</p>' +
       rows +
-      '<p class="clear-caps" style="font-size:12px;margin:6px 0 0;color:rgba(246,235,216,.75)">A Sunday test in ' + esc(t) + ' checks for</p>' +
+      '<p class="clear-caps" style="font-size:12px;margin:6px 0 0;color:rgba(243,237,220,.75)">A Sunday test in ' + esc(t) + ' checks for</p>' +
       '<ul class="sq-town-checks">' + prof.checks.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + (well || info.profile !== 'M' ? '' : '<li>PFAS</li>') + '</ul>' +
       '<p class="sq-town-src">Source: EPA SDWIS, CT DPH, utility water quality reports.</p>' +
       '</div>' +
@@ -386,7 +386,7 @@
     var a = arch();
     var art = p.image
       ? '<img src="' + esc(p.image) + '" alt="' + esc(p.alt) + '" width="104" height="104">'
-      : '<span class="sq-result-ic" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 56 56"><path d="M28 6c-7 11-15 19-15 29a15 15 0 0 0 30 0c0-10-8-18-15-29z" fill="#3E8F74" stroke="#1C3F36" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 36a7 7 0 0 0 7 7" fill="none" stroke="#F6EBD8" stroke-width="2.5" stroke-linecap="round"/></svg></span>';
+      : '<span class="sq-result-ic" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 56 56"><path d="M28 6c-7 11-15 19-15 29a15 15 0 0 0 30 0c0-10-8-18-15-29z" fill="#3E8F74" stroke="#0E2E2C" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 36a7 7 0 0 0 7 7" fill="none" stroke="#F3EDDC" stroke-width="2.5" stroke-linecap="round"/></svg></span>';
     var slots = ['Weekday morning', 'Weekday afternoon', 'Weekday evening', 'Saturday'];
     var isTest = p === MAP.plans.test;
     // A renter keeps the identity but the fix moves to the kitchen tap; the archetype's lead would contradict the plan.

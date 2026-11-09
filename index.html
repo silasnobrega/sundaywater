@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=96">
-  <link rel="stylesheet" href="quiz.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=97">
+  <link rel="stylesheet" href="quiz.css?v=8">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
   <script>
@@ -24,7 +24,7 @@
       } catch (e) {}
     })();
   </script>
-  <script src="app.js?v=33" defer></script>
+  <script src="app.js?v=34" defer></script>
   <script src="drop.js?v=2" defer></script>
 </head>
 <body>
@@ -48,23 +48,23 @@
             <a href="about.html" class="clear-navlink" style="text-decoration: none; color: #fff; min-height: 44px; display: inline-flex; align-items: center">About</a>
             <a href="tel:+14752414486" class="clear-btn" style="text-decoration: none; background: var(--ink); color: #fff; padding: 0 18px; border-radius: var(--r-btn); min-height: 44px; display: inline-flex; align-items: center; white-space: nowrap">475-241-4486</a>
           </div>
-          <a href="book.html" class="clear-caps clear-btn btn-butter clear-navbook" style="text-decoration: none; background: #1C3F36; color: #F6EBD8; padding: 0 22px; border-radius: var(--r-btn); min-height: 44px; display: inline-flex; align-items: center; font-size: 16px">Test my water</a>
-          <button type="button" id="menuBtn" class="clear-menubtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" style="width: 48px; height: 48px; border: 2px solid #1C3F36; border-radius: var(--r-btn); background: #F6EBD8; color: #1C3F36; cursor: pointer; padding: 0; box-shadow: var(--shadow)">
+          <a href="book.html" class="clear-caps clear-btn btn-butter clear-navbook" style="text-decoration: none; background: #0E2E2C; color: #F3EDDC; padding: 0 22px; border-radius: var(--r-btn); min-height: 44px; display: inline-flex; align-items: center; font-size: 16px">Test my water</a>
+          <button type="button" id="menuBtn" class="clear-menubtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" style="width: 48px; height: 48px; border: 2px solid #0E2E2C; border-radius: var(--r-btn); background: #F3EDDC; color: #0E2E2C; cursor: pointer; padding: 0; box-shadow: var(--shadow)">
             <svg id="iconOpen" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 6h12M3 12h12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
             <svg id="iconClose" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" hidden><path d="M4.5 4.5l9 9M13.5 4.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
           </button>
         </div>
       </nav>
-      <div id="menu" class="clear-menusheet clear-sticker clear-caps" hidden style="position: absolute; left: 16px; right: 16px; top: calc(100% + 10px); background: #F6EBD8; color: #1C3F36; border-radius: 22px; padding: 10px; gap: 4px; font-size: 20px">
+      <div id="menu" class="clear-menusheet clear-sticker clear-caps" hidden style="position: absolute; left: 16px; right: 16px; top: calc(100% + 10px); background: #F3EDDC; color: #0E2E2C; border-radius: 22px; padding: 10px; gap: 4px; font-size: 20px">
         <a href="start.html" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Water check</a>
       <a href="#map" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Water map</a>
         <a href="#filtration" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Filtration</a>
         <a href="#pricing" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">Systems</a>
         <a href="about.html" style="text-decoration: none; padding: 0 14px; min-height: 52px; display: flex; align-items: center; border-radius: 14px">About</a>
         <div class="menu-actions" style="display: flex; flex-direction: column; gap: 8px; padding: 8px 4px 4px">
-          <a href="start.html" class="clear-caps btn-butter" style="text-decoration: none; background: #1C3F36; color: #F6EBD8; border-radius: var(--r-btn); min-height: 52px; display: flex; align-items: center; justify-content: center; font-size: 16px; border: 1.5px solid var(--ink)">Find my system &rarr;</a>
-          <a href="book.html" class="clear-caps" style="text-decoration: none; background: #F6EBD8; color: #1C3F36; border-radius: var(--r-btn); min-height: 50px; display: flex; align-items: center; justify-content: center; font-size: 15px; border: 1.5px solid var(--ink)">Book the free test</a>
-          <a href="tel:+14752414486" class="clear-caps" style="text-decoration: none; background: #1C3F36; color: #F6EBD8; border-radius: var(--r-btn); min-height: 50px; display: flex; align-items: center; justify-content: center; font-size: 15px; border: 1.5px solid var(--ink)">Call 475-241-4486</a>
+          <a href="start.html" class="clear-caps btn-butter" style="text-decoration: none; background: #0E2E2C; color: #F3EDDC; border-radius: var(--r-btn); min-height: 52px; display: flex; align-items: center; justify-content: center; font-size: 16px; border: 1.5px solid var(--ink)">Find my system &rarr;</a>
+          <a href="book.html" class="clear-caps" style="text-decoration: none; background: #F3EDDC; color: #0E2E2C; border-radius: var(--r-btn); min-height: 50px; display: flex; align-items: center; justify-content: center; font-size: 15px; border: 1.5px solid var(--ink)">Book the free test</a>
+          <a href="tel:+14752414486" class="clear-caps" style="text-decoration: none; background: #0E2E2C; color: #F3EDDC; border-radius: var(--r-btn); min-height: 50px; display: flex; align-items: center; justify-content: center; font-size: 15px; border: 1.5px solid var(--ink)">Call 475-241-4486</a>
         </div>
       </div>
     </header>
@@ -78,21 +78,21 @@
         <p class="hero-lede">You read the labels on your food. You care about what goes into your home. Why should your water be any different?</p>
         <p class="hero-lede hero-promise">Simple, dependable water filtration for Connecticut families who want to feel good about every glass.</p>
       </div>
-      <form id="heroForm" action="start.html" method="get" class="clear-search clear-sticker sunday-in-3" style="position: relative; z-index: 30; width: min(620px, 100%); display: flex; flex-wrap: wrap; gap: 8px; padding: 8px; border-radius: var(--r-btn); background: #F6EBD8; box-shadow: var(--shadow)">
+      <form id="heroForm" action="start.html" method="get" class="clear-search clear-sticker sunday-in-3" style="position: relative; z-index: 30; width: min(620px, 100%); display: flex; flex-wrap: wrap; gap: 8px; padding: 8px; border-radius: var(--r-btn); background: #F3EDDC; box-shadow: var(--shadow)">
         <label for="heroAddr" class="visually-hidden">Street address and town</label>
-        <input id="heroAddr" name="address" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="heroAddrList" autocomplete="off" spellcheck="false" placeholder="123 Main St, Glastonbury" style="flex: 1 1 220px; min-width: 0; border: 0; outline: none; font: inherit; font-weight: 600; font-size: 17px; padding: 12px 20px; color: #1C3F36; background: transparent; min-height: 50px; border-radius: var(--r-btn)">
+        <input id="heroAddr" name="address" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="heroAddrList" autocomplete="off" spellcheck="false" placeholder="123 Main St, Glastonbury" style="flex: 1 1 220px; min-width: 0; border: 0; outline: none; font: inherit; font-weight: 600; font-size: 17px; padding: 12px 20px; color: #0E2E2C; background: transparent; min-height: 50px; border-radius: var(--r-btn)">
         <ul id="heroAddrList" class="addr-suggest" role="listbox" aria-label="Address suggestions" hidden></ul>
-        <button type="submit" class="clear-caps clear-btn btn-butter" style="flex: 0 0 auto; background: #1C3F36; color: #F6EBD8; border: 0; border-radius: var(--r-btn); font: inherit; font-size: 17px; padding: 12px 28px; cursor: pointer; min-height: 52px; display: inline-flex; align-items: center; text-decoration: none">Check my water</button>
+        <button type="submit" class="clear-caps clear-btn btn-butter" style="flex: 0 0 auto; background: #0E2E2C; color: #F3EDDC; border: 0; border-radius: var(--r-btn); font: inherit; font-size: 17px; padding: 12px 28px; cursor: pointer; min-height: 52px; display: inline-flex; align-items: center; text-decoration: none">Check my water</button>
       </form>
-      <p class="sunday-in-3" style="position: relative; z-index: 20; margin: 14px 0 0; font-size: 14px; font-weight: 600; color: #FBF6EE; text-shadow: 0 1px 2px rgba(16,40,34,.9), 0 2px 14px rgba(16,40,34,.7)">90 seconds. Two questions sort you. Then the one system that fits your tap.</p>
+      <p class="sunday-in-3" style="position: relative; z-index: 20; margin: 14px 0 0; font-size: 14px; font-weight: 600; color: #F3EDDC; text-shadow: 0 1px 2px rgba(14,46,44,.9), 0 2px 14px rgba(14,46,44,.7)">90 seconds. Two questions sort you. Then the one system that fits your tap.</p>
     </div>
       <svg class="hero-seal" viewBox="0 0 160 160" aria-hidden="true">
         <defs><path id="sealArc" d="M80,80 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
-        <circle cx="80" cy="80" r="76" fill="#F6EBD8" stroke="#1C3F36" stroke-width="2"/>
-        <circle cx="80" cy="80" r="68" fill="none" stroke="#1C3F36" stroke-width="1"/>
-        <text class="hero-seal-text" font-size="12" letter-spacing="2.6" fill="#1C3F36"><textPath href="#sealArc" textLength="362" lengthAdjust="spacing">FREE IN-HOME WATER TEST  ·  LICENSED CT PLUMBERS  ·</textPath></text>
-        <path d="M80 52c-9 14-19 24-19 36a19 19 0 0 0 38 0c0-12-10-22-19-36z" fill="#3E8F74" stroke="#1C3F36" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M71 90a9 9 0 0 0 9 9" fill="none" stroke="#F6EBD8" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="80" cy="80" r="76" fill="#F3EDDC" stroke="#0E2E2C" stroke-width="2"/>
+        <circle cx="80" cy="80" r="68" fill="none" stroke="#0E2E2C" stroke-width="1"/>
+        <text class="hero-seal-text" font-size="12" letter-spacing="2.6" fill="#0E2E2C"><textPath href="#sealArc" textLength="362" lengthAdjust="spacing">FREE IN-HOME WATER TEST  ·  LICENSED CT PLUMBERS  ·</textPath></text>
+        <path d="M80 52c-9 14-19 24-19 36a19 19 0 0 0 38 0c0-12-10-22-19-36z" fill="#3E8F74" stroke="#0E2E2C" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M71 90a9 9 0 0 0 9 9" fill="none" stroke="#F3EDDC" stroke-width="2.4" stroke-linecap="round"/>
       </svg>
     <a class="hero-scroll clear-caps" href="#problem"><span>Scroll down</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6.2 8 11l5-4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </section>
@@ -151,20 +151,20 @@
         <p style="font-size: 18px; line-height: 1.5; color: #3D564C; margin: 0; max-width: 380px">About 1 in 4 people in Connecticut drink from a private well that no utility tests. Find out where your town stands.</p>
       </div>
 
-      <div class="clear-sticker clear-mapcard" style="background: #F6EBD8; border-radius: 30px; padding: 14px; display: flex; flex-wrap: wrap; gap: 14px; box-shadow: var(--shadow)">
+      <div class="clear-sticker clear-mapcard" style="background: #F3EDDC; border-radius: 30px; padding: 14px; display: flex; flex-wrap: wrap; gap: 14px; box-shadow: var(--shadow)">
         <!-- Town panel -->
-        <div class="clear-panel" style="flex: 1 1 320px; min-width: 0; background: #1C3F36; color: #F6EBD8; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+        <div class="clear-panel" style="flex: 1 1 320px; min-width: 0; background: #0E2E2C; color: #F3EDDC; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
           <div>
-            <label for="townSelect" class="clear-caps" style="display: block; font-size: 13px; color: #F6EBD8; margin-bottom: 10px">Your town</label>
+            <label for="townSelect" class="clear-caps" style="display: block; font-size: 13px; color: #F3EDDC; margin-bottom: 10px">Your town</label>
             <div style="position: relative">
-              <select id="townSelect" class="clear-dark-field" style="appearance: none; -webkit-appearance: none; width: 100%; font: inherit; font-size: 18px; font-weight: 700; padding: 13px 44px 13px 16px; border-radius: 14px; border: 2px solid rgba(255,246,234,.35); background: rgba(255,246,234,.08); color: #F6EBD8; min-height: 52px; cursor: pointer"></select>
-              <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); pointer-events: none"><path d="M3 5l4 4 4-4" fill="none" stroke="#F6EBD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <select id="townSelect" class="clear-dark-field" style="appearance: none; -webkit-appearance: none; width: 100%; font: inherit; font-size: 18px; font-weight: 700; padding: 13px 44px 13px 16px; border-radius: 14px; border: 2px solid rgba(243,237,220,.35); background: rgba(243,237,220,.08); color: #F3EDDC; min-height: 52px; cursor: pointer"></select>
+              <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); pointer-events: none"><path d="M3 5l4 4 4-4" fill="none" stroke="#F3EDDC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
           </div>
           <p id="addrMsg" role="status" hidden style="margin: 0; font-size: 14px"></p>
           <div id="badge" class="clear-caps badge" style="background: #A9D4C4">Public water</div>
           <div id="panelHeadline" style="font-weight: 800; font-size: 26px; line-height: 1.1; letter-spacing: -0.01em">Your utility tests the plant. Not your tap.</div>
-          <p id="panelExplainer" style="margin: 0; font-size: 15px; line-height: 1.55; color: rgba(255,246,234,.84)"></p>
+          <p id="panelExplainer" style="margin: 0; font-size: 15px; line-height: 1.55; color: rgba(243,237,220,.84)"></p>
           <div class="panel-block">
             <p class="clear-caps panel-checks-label">What we’d test for in <span id="panelTownChecks">Hartford</span></p>
             <ul id="panelChecks" class="panel-checks"></ul>
@@ -175,17 +175,17 @@
             <div id="panelMeterTrack" class="panel-finding-track" role="meter" aria-valuemin="0" aria-valuemax="200" aria-valuenow="0"><span id="panelMeterFill" class="panel-finding-fill"></span><span class="panel-finding-limit" aria-hidden="true"></span></div>
           </div>
           <a id="panelBook" href="book.html#town=Hartford" class="clear-caps clear-btn btn-butter" style="margin-top: auto; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--ink); color: #fff; text-decoration: none; border-radius: var(--r-btn); padding: 14px 18px; min-height: 52px; font-size: 16px"><span>Test my tap in <span id="panelTown">Hartford</span></span></a>
-          <p style="margin: 0; font-size: 12px; color: rgba(255,246,234,.62)">Source: EPA Safe Drinking Water Information System; CT DPH.</p>
+          <p style="margin: 0; font-size: 12px; color: rgba(243,237,220,.62)">Source: EPA Safe Drinking Water Information System; CT DPH.</p>
         </div>
 
         <!-- Map -->
         <div class="clear-mapcol" style="flex: 999 1 520px; min-width: 0; padding: 8px; display: flex; flex-direction: column; gap: 12px">
           <div class="clear-caps clear-legend" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px">
-            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 2px solid #1C3F36; background: #FFFFFF"><span style="width: 12px; height: 12px; border-radius: 50%; background: #A9D4C4; border: 1.5px solid #1C3F36" aria-hidden="true"></span>Public system present</span>
-            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 2px solid #1C3F36; background: #FFFFFF"><span style="width: 12px; height: 12px; border-radius: 50%; background: #E4C56A; border: 1.5px solid #1C3F36" aria-hidden="true"></span>Small systems only</span>
-            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 2px solid #1C3F36; background: #FFFFFF"><span style="width: 12px; height: 12px; border-radius: 50%; background: #E07A62; border: 1.5px solid #1C3F36" aria-hidden="true"></span>Likely private wells</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 2px solid #0E2E2C; background: #FFFFFF"><span style="width: 12px; height: 12px; border-radius: 50%; background: #A9D4C4; border: 1.5px solid #0E2E2C" aria-hidden="true"></span>Public system present</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 2px solid #0E2E2C; background: #FFFFFF"><span style="width: 12px; height: 12px; border-radius: 50%; background: #E4C56A; border: 1.5px solid #0E2E2C" aria-hidden="true"></span>Small systems only</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 2px solid #0E2E2C; background: #FFFFFF"><span style="width: 12px; height: 12px; border-radius: 50%; background: #E07A62; border: 1.5px solid #0E2E2C" aria-hidden="true"></span>Likely private wells</span>
           </div>
-          <div style="position: relative; width: 100%; aspect-ratio: 640 / 491; border-radius: 20px; overflow: hidden; background: #3E8F74; border: 2px solid #1C3F36">
+          <div style="position: relative; width: 100%; aspect-ratio: 640 / 491; border-radius: 20px; overflow: hidden; background: #3E8F74; border: 2px solid #0E2E2C">
             <svg viewBox="0 0 640 491.4" class="clear-map" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block" role="img" aria-label="Map of Connecticut's 169 towns, shaded by water profile. Use the town list to choose a town with the keyboard.">
               <g id="mapZoom" class="map-zoom">
                 <g id="mapCtx" class="map-ctx"></g>
@@ -194,21 +194,21 @@
                 <path id="selLine" class="sel-line" d=""/>
               </g>
             </svg>
-            <div id="mapStatus" class="clear-caps" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; font-size: 15px; color: #F6EBD8">Loading Connecticut…</div>
+            <div id="mapStatus" class="clear-caps" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; font-size: 15px; color: #F3EDDC">Loading Connecticut…</div>
             <div id="selLabel" class="sel-label" aria-hidden="true" hidden>
-              <span style="width: 12px; height: 12px; border-radius: 50%; background: #F6EBD8; border: 2.5px solid #1C3F36"></span>
-              <span id="selLabelText" class="clear-caps" style="background: #F6EBD8; color: #1C3F36; font-size: 13px; padding: 5px 11px; border-radius: 999px; border: 2px solid #1C3F36; white-space: nowrap; box-shadow: var(--shadow)"></span>
+              <span style="width: 12px; height: 12px; border-radius: 50%; background: #F3EDDC; border: 2.5px solid #0E2E2C"></span>
+              <span id="selLabelText" class="clear-caps" style="background: #F3EDDC; color: #0E2E2C; font-size: 13px; padding: 5px 11px; border-radius: 999px; border: 2px solid #0E2E2C; white-space: nowrap; box-shadow: var(--shadow)"></span>
             </div>
             <div id="hoverTip" class="hover-tip" aria-hidden="true" hidden>
               <div id="hoverName" style="font-weight: 800; font-size: 14px"></div>
               <div id="hoverBadge" style="font-size: 12px; color: #3D564C; margin-top: 2px"></div>
             </div>
-            <div class="map-zooms" style="position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; background: #F6EBD8; border: 2px solid #1C3F36; box-shadow: var(--shadow)">
+            <div class="map-zooms" style="position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; background: #F3EDDC; border: 2px solid #0E2E2C; box-shadow: var(--shadow)">
               <button type="button" id="zoomIn" class="zoom-btn" aria-label="Zoom in"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
               <button type="button" id="zoomOut" class="zoom-btn" aria-label="Zoom out"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
               <button type="button" id="zoomReset" class="zoom-btn" aria-label="Show all of Connecticut"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
             </div>
-            <div class="clear-script map-sound" style="position: absolute; left: 18px; bottom: 10px; font-size: 22px; color: #F6EBD8; pointer-events: none">Long Island Sound</div>
+            <div class="clear-script map-sound" style="position: absolute; left: 18px; bottom: 10px; font-size: 22px; color: #F3EDDC; pointer-events: none">Long Island Sound</div>
           </div>
           <p style="font-size: 12px; color: #5A6E64; margin: 0">Tap any town, or pick one from the list. Boundaries: U.S. Census Bureau. Water profiles: EPA SDWIS.</p>
         </div>
@@ -222,7 +222,7 @@
       <div class="stage-pin-inner">
         <div class="mascot-filtration stage-head">
           <div class="stage-head-copy">
-            <div class="clear-caps eyebrow" style="font-size: 14px; color: #F6EBD8">How filtration works</div>
+            <div class="clear-caps eyebrow" style="font-size: 14px; color: #F3EDDC">How filtration works</div>
             <h2 class="clear-display" style="text-shadow: none">Follow a <span class="clear-script" style="color: #fff; font-size: 1.15em; text-shadow: none">drop</span> through your home.</h2>
             <p>Each stage catches something different. Scroll, and watch what gets left behind.</p>
           </div>
@@ -232,17 +232,17 @@
           <img class="drop-poster" src="assets/drop/plate.jpg" width="1344" height="576" alt="Cross-section of a Connecticut house: water comes in from the main carrying rust, chlorine and minerals, passes a sediment filter, a carbon filter and a softener, then reverse osmosis under the kitchen sink, and ends up clear in a glass.">
           <canvas id="dropCanvas" aria-hidden="true"></canvas>
         </div>
-        <div class="stage-meter" style="height: 18px; border-radius: 999px; margin-bottom: 26px; padding: 3px; background: rgba(255,246,234,.18); border: 2px solid #1C3F36" aria-hidden="true">
+        <div class="stage-meter" style="height: 18px; border-radius: 999px; margin-bottom: 26px; padding: 3px; background: rgba(243,237,220,.18); border: 2px solid #0E2E2C" aria-hidden="true">
           <div id="progressFill" class="progress-fill"></div>
         </div>
         <div id="stages" class="clear-rail" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px"></div>
       </div>
     </div>
     <svg class="stage-wave stage-wave-top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 0 L1440 0 L1440 22 C 1260 52, 1080 52, 900 26 S 540 0, 360 24 S 120 50, 0 30 Z" fill="#FBF6EE"/>
+      <path d="M0 0 L1440 0 L1440 22 C 1260 52, 1080 52, 900 26 S 540 0, 360 24 S 120 50, 0 30 Z" fill="#F3EDDC"/>
     </svg>
     <svg class="stage-wave stage-wave-bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 30 C 180 6, 360 6, 540 28 S 900 56, 1080 30 S 1350 8, 1440 24 L1440 60 L0 60 Z" fill="#FBF6EE"/>
+      <path d="M0 30 C 180 6, 360 6, 540 28 S 900 56, 1080 30 S 1350 8, 1440 24 L1440 60 L0 60 Z" fill="#F3EDDC"/>
     </svg>
   </section>
 
@@ -255,26 +255,26 @@
         <p style="font-size: 18px; line-height: 1.5; color: #3D564C; margin: 0">A free test shows which one fits. The price comes after you see your water.</p>
       </div>
       <div class="systems-row">
-        <div class="clear-sticker clear-card" style="background: #F6EBD8; border-radius: 26px; padding: 18px 18px 28px; display: flex; flex-direction: column; gap: 14px">
+        <div class="clear-sticker clear-card" style="background: #F3EDDC; border-radius: 26px; padding: 18px 18px 28px; display: flex; flex-direction: column; gap: 14px">
           <img class="price-art" src="assets/price-essential.png" alt="A blue sediment filter beside two whole-house tanks" width="343" height="369">
           <div class="clear-display" style="font-size: 28px">Essential</div>
           <div style="font-size: 15px; color: #3D564C">Whole-house sediment + carbon filter</div>
           <p class="card-fit"><span class="clear-caps">Good if</span> the water looks rusty, gritty, or tastes like chlorine.</p>
-          <ul style="margin: 0; padding: 16px 0 0; border-top: 2px dashed rgba(20,36,77,.25); list-style: none; display: flex; flex-direction: column; gap: 11px; font-size: 15px; font-weight: 600">
+          <ul style="margin: 0; padding: 16px 0 0; border-top: 2px dashed rgba(14,46,44,.25); list-style: none; display: flex; flex-direction: column; gap: 11px; font-size: 15px; font-weight: 600">
             <li>Cuts sediment and chlorine taste</li>
             <li>Good fit for well sediment</li>
             <li>Licensed CT plumber install</li>
           </ul>
           <p class="offer-chip">Free test for sediment, iron, and chlorine</p>
-          <a href="book.html" class="clear-caps clear-btn btn-paper" style="margin-top: auto; display: flex; justify-content: center; align-items: center; background: #1C3F36; color: #F6EBD8; text-decoration: none; border-radius: var(--r-btn); padding: 14px; min-height: 52px; font-size: 16px">Test my water</a>
+          <a href="book.html" class="clear-caps clear-btn btn-paper" style="margin-top: auto; display: flex; justify-content: center; align-items: center; background: #0E2E2C; color: #F3EDDC; text-decoration: none; border-radius: var(--r-btn); padding: 14px; min-height: 52px; font-size: 16px">Test my water</a>
         </div>
-        <div class="clear-sticker clear-card clear-featured" style="background: #1C3F36; color: #F6EBD8; border-radius: 26px; padding: 18px 18px 28px; display: flex; flex-direction: column; gap: 14px">
+        <div class="clear-sticker clear-card clear-featured" style="background: #0E2E2C; color: #F3EDDC; border-radius: 26px; padding: 18px 18px 28px; display: flex; flex-direction: column; gap: 14px">
           <img class="price-art" src="assets/price-soft.png" alt="A water softener tank beside a brine tank" width="314" height="396">
           <span class="system-flag clear-caps">Most popular</span>
           <div class="clear-display" style="font-size: 28px">Soft</div>
-          <div style="font-size: 15px; color: rgba(255,246,234,.85)">Whole-house water softener</div>
+          <div style="font-size: 15px; color: rgba(243,237,220,.85)">Whole-house water softener</div>
           <p class="card-fit"><span class="clear-caps">Good if</span> glass spots, faucets scale up, or laundry feels stiff.</p>
-          <ul style="margin: 0; padding: 16px 0 0; border-top: 2px dashed rgba(255,246,234,.3); list-style: none; display: flex; flex-direction: column; gap: 11px; font-size: 15px; font-weight: 600">
+          <ul style="margin: 0; padding: 16px 0 0; border-top: 2px dashed rgba(243,237,220,.3); list-style: none; display: flex; flex-direction: column; gap: 11px; font-size: 15px; font-weight: 600">
             <li>Stops scale on fixtures and heaters</li>
             <li>Softer skin, hair and laundry</li>
             <li>Licensed CT plumber install</li>
@@ -282,18 +282,18 @@
           <p class="offer-chip">Free hardness test before a softener</p>
           <a href="book.html" class="clear-caps clear-btn btn-butter" style="margin-top: auto; display: flex; justify-content: center; align-items: center; background: var(--ink); color: #fff; text-decoration: none; border-radius: var(--r-btn); padding: 14px; min-height: 52px; font-size: 16px">Test my water</a>
         </div>
-        <div class="clear-sticker clear-card" style="background: #F6EBD8; border-radius: 26px; padding: 18px 18px 28px; display: flex; flex-direction: column; gap: 14px">
+        <div class="clear-sticker clear-card" style="background: #F3EDDC; border-radius: 26px; padding: 18px 18px 28px; display: flex; flex-direction: column; gap: 14px">
           <img class="price-art" src="assets/price-complete.png" alt="Filters, a softener, and a brine tank together" width="373" height="347">
           <div class="clear-display" style="font-size: 28px">Complete</div>
           <div style="font-size: 15px; color: #3D564C">Softener + reverse osmosis at the kitchen tap</div>
           <p class="card-fit"><span class="clear-caps">Good if</span> you want soft water through the house and drinking water at the sink.</p>
-          <ul style="margin: 0; padding: 16px 0 0; border-top: 2px dashed rgba(20,36,77,.25); list-style: none; display: flex; flex-direction: column; gap: 11px; font-size: 15px; font-weight: 600">
+          <ul style="margin: 0; padding: 16px 0 0; border-top: 2px dashed rgba(14,46,44,.25); list-style: none; display: flex; flex-direction: column; gap: 11px; font-size: 15px; font-weight: 600">
             <li>Everything in Soft</li>
             <li>RO drinking water at the sink</li>
             <li>Licensed CT plumber install</li>
           </ul>
           <p class="offer-chip">Free test of the tap, then a sink filter only if the water needs it</p>
-          <a href="book.html" class="clear-caps clear-btn btn-paper" style="margin-top: auto; display: flex; justify-content: center; align-items: center; background: #1C3F36; color: #F6EBD8; text-decoration: none; border-radius: var(--r-btn); padding: 14px; min-height: 52px; font-size: 16px">Test my water</a>
+          <a href="book.html" class="clear-caps clear-btn btn-paper" style="margin-top: auto; display: flex; justify-content: center; align-items: center; background: #0E2E2C; color: #F3EDDC; text-decoration: none; border-radius: var(--r-btn); padding: 14px; min-height: 52px; font-size: 16px">Test my water</a>
         </div>
       </div>
       <p style="text-align: center; font-size: 13px; color: #5A6E64; margin: 28px 0 0">You can cancel any in-home agreement until midnight of the third business day.</p>
@@ -308,25 +308,25 @@
         <h2 class="clear-display" style="font-size: clamp(38px, 5.2vw, 72px); margin: 12px 0 18px">Test first. <span class="clear-script" style="color: #3E8F74; font-size: 1.15em">Decide later.</span></h2>
         <p style="font-size: 18px; line-height: 1.5; color: #3D564C; margin: 0 0 30px">A local technician tests your tap, walks you through the results, and leaves. No pressure, no obligation.</p>
         <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; font-size: 17px; font-weight: 700">
-          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">1</span>Pick a time that works</li>
-          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">2</span>We test hardness, iron, chlorine and more</li>
-          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">3</span>You get a written report to keep</li>
+          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #0E2E2C; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">1</span>Pick a time that works</li>
+          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #0E2E2C; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">2</span>We test hardness, iron, chlorine and more</li>
+          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #0E2E2C; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">3</span>You get a written report to keep</li>
         </ol>
       </div>
-      <div class="clear-sticker clear-formcard" style="flex: 1 1 460px; min-width: 0; background: #F6EBD8; border-radius: 28px; padding: 32px; box-shadow: var(--shadow)">
+      <div class="clear-sticker clear-formcard" style="flex: 1 1 460px; min-width: 0; background: #F3EDDC; border-radius: 28px; padding: 32px; box-shadow: var(--shadow)">
         <!-- TODO: connect to your CRM / email (see README). Right now submit only shows the confirmation. -->
         <form id="bookForm" style="display: flex; flex-direction: column; gap: 18px">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px">
-            <div><label for="fName" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Full name</label><input id="fName" name="name" class="clear-field" type="text" autocomplete="name" required style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #1C3F36; border-radius: 14px; min-height: 52px; color: #1C3F36; background: #FFFFFF"></div>
-            <div><label for="fPhone" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Phone</label><input id="fPhone" name="phone" class="clear-field" type="tel" autocomplete="tel" required style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #1C3F36; border-radius: 14px; min-height: 52px; color: #1C3F36; background: #FFFFFF"></div>
+            <div><label for="fName" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Full name</label><input id="fName" name="name" class="clear-field" type="text" autocomplete="name" required style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #0E2E2C; border-radius: 14px; min-height: 52px; color: #0E2E2C; background: #FFFFFF"></div>
+            <div><label for="fPhone" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Phone</label><input id="fPhone" name="phone" class="clear-field" type="tel" autocomplete="tel" required style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #0E2E2C; border-radius: 14px; min-height: 52px; color: #0E2E2C; background: #FFFFFF"></div>
           </div>
-          <div><label for="fEmail" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Email</label><input id="fEmail" name="email" class="clear-field" type="email" autocomplete="email" style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #1C3F36; border-radius: 14px; min-height: 52px; color: #1C3F36; background: #FFFFFF"></div>
+          <div><label for="fEmail" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Email</label><input id="fEmail" name="email" class="clear-field" type="email" autocomplete="email" style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #0E2E2C; border-radius: 14px; min-height: 52px; color: #0E2E2C; background: #FFFFFF"></div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px">
-            <div class="addr-field"><label for="fStreet" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Street address</label><input id="fStreet" name="street" class="clear-field" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="fStreetList" autocomplete="off" spellcheck="false" style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #1C3F36; border-radius: 14px; min-height: 52px; color: #1C3F36; background: #FFFFFF"><ul id="fStreetList" class="addr-suggest" role="listbox" aria-label="Address suggestions" hidden></ul></div>
+            <div class="addr-field"><label for="fStreet" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Street address</label><input id="fStreet" name="street" class="clear-field" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="fStreetList" autocomplete="off" spellcheck="false" style="width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 16px; border: 2px solid #0E2E2C; border-radius: 14px; min-height: 52px; color: #0E2E2C; background: #FFFFFF"><ul id="fStreetList" class="addr-suggest" role="listbox" aria-label="Address suggestions" hidden></ul></div>
             <div><label for="fTown" class="clear-caps" style="display: block; font-size: 13px; margin-bottom: 7px">Town</label>
               <div style="position: relative">
-                <select id="fTown" name="town" class="clear-field" style="appearance: none; -webkit-appearance: none; width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 40px 12px 16px; border: 2px solid #1C3F36; border-radius: 14px; min-height: 52px; color: #1C3F36; background: #FFFFFF; cursor: pointer"></select>
-                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); pointer-events: none"><path d="M3 5l4 4 4-4" fill="none" stroke="#1C3F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <select id="fTown" name="town" class="clear-field" style="appearance: none; -webkit-appearance: none; width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 12px 40px 12px 16px; border: 2px solid #0E2E2C; border-radius: 14px; min-height: 52px; color: #0E2E2C; background: #FFFFFF; cursor: pointer"></select>
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); pointer-events: none"><path d="M3 5l4 4 4-4" fill="none" stroke="#0E2E2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </div>
             </div>
           </div>
@@ -348,11 +348,11 @@
               <button type="button" class="chip clear-btn" aria-pressed="false">Saturday</button>
             </div>
           </fieldset>
-          <button type="submit" class="clear-caps clear-btn btn-butter" style="background: #1C3F36; color: #F6EBD8; border: 0; border-radius: var(--r-btn); font-size: 18px; padding: 15px; cursor: pointer; min-height: 56px">Book my free water test</button>
+          <button type="submit" class="clear-caps clear-btn btn-butter" style="background: #0E2E2C; color: #F3EDDC; border: 0; border-radius: var(--r-btn); font-size: 18px; padding: 15px; cursor: pointer; min-height: 56px">Book my free water test</button>
           <p style="margin: 0; font-size: 12px; color: #5A6E64">We'll only use your details to schedule your test.</p>
         </form>
         <div id="booked" hidden role="status" style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px 0">
-          <span style="width: 60px; height: 60px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; box-shadow: var(--shadow); display: inline-flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M6 14.5l5.5 5.5L22 9" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span style="width: 60px; height: 60px; border-radius: 50%; background: var(--ink); border: 2px solid #0E2E2C; box-shadow: var(--shadow); display: inline-flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M6 14.5l5.5 5.5L22 9" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div class="clear-display" style="font-size: 40px">You're on <span class="clear-script" style="color: #3E8F74; font-size: 1.15em">the schedule.</span></div>
           <p id="bookedSummary" style="margin: 0; font-size: 17px; line-height: 1.5; color: #3D564C"></p>
           <button type="button" id="resetBtn" class="clear-caps" style="background: none; border: 0; padding: 0; font-size: 15px; color: #3E8F74; text-decoration: underline; cursor: pointer; min-height: 44px">Book another test</button>
@@ -393,11 +393,11 @@
 
   <!-- ================= CTA ================= -->
   <section class="clear-sec" style="position: relative; padding: 0 20px 110px">
-    <div class="clear-photo clear-sticker clear-cta" style="max-width: 1200px; margin: 0 auto; border-radius: 34px; padding: 96px 28px; text-align: center; color: #F6EBD8; box-shadow: var(--shadow)">
+    <div class="clear-photo clear-sticker clear-cta" style="max-width: 1200px; margin: 0 auto; border-radius: 34px; padding: 96px 28px; text-align: center; color: #F3EDDC; box-shadow: var(--shadow)">
       <h2 class="clear-display" style="font-size: clamp(40px, 6.4vw, 92px); margin: 0 auto; max-width: 1000px; text-shadow: none">Your water has a story.</h2>
       <div class="clear-script" style="font-size: clamp(50px, 6.4vw, 92px); color: #fff; margin: -0.05em 0 22px; transform: rotate(-4deg); text-shadow: none">Read it.</div>
       <div class="clear-cta-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
-        <a href="start.html" class="clear-caps clear-btn" style="background: #1C3F36; color: #F6EBD8; text-decoration: none; padding: 0 30px; border-radius: var(--r-btn); min-height: 56px; display: inline-flex; align-items: center; font-size: 17px">Find my system</a>
+        <a href="start.html" class="clear-caps clear-btn" style="background: #0E2E2C; color: #F3EDDC; text-decoration: none; padding: 0 30px; border-radius: var(--r-btn); min-height: 56px; display: inline-flex; align-items: center; font-size: 17px">Find my system</a>
         <a href="book.html" class="clear-caps clear-btn btn-butter" style="background: var(--ink); color: #fff; text-decoration: none; padding: 0 30px; border-radius: var(--r-btn); min-height: 56px; display: inline-flex; align-items: center; font-size: 17px">Test my water</a>
       </div>
     </div>
@@ -411,15 +411,15 @@
   </div>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="clear-foot" style="position: relative; background: #1C3F36; color: #F6EBD8; padding: 64px 28px 28px">
+  <footer class="clear-foot" style="position: relative; background: #0E2E2C; color: #F3EDDC; padding: 64px 28px 28px">
     <div style="max-width: 1200px; margin: 0 auto">
       <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
         <div style="flex: 1 1 300px; min-width: 0">
           <img class="footer-logo" src="assets/sunday-wordmark.png?v=2" alt="Sunday Water Co." width="194" height="88">
-          <p style="font-size: 15px; line-height: 1.6; color: rgba(246,235,216,.82); margin: 16px 0 0; max-width: 340px">Water testing and filtration for Connecticut homes. Installs by licensed Connecticut plumbers.</p>
+          <p style="font-size: 15px; line-height: 1.6; color: rgba(243,237,220,.82); margin: 16px 0 0; max-width: 340px">Water testing and filtration for Connecticut homes. Installs by licensed Connecticut plumbers.</p>
         </div>
         <div class="clear-caps" style="flex: 0 1 180px; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
-          <div style="color: #F6EBD8; font-size: 13px">Explore</div>
+          <div style="color: #F3EDDC; font-size: 13px">Explore</div>
           <a href="#map" class="clear-navlink" style="text-decoration: none">Water map</a>
           <a href="#filtration" class="clear-navlink" style="text-decoration: none">Filtration</a>
           <a href="#pricing" class="clear-navlink" style="text-decoration: none">Systems</a>
@@ -428,14 +428,14 @@
           <a href="sources.html" class="clear-navlink" style="text-decoration: none">Sources</a>
           <a href="book.html" class="clear-navlink" style="text-decoration: none">Test my water</a>
         </div>
-        <div style="flex: 0 1 280px; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: rgba(255,246,234,.9)">
-          <div class="clear-caps" style="color: #F6EBD8; font-size: 13px">Contact</div>
+        <div style="flex: 0 1 280px; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: rgba(243,237,220,.9)">
+          <div class="clear-caps" style="color: #F3EDDC; font-size: 13px">Contact</div>
           <a href="tel:+14752414486" class="clear-navlink" style="text-decoration: none; color: inherit">475-241-4486</a>
           <span>[Email]</span>
           <span>CT Home Improvement Contractor HIC.[0000000]</span>
         </div>
       </div>
-      <div style="margin-top: 48px; padding-top: 20px; border-top: 1px solid rgba(255,246,234,.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: 13px; color: rgba(255,246,234,.7)">
+      <div style="margin-top: 48px; padding-top: 20px; border-top: 1px solid rgba(243,237,220,.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: 13px; color: rgba(243,237,220,.7)">
         <span>© 2026 Sunday Water Co.</span>
         <span>Data: EPA SDWIS, CT Department of Public Health, U.S. Census Bureau</span>
       </div>

@@ -215,7 +215,7 @@
 
     // sparkle over the full glass
     if (p > 0.985) {
-      ctx.strokeStyle = '#F6EBD8'; ctx.lineWidth = Math.max(1.5, px(2.5)); ctx.lineCap = 'round';
+      ctx.strokeStyle = '#F3EDDC'; ctx.lineWidth = Math.max(1.5, px(2.5)); ctx.lineCap = 'round';
       var sx = view.ox + px(1264), sy = view.oy + px(150), r = px(7);
       ctx.beginPath(); ctx.moveTo(sx - r, sy); ctx.lineTo(sx + r, sy); ctx.moveTo(sx, sy - r); ctx.lineTo(sx, sy + r); ctx.stroke();
     }
@@ -226,10 +226,10 @@
       var msg = 'Your water test shows which stages your home needs.';
       ctx.font = '700 ' + Math.round(px(17)) + 'px Archivo, "Helvetica Neue", Arial, sans-serif';
       var tw = ctx.measureText(msg).width, pad = px(14), bx = view.ox + px(24), by = view.oy + px(20), bh = px(40);
-      ctx.fillStyle = '#1C3F36'; rrect(bx + px(3), by + px(3), tw + pad * 2, bh, px(10)); ctx.fill();
-      ctx.fillStyle = '#F6EBD8'; rrect(bx, by, tw + pad * 2, bh, px(10)); ctx.fill();
-      ctx.strokeStyle = '#1C3F36'; ctx.lineWidth = px(2); rrect(bx, by, tw + pad * 2, bh, px(10)); ctx.stroke();
-      ctx.fillStyle = '#1C3F36'; ctx.textBaseline = 'middle'; ctx.fillText(msg, bx + pad, by + bh / 2 + px(1));
+      ctx.fillStyle = '#0E2E2C'; rrect(bx + px(3), by + px(3), tw + pad * 2, bh, px(10)); ctx.fill();
+      ctx.fillStyle = '#F3EDDC'; rrect(bx, by, tw + pad * 2, bh, px(10)); ctx.fill();
+      ctx.strokeStyle = '#0E2E2C'; ctx.lineWidth = px(2); rrect(bx, by, tw + pad * 2, bh, px(10)); ctx.stroke();
+      ctx.fillStyle = '#0E2E2C'; ctx.textBaseline = 'middle'; ctx.fillText(msg, bx + pad, by + bh / 2 + px(1));
       ctx.globalAlpha = 1;
     }
   }
