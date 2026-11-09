@@ -76,26 +76,16 @@ flowchart TD
 
 ## The drop animation (home page, "Follow a drop through your home")
 
-The filtration section scrubs a frame sequence on a `<canvas>` as the page scrolls, so the drop moves through the house in step with the four stage cards. The section's existing scroll math in `app.js` fires a `sunday:stage` event with the pinned progress (0–1); `drop.js` maps that to a frame. The mapping is piecewise so each quarter of scroll covers exactly the frames where the drop is in that stage (`data-keys` on `#dropStage`: the frame where each stage starts, then the last frame).
+The filtration section is a layered, scroll-driven scene on a `<canvas>`: a cutaway plate with no characters, plus a sprite atlas of Drip and the four contaminants (rust, chlorine, scale, dissolved solids; four poses each). `app.js` fires `sunday:stage` with the pinned progress (0–1); `drop.js` moves Drip along the pipe path, has each villain caught at its tank in step with the four stage cards, dims the stages not in play, fills the glass from the RO tap, and ends with Drip cheering.
 
 | File | What it is |
 |---|---|
-| `drop.js` | Loads the frames in two phases (every 6th first, the rest when the section is a viewport away), draws them, pans on phones so the drop stays in view, shows the final frame for reduced-motion and headless capture. |
-| `assets/drop-frames/d/` | 108 WebP frames, 1200px wide, for desktop. |
-| `assets/drop-frames/m/` | 108 WebP frames, 800px wide, for phones. |
-| `assets/drop-frames/poster.jpg` | First frame, shown until the canvas is ready (and as the `alt` carrier). |
+| `drop.js` | The renderer. Path points, zones, catch timings and sprite sizes are the constants at the top. |
+| `assets/drop/plate.webp` / `plate.jpg` | The cutaway (1344×576). The jpg is also the poster shown until the canvas is ready. |
+| `assets/drop/atlas.webp` / `atlas.png` | Sprite atlas; `frames.json` has the rects (also inlined in `drop.js`). |
+| `assets/drop/build_atlas.py` | Rebuilds plate + atlas from `assets/drop/src/` (python3 + Pillow). `src/` is gitignored. |
 
-**Source video:** `sundaywater hero animation1.mp4` (2200×940, 24 fps, 15 s). It is not in the repo; keep it with the brand files. The motion ends at 12 s, so frames are cut there (the last 3 s hold on the glass).
-
-**Regenerate the frames** (ffmpeg; the SkyShield repo has `ffmpeg-static` under `node_modules` if you don't have one installed):
-
-```bash
-ffmpeg -i "sundaywater hero animation1.mp4" -t 12 -vf "fps=9,scale=1200:-2" -c:v libwebp -quality 64 assets/drop-frames/d/frame_%03d.webp
-ffmpeg -i "sundaywater hero animation1.mp4" -t 12 -vf "fps=9,scale=800:-2"  -c:v libwebp -quality 70 assets/drop-frames/m/frame_%03d.webp
-ffmpeg -i "sundaywater hero animation1.mp4" -frames:v 1 -vf "scale=1400:-2" -q:v 5 assets/drop-frames/poster.jpg
-```
-
-If the clip changes, update `data-frames` (count) and `data-keys` on `#dropStage` in `index.html`. At 9 fps the current keys are `0,18,45,68,107`: rust caught at tank 1 by 2 s, chlorine at tank 2 by 5 s, minerals at tank 3 by 7.5 s, then the climb to the sink and the pour.
+Beat map: 0–0.25 Sediment (rust caught at tank 1) · 0.25–0.50 Carbon (chlorine absorbed at tank 2) · 0.50–0.75 Softener (scale caught, dropped in the brine tank) · 0.75–1.00 RO (dissolved solids stopped at the membrane; glass fills; Drip celebrates). Phones fit the plate's height and pan with Drip. Reduced-motion and headless capture get the final scene.
 
 ## Brand
 

@@ -1155,18 +1155,18 @@ li > span.clear-display { color: #fff; }
   /* The one flexible item in the pinned column: it takes whatever height is left, never more than its full-width aspect. */
   flex: 1 1 auto;
   min-height: 140px;
-  max-height: calc(min(1200px, 100vw - 40px) * 940 / 2200);
-  aspect-ratio: 2200 / 940;
+  max-height: calc(min(1200px, 100vw - 40px) * 576 / 1344);
+  aspect-ratio: 1344 / 576;
   max-width: 100%;
   margin: 0 auto;
   border-radius: 22px;
   overflow: hidden;
-  background: #336C54;
+  background: #3E8F74;
   box-shadow: 8px 8px 0 var(--navy);
 }
 .stage-head, .stage-pin .stage-meter, .stage-pin .clear-rail { flex: 0 0 auto; }
 .drop-stage .drop-poster, .drop-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.drop-stage .drop-poster { object-fit: contain; object-position: center; background: #336C54; }
+.drop-stage .drop-poster { object-fit: contain; object-position: center; background: #3E8F74; }
 .drop-stage canvas { opacity: 0; transition: opacity .25s; }
 .drop-stage.is-ready canvas { opacity: 1; }
 .drop-stage.is-ready .drop-poster { visibility: hidden; }

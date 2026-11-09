@@ -1,2 +1,5 @@
 node_modules/
 .DS_Store
+
+# animation source sheets (not served)
+assets/drop/src/
