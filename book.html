@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=87">
+  <link rel="stylesheet" href="styles.css?v=93">
   <script src="data/ct-towns-map.js" defer></script>
   <script src="app.js?v=31" defer></script>
 </head>
@@ -32,8 +32,8 @@
           <a href="index.html#pricing" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">Systems</a>
           <a href="about.html" class="clear-navlink" style="text-decoration: none; color: #F6EBD8; min-height: 44px; display: inline-flex; align-items: center">About</a>
         </div>
-        <a href="book.html" class="clear-caps clear-btn clear-navbook" aria-current="page" style="text-decoration: none; background: #14244D; color: #fff; padding: 0 22px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; font-size: 16px">Test my water</a>
-        <button type="button" id="menuBtn" class="clear-menubtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" style="width: 48px; height: 48px; border: 2px solid #1C3F36; border-radius: 999px; background: #F6EBD8; color: #1C3F36; cursor: pointer; padding: 0; box-shadow: 3px 3px 0 #1C3F36">
+        <a href="book.html" class="clear-caps clear-btn btn-butter clear-navbook" aria-current="page" style="text-decoration: none; background: var(--ink); color: #fff; padding: 0 22px; border-radius: var(--r-btn); min-height: 44px; display: inline-flex; align-items: center; font-size: 16px">Test my water</a>
+        <button type="button" id="menuBtn" class="clear-menubtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" style="width: 48px; height: 48px; border: 2px solid #1C3F36; border-radius: var(--r-btn); background: #F6EBD8; color: #1C3F36; cursor: pointer; padding: 0; box-shadow: var(--shadow)">
           <svg id="iconOpen" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 6h12M3 12h12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
           <svg id="iconClose" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" hidden><path d="M4.5 4.5l9 9M13.5 4.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
         </button>
@@ -52,16 +52,16 @@
   <section class="clear-sec" style="position: relative; padding: 48px 20px 80px">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 44px; align-items: flex-start">
       <div style="flex: 1 1 340px; min-width: 0; padding-top: 8px">
-        <div class="clear-caps" style="font-size: 14px; color: #3E8F74">Free in-home water test</div>
+        <div class="clear-caps eyebrow" style="font-size: 14px; color: #3E8F74">Free in-home water test</div>
         <h1 class="clear-display book-title" style="font-size: clamp(38px, 5.2vw, 72px); margin: 12px 0 18px">Test my water. <span class="clear-script" style="color: #3E8F74; font-size: 1.15em">Decide later.</span></h1>
         <p style="font-size: 18px; line-height: 1.5; color: #3D564C; margin: 0 0 30px">A local technician tests your tap, walks you through the results, and leaves. No pressure, no obligation.</p>
         <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; font-size: 17px; font-weight: 700">
-          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: #14244D; border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: 2px 2px 0 #1C3F36">1</span>Pick a time that works</li>
-          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: #14244D; border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: 2px 2px 0 #1C3F36">2</span>We test hardness, iron, chlorine and more</li>
-          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: #14244D; border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: 2px 2px 0 #1C3F36">3</span>You get a written report to keep</li>
+          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">1</span>Pick a time that works</li>
+          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">2</span>We test hardness, iron, chlorine and more</li>
+          <li style="display: flex; gap: 14px; align-items: center"><span class="clear-display" style="width: 44px; height: 44px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; box-shadow: var(--shadow)">3</span>You get a written report to keep</li>
         </ol>
       </div>
-      <div class="clear-sticker clear-formcard" style="flex: 1 1 460px; min-width: 0; background: #F6EBD8; border-radius: 28px; padding: 32px; box-shadow: 8px 8px 0 #1C3F36">
+      <div class="clear-sticker clear-formcard" style="flex: 1 1 460px; min-width: 0; background: #F6EBD8; border-radius: 28px; padding: 32px; box-shadow: var(--shadow)">
         <!-- TODO: connect to your CRM / email (see README). Right now submit only shows the confirmation. -->
         <form id="bookForm" style="display: flex; flex-direction: column; gap: 18px">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px">
@@ -96,11 +96,11 @@
               <button type="button" class="chip clear-btn" aria-pressed="false">Saturday</button>
             </div>
           </fieldset>
-          <button type="submit" class="clear-caps clear-btn" style="background: #1C3F36; color: #F6EBD8; border: 0; border-radius: 999px; font-size: 18px; padding: 15px; cursor: pointer; min-height: 56px">Book my free water test</button>
+          <button type="submit" class="clear-caps clear-btn btn-butter" style="background: #1C3F36; color: #F6EBD8; border: 0; border-radius: var(--r-btn); font-size: 18px; padding: 15px; cursor: pointer; min-height: 56px">Book my free water test</button>
           <p style="margin: 0; font-size: 12px; color: #5A6E64">We'll only use your details to schedule your test. You can cancel any in-home agreement until midnight of the third business day.</p>
         </form>
         <div id="booked" hidden role="status" style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px 0">
-          <span style="width: 60px; height: 60px; border-radius: 50%; background: #14244D; border: 2px solid #1C3F36; box-shadow: 3px 3px 0 #1C3F36; display: inline-flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M6 14.5l5.5 5.5L22 9" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span style="width: 60px; height: 60px; border-radius: 50%; background: var(--ink); border: 2px solid #1C3F36; box-shadow: var(--shadow); display: inline-flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M6 14.5l5.5 5.5L22 9" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div class="clear-display" style="font-size: 40px">You're on <span class="clear-script" style="color: #3E8F74; font-size: 1.15em">the schedule.</span></div>
           <p id="bookedSummary" style="margin: 0; font-size: 17px; line-height: 1.5; color: #3D564C"></p>
           <button type="button" id="resetBtn" class="clear-caps" style="background: none; border: 0; padding: 0; font-size: 15px; color: #3E8F74; text-decoration: underline; cursor: pointer; min-height: 44px">Book another test</button>

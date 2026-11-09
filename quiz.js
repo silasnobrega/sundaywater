@@ -181,7 +181,7 @@
         return '<p class="sq-eyebrow clear-caps">You’re sorted</p>' +
           '<h2 class="sq-q clear-display">' + esc(first()) + ', you’re ' + article(short) + ' <span class="clear-script">' + esc(short) + '.</span></h2>' +
           '<div class="sq-arch">' +
-          '<div class="sq-arch-top"><span class="sq-arch-glyph" aria-hidden="true">' + esc(a.glyph) + '</span><div><div class="sq-arch-name clear-display">' + esc(a.name) + '</div><p class="sq-arch-tag">' + esc(a.tag) + '</p></div></div>' +
+          '<div class="sq-arch-top"><span class="sq-arch-glyph" aria-hidden="true">' + esc(short.charAt(0)) + '</span><div><div class="sq-arch-name clear-display">' + esc(a.name) + '</div><p class="sq-arch-tag">' + esc(a.tag) + '</p></div></div>' +
           '<p class="sq-arch-id">' + rich(a.identity) + '</p>' +
           '<p class="sq-arch-shift">' + rich(a.shift) + '</p>' +
           '</div>' +
@@ -394,7 +394,7 @@
       ? 'Renting doesn\u2019t change what kind of person you are. It changes where the fix goes: the kitchen tap, with the numbers in writing for whoever owns the pipes.'
       : a.resultLead;
     return '<p class="sq-eyebrow clear-caps">Your water plan</p>' +
-      '<p class="sq-result-arch clear-caps"><span aria-hidden="true">' + esc(a.glyph) + '</span><span>' + esc(a.name) + '</span></p>' +
+      '<p class="sq-result-arch clear-caps"><span aria-hidden="true">' + esc(archShort().charAt(0)) + '</span><span>' + esc(a.name) + '</span></p>' +
       '<h2 class="sq-q clear-display">' + rich(a.resultHead) + '</h2>' +
       '<p class="sq-result-lead">' + rich(lead) + '</p>' +
       '<div class="sq-result-hero">' + art + '<div>' + (p.flag ? '<span class="sq-result-flag clear-caps">' + esc(p.flag) + '</span>' : '') + '<div class="sq-result-name clear-display">' + esc(p.name) + '</div><p class="sq-result-detail">' + esc(p.detail) + '</p></div></div>' +
@@ -478,9 +478,9 @@
         '<h2 class="sq-q clear-display">' + rich(s.q) + '</h2>' +
         (s.help ? '<p class="sq-help">' + rich(s.help) + '</p>' : '') +
         '<ul class="sq-opts' + (s.kind === 'single' && s.opts.length >= 4 && s.opts.every(function (o) { return o.t.length <= 28; }) ? ' sq-grid-2' : '') + '" role="' + (s.kind === 'multi' ? 'group' : 'radiogroup') + '">' +
-        s.opts.map(function (o) {
+        s.opts.map(function (o, oi) {
           var on = s.kind === 'multi' ? (state.a[s.key] || []).indexOf(o.v) !== -1 : state.a[s.key] === o.v;
-          return '<li><button type="button" class="sq-opt" data-v="' + esc(o.v) + '" role="' + (s.kind === 'multi' ? 'checkbox' : 'radio') + '" aria-checked="' + on + '"><span class="sq-opt-ic" aria-hidden="true">' + esc(o.g || '') + '</span><span class="sq-opt-txt">' + esc(o.t) + (o.s ? '<span class="sq-opt-sub">' + esc(o.s) + '</span>' : '') + '</span><span class="sq-opt-tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6.2l2.6 2.6L10 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>';
+          return '<li><button type="button" class="sq-opt" data-v="' + esc(o.v) + '" role="' + (s.kind === 'multi' ? 'checkbox' : 'radio') + '" aria-checked="' + on + '"><span class="sq-opt-ic" aria-hidden="true">' + String.fromCharCode(65 + oi) + '</span><span class="sq-opt-txt">' + esc(o.t) + (o.s ? '<span class="sq-opt-sub">' + esc(o.s) + '</span>' : '') + '</span><span class="sq-opt-tick" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6.2l2.6 2.6L10 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>';
         }).join('') + '</ul>';
     }
     var fresh = document.createElement('div');

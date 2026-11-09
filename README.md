@@ -89,9 +89,14 @@ Beat map: 0–0.25 Sediment (rust caught at tank 1) · 0.25–0.50 Carbon (chlor
 
 ## Brand
 
-- Navy `#14244D` · Cream `#FFF6EA` · Sun `#FFD978` · Blue `#2350D8`
-- Map: public system `#A8C4FF` · small systems only `#FFD978` · likely private wells `#FF8F66`
-- Type: **Archivo** (heavy + wide for headlines, condensed caps for buttons/labels) and **Yellowtail** for the script accent words
+See `DESIGN.md` for the full brief ("the 1952 Sunday-supplement ad for a water company that actually exists").
+
+- Ink `#1C3F36` (forest green, never black) · Paper `#FBF6EE` · Cream `#F6EBD8`
+- Seafoam `#3E8F74` (the brand color) · Mint `#A9D4C4`
+- Butter `#F2D06B` for emphasis (the primary button, the active card, one starburst) · Tomato `#D9593D` sparingly
+- Map: public system `#A9D4C4` · small systems only `#E4C56A` · likely private wells `#E07A62`
+- Type: **Archivo** condensed (75%) 800 caps for headlines, Archivo for body and labels; **Playball** script for one accent word per headline
+- Shapes: 12–14px corners, 1.5px ink hairlines, a soft paper shadow. No offset block shadows, no emoji.
 
 ## Before going live — fill these in
 
