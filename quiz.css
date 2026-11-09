@@ -259,16 +259,16 @@
   gap: 8px;
   padding: 8px;
   border-radius: 14px;
-  background: var(--sq-cream);
-  border: 1.5px solid var(--sq-ink);
+  background: var(--cream);
+  border: 1.5px solid var(--ink);
   box-shadow: 0 2px 0 rgba(14, 46, 44, .18), 0 14px 28px -18px rgba(14, 46, 44, .5);
   transform: translateY(120%);
   transition: transform .3s cubic-bezier(.2, .8, .2, 1);
 }
 .sq-stickybar.is-on { transform: none; }
-.sq-stickybar a { flex: 1 1 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 10px; text-decoration: none; font-size: 15px; border: 1.5px solid var(--sq-ink); }
-.sq-stickybar a.sq-sb-main { background: var(--sq-brick); color: var(--sq-cream); }
-.sq-stickybar a.sq-sb-call { flex: 0 0 48px; width: 48px; background: var(--sq-ink); color: var(--sq-cream); }
+.sq-stickybar a { flex: 1 1 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 10px; text-decoration: none; font-size: 15px; border: 1.5px solid var(--ink); }
+.sq-stickybar a.sq-sb-main { background: var(--brick); color: var(--cream); }
+.sq-stickybar a.sq-sb-call { flex: 0 0 48px; width: 48px; background: var(--ink); color: var(--cream); }
 @media (max-width: 720px) { .sq-stickybar { display: flex; } body.sq-has-stickybar { padding-bottom: 84px; } }
 
 /* ---------- Desktop / web version ---------- */
@@ -315,3 +315,19 @@
 .sq-result-arch span:first-child { width: 24px; height: 24px; border-radius: 50%; background: var(--sq-brick); color: var(--sq-cream); border: 1.5px solid var(--sq-ink); display: inline-flex; align-items: center; justify-content: center; font-family: 'Archivo', sans-serif; font-weight: 800; font-stretch: 75%; font-size: 13px; }
 .sq-result-lead { font-size: 16px; line-height: 1.5; color: var(--sq-ink-2); margin: 0 0 16px; }
 @media (prefers-reduced-motion: reduce) { .sq-arch { animation: none; } }
+
+/* ---------- Home page, phone only: the invitation to the water check (bottom sheet) ---------- */
+.sq-pop { position: fixed; inset: 0; z-index: 70; display: none; align-items: flex-end; justify-content: center; padding: 0 10px calc(10px + env(safe-area-inset-bottom)); background: rgba(14, 46, 44, 0); transition: background .3s; }
+.sq-pop.is-on { background: rgba(14, 46, 44, .45); }
+.sq-pop[hidden] { display: none !important; }
+.sq-pop-card { position: relative; width: min(560px, 100%); background: var(--cream); color: var(--ink); border: 1.5px solid var(--ink); outline: 1.5px solid var(--ink); outline-offset: 4px; border-radius: 10px; padding: 24px 20px 18px; box-shadow: 0 2px 0 rgba(14, 46, 44, .18), 0 24px 48px -24px rgba(14, 46, 44, .7); transform: translateY(calc(100% + 24px)); transition: transform .32s cubic-bezier(.2, .8, .2, 1); }
+.sq-pop.is-on .sq-pop-card { transform: none; }
+.sq-pop-close { position: absolute; top: 10px; right: 10px; width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid var(--ink); background: var(--cream); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+.sq-pop-eyebrow { margin: 0 0 8px; font-size: 12px; color: var(--seafoam-deep); }
+.sq-pop h2.clear-display.sq-pop-title { margin: 0 0 10px; font-size: 32px !important; line-height: .92 !important; padding-right: 44px; }
+.sq-pop-title .clear-script { color: var(--seafoam-deep); font-size: 1.15em; }
+.sq-pop-body { margin: 0 0 16px; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+.sq-pop-go { display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: 12px; background: var(--brick); color: var(--cream); border: 1.5px solid var(--ink); text-decoration: none; font-size: 16px; box-shadow: 0 2px 0 rgba(14, 46, 44, .18); }
+.sq-pop-later { display: block; width: 100%; margin: 10px 0 0; min-height: 40px; background: none; border: 0; color: var(--ink-3); font: inherit; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; cursor: pointer; }
+@media (max-width: 720px) { .sq-pop { display: flex; } }
+@media (prefers-reduced-motion: reduce) { .sq-pop, .sq-pop-card { transition: none; } }

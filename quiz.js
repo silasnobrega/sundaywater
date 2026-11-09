@@ -637,8 +637,6 @@
     stageEl = $('sqStage'); footEl = $('sqFoot'); footInner = $('sqFootInner');
     backBtn = $('sqBack'); fillEl = $('sqFill'); stepEl = $('sqStep'); pctEl = $('sqPct');
     backBtn.addEventListener('click', function () { go(-1); });
-    // Leaving the quiz for the site: remember it so index.html does not bounce a phone straight back here.
-    document.querySelector('.sq-bar-mark').addEventListener('click', function () { try { sessionStorage.setItem('sunday_home', '1'); } catch (e) {} });
 
     fetch(CONFIG.mapUrl).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (map) {
       MAP = map;

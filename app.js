@@ -576,6 +576,39 @@
     });
   }
 
+  /* ---------------- Phone invitation to the water check (home page) ---------------- */
+  // Shown once per visit, after a few seconds or once the hero scrolls away, whichever comes first.
+  var quizPop = $('quizPop');
+  if (quizPop && isPhone()) {
+    var popSeen = false;
+    try { popSeen = !!sessionStorage.getItem('sunday_pop'); } catch (err) {}
+    var popOpen = function () {
+      if (popSeen) return;
+      popSeen = true;
+      try { sessionStorage.setItem('sunday_pop', '1'); } catch (err) {}
+      quizPop.hidden = false;
+      document.body.classList.add('sq-pop-open');
+      requestAnimationFrame(function () { quizPop.classList.add('is-on'); });
+    };
+    var popClose = function () {
+      quizPop.classList.remove('is-on');
+      document.body.classList.remove('sq-pop-open');
+      setTimeout(function () { quizPop.hidden = true; }, 320);
+    };
+    if (!popSeen) {
+      var popTimer = setTimeout(popOpen, 6000);
+      var popHero = document.getElementById('top');
+      var popOnScroll = function () {
+        if (popHero && window.scrollY > popHero.offsetHeight * 0.6) { clearTimeout(popTimer); popOpen(); window.removeEventListener('scroll', popOnScroll); }
+      };
+      window.addEventListener('scroll', popOnScroll, { passive: true });
+    }
+    $('quizPopClose').addEventListener('click', popClose);
+    $('quizPopLater').addEventListener('click', popClose);
+    quizPop.addEventListener('click', function (e) { if (e.target === quizPop) popClose(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !quizPop.hidden) popClose(); });
+  }
+
   /* ---------------- Phone sticky CTA (home page) ---------------- */
   var stickyCta = $('stickyCta');
   if (stickyCta) {
@@ -598,7 +631,7 @@
         var sr = stageSec.getBoundingClientRect();
         pinned = sr.top <= 8 && sr.bottom >= window.innerHeight - 8;
       }
-      var on = past && !nearForm && !pinned;
+      var on = past && !nearForm && !pinned && !document.body.classList.contains('sq-pop-open');
       stickyCta.classList.toggle('is-on', on);
       stickyCta.setAttribute('aria-hidden', String(!on));
     };

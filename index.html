@@ -12,19 +12,10 @@
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
   <link rel="stylesheet" href="styles.css?v=97">
-  <link rel="stylesheet" href="quiz.css?v=8">
+  <link rel="stylesheet" href="quiz.css?v=12">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
-  <script>
-    // Phones land on the water check first (start.html). Skipped for a hash deep link (/#map), after the
-    // visitor leaves the quiz for the site via its logo (session flag set in quiz.js), and for crawlers/headless capture.
-    (function () {
-      try {
-        if (window.innerWidth <= 720 && !location.hash && !navigator.webdriver && !sessionStorage.getItem("sunday_home") && !/bot|crawl|spider|slurp/i.test(navigator.userAgent)) location.replace("start.html");
-      } catch (e) {}
-    })();
-  </script>
-  <script src="app.js?v=34" defer></script>
+  <script src="app.js?v=35" defer></script>
   <script src="drop.js?v=2" defer></script>
 </head>
 <body>
@@ -403,6 +394,18 @@
     </div>
   </section>
   </main>
+
+  <!-- Phone-only invitation to the water check: a bottom sheet, once per visit (see app.js) -->
+  <div id="quizPop" class="sq-pop" hidden role="dialog" aria-modal="false" aria-labelledby="quizPopTitle">
+    <div class="sq-pop-card">
+      <button type="button" class="sq-pop-close" id="quizPopClose" aria-label="Not now"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+      <p class="clear-caps sq-pop-eyebrow">The Connecticut water check</p>
+      <h2 id="quizPopTitle" class="clear-display sq-pop-title">Not sure what your water <span class="clear-script">needs?</span></h2>
+      <p class="sq-pop-body">Two questions sort you into a type. Then the one system that fits your tap. About 90 seconds, no pressure.</p>
+      <a href="start.html" class="sq-pop-go clear-caps">Take the water check &rarr;</a>
+      <button type="button" class="sq-pop-later clear-caps" id="quizPopLater">Not now, I’m just looking</button>
+    </div>
+  </div>
 
   <!-- Phone-only sticky bar: slides up once the hero is scrolled past (see app.js) -->
   <div id="stickyCta" class="sq-stickybar clear-caps" aria-hidden="true">
