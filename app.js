@@ -41,6 +41,7 @@
         else el.setAttribute('inert', '');
       });
       if (problemFill) problemFill.style.width = (((i + 1) / problemPoints.length) * 100) + '%';
+      Array.prototype.forEach.call(document.querySelectorAll('.problem-innings li'), function (li, j) { li.classList.toggle('is-on', j <= i); li.classList.toggle('is-now', j === i); });
     }
     function problemFromScroll() {
       if (problemMotion.matches) return;

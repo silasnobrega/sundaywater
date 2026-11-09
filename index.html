@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=94">
+  <link rel="stylesheet" href="styles.css?v=96">
   <link rel="stylesheet" href="quiz.css?v=6">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
@@ -24,7 +24,7 @@
       } catch (e) {}
     })();
   </script>
-  <script src="app.js?v=32" defer></script>
+  <script src="app.js?v=33" defer></script>
   <script src="drop.js?v=2" defer></script>
 </head>
 <body>
@@ -101,8 +101,10 @@
   <!-- ================= THE PROBLEM ================= -->
   <section id="problem" class="problem">
     <div class="problem-pin">
+    <div class="clear-caps eyebrow problem-kicker">What’s in the water</div>
     <h2 class="clear-display problem-title">The Problem</h2>
-    <div class="problem-meter" aria-hidden="true"><span id="problemFill"></span></div>
+    <ol class="problem-innings clear-caps" aria-hidden="true"><li>1</li><li>2</li><li>3</li></ol>
+    <div class="problem-meter" aria-hidden="true" hidden><span id="problemFill"></span></div>
     <div class="problem-rows">
       <article class="problem-point">
         <div class="problem-figure">
@@ -110,7 +112,7 @@
           <p class="problem-caption">Legal limits vs. health guidelines</p>
         </div>
         <div class="problem-copy">
-          <h3 class="problem-heading">Your tap water isn't as clean as you think</h3>
+          <h3 class="problem-heading clear-display">Your tap water isn’t as clean as <span class="clear-script">you think.</span></h3>
           <p class="problem-body"><span class="problem-em">Nearly every</span> U.S. water system tested had at least one contaminant above recommended <span class="cite-keep">guidelines<sup><a href="sources.html#source-1" aria-label="Source 1">1</a></sup>.</span> Federal legal limits can be <span class="problem-em">10 to 100 times higher</span> than what health researchers consider <span class="cite-keep">safe<sup><a href="sources.html#source-2" aria-label="Source 2">2</a></sup>.</span></p>
         </div>
       </article>
@@ -120,7 +122,7 @@
           <p class="problem-caption">To repair aging water infrastructure</p>
         </div>
         <div class="problem-copy">
-          <h3 class="problem-heading">The pipes are falling apart</h3>
+          <h3 class="problem-heading clear-display">The pipes are <span class="clear-script">falling apart.</span></h3>
           <p class="problem-body">Much of America's water infrastructure dates back to the <span class="problem-em">early 1900s</span>. Repairing and replacing it is projected to cost <span class="problem-em">more than $1 trillion</span> over 25 <span class="cite-keep">years<sup><a href="sources.html#source-3" aria-label="Source 3">3</a></sup>.</span></p>
         </div>
       </article>
@@ -130,7 +132,7 @@
           <p class="problem-caption">Americans who may have PFAS in their water</p>
         </div>
         <div class="problem-copy">
-          <h3 class="problem-heading">A daily dose of forever chemicals</h3>
+          <h3 class="problem-heading clear-display">A daily dose of <span class="clear-script">forever chemicals.</span></h3>
           <p class="problem-body">An estimated <span class="problem-em">200+ million Americans</span> may have PFAS ("forever chemicals") in their tap <span class="cite-keep">water<sup><a href="sources.html#source-4" aria-label="Source 4">4</a></sup>.</span> Exposure has been <span class="problem-em">linked to decreased fertility, weakened immune systems and </span><span class="cite-keep"><span class="problem-em">cancers</span><sup><a href="sources.html#source-5" aria-label="Source 5">5</a></sup>.</span></p>
         </div>
       </article>
