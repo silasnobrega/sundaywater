@@ -207,25 +207,25 @@
   // row: [town, county, profile, systemCount, largestSystem, svgPath, labelX, labelY]
   var PROFILE = {
     N: {
-      badge: 'Likely private wells',
-      headline: 'This water is probably untested.',
-      explainer: 'No utility tests a private well. No community system serving 1,000+ people lists this town, so only the homeowner can test this water.',
+      badge: 'Mostly private wells',
+      headline: 'Nobody is testing this water but you.',
+      explainer: 'Most homes in {town} are on private wells. No utility checks a well, so the only numbers for your water are the ones a test gives you.',
       checks: ['Bacteria', 'Arsenic', 'Hardness', 'Iron', 'Chlorine'],
       strip: '#E07A62',
       color: '#E07A62'
     },
     S: {
-      badge: 'Small systems only',
-      headline: 'Most of this water is probably untested.',
-      explainer: 'Only small community systems serve parts of this town. Most homes are likely on private wells, and those wells are not tested by any utility.',
+      badge: 'Small systems and wells',
+      headline: 'Most of {town} is probably on a well.',
+      explainer: 'Only small water systems serve parts of town. If your home is on a well, nobody tests it but you.',
       checks: ['Bacteria', 'Arsenic', 'Hardness', 'Iron', 'Chlorine'],
       strip: '#E4C56A',
       color: '#E4C56A'
     },
     M: {
-      badge: 'Public system present',
-      headline: 'A utility report is not your kitchen tap.',
-      explainer: 'A large community system serves parts of this town. Coverage is not reported street by street, and some homes may still be on private wells.',
+      badge: 'Public water',
+      headline: '{supplier} tests the plant. Not your tap.',
+      explainer: '{supplier} serves parts of {town}. Its report covers the water leaving the plant. Chlorine, hardness and your own pipes are what show up at the sink.',
       checks: ['Chlorine', 'Hardness', 'Iron'],
       strip: '#E4C56A',
       color: '#A9D4C4'
@@ -348,46 +348,28 @@
     }
     return best || { clear: true };
   }
+  // One plain-English line about the town's utility report, shown only when there is one.
   function paintMeter(name) {
     var root = $('panelMeter');
     if (!root) return;
     var reading = townMeter(name);
-    var label = $('panelMeterLabel');
-    var pctEl = $('panelMeterPct');
     var detail = $('panelMeterDetail');
     var track = $('panelMeterTrack');
     var fill = $('panelMeterFill');
-    var knob = $('panelMeterKnob');
     var empty = !reading || reading.empty;
-    var over = !empty && !reading.clear && (reading.over || reading.ratio >= 1);
-    var pct = empty || reading.clear ? 0 : Math.round(Number((reading.ratio * 100).toFixed(2)));
-    var visual = empty || reading.clear ? 0 : Math.min(reading.ratio / 2, 1);
+    if (empty) { root.hidden = true; return; }
+    root.hidden = false;
+    var over = !reading.clear && (reading.over || reading.ratio >= 1);
+    var pct = reading.clear ? 0 : Math.round(reading.ratio * 100);
+    var visual = reading.clear ? 0 : Math.min(reading.ratio / 2, 1);
     root.classList.toggle('is-over', over);
-    root.classList.toggle('is-empty', empty);
     if (fill) fill.style.width = (visual * 100).toFixed(1) + '%';
-    if (knob) knob.style.left = 'calc(11px + (100% - 22px) * ' + visual + ')';
-    var headline = empty
-      ? 'No utility report for this town.'
-      : (over ? 'Harmful contaminants detected in your water.' : 'Under the legal limit.');
-    var line = 'A tap test is the only reading for this water.';
-    if (!empty && reading.clear) line = 'Nothing in this report was over a health limit.';
-    if (!empty && !reading.clear) {
-      var noun = reading.kind === 'ct' ? "Connecticut's action level" : (reading.action ? 'the action level' : 'the federal limit');
-      var verb = reading.usedHigh ? 'reached' : 'is at';
-      var unit = reading.units ? ' ' + reading.units : '';
-      line = reading.name + ' ' + verb + ' ' + fmtLevel(reading.value) + unit + ', ' + (over ? 'over' : 'under') + ' ' + noun + ' of ' + fmtLevel(reading.limit) + unit + '.';
-    }
-    if (label) label.textContent = headline;
-    if (pctEl) pctEl.textContent = empty ? '\u2014' : pct + '%';
+    var line;
+    if (reading.clear) line = 'Nothing in the latest utility report was over a health limit.';
+    else if (over) line = reading.name + ' was over the legal limit in the latest utility report.';
+    else line = 'Highest reading: ' + reading.name + ' at ' + pct + '% of the legal limit.';
     if (detail) detail.textContent = line;
-    if (track) {
-      track.setAttribute('aria-valuetext', headline + ' ' + line);
-      if (empty) track.removeAttribute('aria-valuenow');
-      else {
-        track.setAttribute('aria-valuenow', String(pct));
-        track.setAttribute('aria-valuemax', String(Math.max(200, pct)));
-      }
-    }
+    if (track) { track.setAttribute('aria-valuetext', line); track.setAttribute('aria-valuenow', String(pct)); track.setAttribute('aria-valuemax', String(Math.max(200, pct))); }
   }
 
   function render() {
@@ -398,9 +380,11 @@
     var badge = $('badge');
     badge.textContent = p.badge;
     badge.style.background = p.color;
-    $('caution').style.background = p.strip;
-    $('panelHeadline').textContent = p.headline;
-    $('panelExplainer').textContent = p.explainer;
+    var supplier = t[4] || 'Your utility';
+    var fill = function (str) { return str.replace(/\{town\}/g, t[0]).replace(/\{supplier\}/g, supplier); };
+    $('panelHeadline').textContent = fill(p.headline);
+    $('panelExplainer').textContent = fill(p.explainer);
+    if ($('panelTownChecks')) $('panelTownChecks').textContent = t[0];
     var checks = $('panelChecks');
     checks.innerHTML = '';
     p.checks.forEach(function (name) {
@@ -408,9 +392,6 @@
       li.textContent = name;
       checks.appendChild(li);
     });
-    $('panelCounty').textContent = t[1];
-    $('panelCount').textContent = String(t[3]);
-    $('panelLargest').textContent = t[4] || 'None on record';
     $('panelTown').textContent = t[0];
     var panelBook = $('panelBook');
     if (panelBook) panelBook.href = 'book.html#town=' + encodeURIComponent(t[0]);

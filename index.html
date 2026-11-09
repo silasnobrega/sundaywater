@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=93">
+  <link rel="stylesheet" href="styles.css?v=94">
   <link rel="stylesheet" href="quiz.css?v=6">
   <script src="clear-water-report/data/ct-water-quality.js" defer></script>
   <script src="data/ct-towns-map.js" defer></script>
@@ -24,7 +24,7 @@
       } catch (e) {}
     })();
   </script>
-  <script src="app.js?v=31" defer></script>
+  <script src="app.js?v=32" defer></script>
   <script src="drop.js?v=2" defer></script>
 </head>
 <body>
@@ -158,29 +158,17 @@
             </div>
           </div>
           <p id="addrMsg" role="status" hidden style="margin: 0; font-size: 14px"></p>
-          <div id="caution" class="clear-caps panel-caution">Worth a test</div>
-          <div id="badge" class="clear-caps badge" style="background: #A9D4C4">Public system present</div>
-          <div id="panelHeadline" style="font-weight: 800; font-size: 27px; line-height: 1.12; letter-spacing: -0.02em">A utility report is not your kitchen tap.</div>
+          <div id="badge" class="clear-caps badge" style="background: #A9D4C4">Public water</div>
+          <div id="panelHeadline" style="font-weight: 800; font-size: 26px; line-height: 1.1; letter-spacing: -0.01em">Your utility tests the plant. Not your tap.</div>
           <p id="panelExplainer" style="margin: 0; font-size: 15px; line-height: 1.55; color: rgba(255,246,234,.84)"></p>
-          <p class="clear-caps panel-checks-label">A Sunday test in Connecticut checks for</p>
-          <ul id="panelChecks" class="panel-checks"></ul>
-          <div style="display: flex; flex-direction: column">
-            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(255,246,234,.16); font-size: 15px"><span style="color: rgba(255,246,234,.72)">County</span><span id="panelCounty" style="font-weight: 700; text-align: right"></span></div>
-            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(255,246,234,.16); font-size: 15px"><span style="color: rgba(255,246,234,.72)">Public systems (1,000+ people)</span><span id="panelCount" style="font-weight: 700; text-align: right"></span></div>
-            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(255,246,234,.16); font-size: 15px"><span style="color: rgba(255,246,234,.72)">Largest supplier</span><span id="panelLargest" style="font-weight: 700; text-align: right"></span></div>
+          <div class="panel-block">
+            <p class="clear-caps panel-checks-label">What we’d test for in <span id="panelTownChecks">Hartford</span></p>
+            <ul id="panelChecks" class="panel-checks"></ul>
           </div>
-          <div id="panelMeter" class="panel-meter">
-            <div class="panel-meter-top">
-              <p id="panelMeterLabel" class="panel-meter-label">Under the legal limit.</p>
-              <p id="panelMeterPct" class="panel-meter-pct">58%</p>
-            </div>
-            <div id="panelMeterTrack" class="panel-meter-track" role="meter" aria-valuemin="0" aria-valuemax="200" aria-valuenow="58" aria-labelledby="panelMeterLabel">
-              <span class="panel-meter-clip" aria-hidden="true"><span id="panelMeterFill" class="panel-meter-fill"></span></span>
-              <span class="panel-meter-limit" aria-hidden="true"></span>
-              <span id="panelMeterKnob" class="panel-meter-knob" aria-hidden="true"></span>
-            </div>
-            <div class="panel-meter-scale clear-caps" aria-hidden="true"><span>Low</span><span>Limit</span><span>Over</span></div>
-            <p id="panelMeterDetail" class="panel-meter-detail">TTHM is at 46 ppb, under the federal limit of 80 ppb.</p>
+          <div id="panelMeter" class="panel-finding" hidden>
+            <p class="clear-caps panel-checks-label">On record</p>
+            <p id="panelMeterDetail" class="panel-finding-text"></p>
+            <div id="panelMeterTrack" class="panel-finding-track" role="meter" aria-valuemin="0" aria-valuemax="200" aria-valuenow="0"><span id="panelMeterFill" class="panel-finding-fill"></span><span class="panel-finding-limit" aria-hidden="true"></span></div>
           </div>
           <a id="panelBook" href="book.html#town=Hartford" class="clear-caps clear-btn btn-butter" style="margin-top: auto; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--ink); color: #fff; text-decoration: none; border-radius: var(--r-btn); padding: 14px 18px; min-height: 52px; font-size: 16px"><span>Test my tap in <span id="panelTown">Hartford</span></span></a>
           <p style="margin: 0; font-size: 12px; color: rgba(255,246,234,.62)">Source: EPA Safe Drinking Water Information System; CT DPH.</p>

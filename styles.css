@@ -1322,3 +1322,17 @@ div:not([style*="text-align: center"]) > .eyebrow::before { display: none; }
 .clear-card { overflow: visible !important; }
 .systems-row { padding-top: 22px; }
 @media (max-width: 720px) { .system-flag { font-size: 9px; letter-spacing: .04em; padding: 0 14px; } }
+
+/* ---------- Map panel, simplified: source → meaning → what we test → book ---------- */
+.clear-panel { gap: 16px !important; }
+.panel-block { display: flex; flex-direction: column; gap: 10px; }
+.panel-checks-label { color: rgba(246, 235, 216, .7) !important; font-size: 11px !important; letter-spacing: .14em; }
+.panel-checks li { border: 1.5px solid rgba(246, 235, 216, .55) !important; background: transparent !important; color: var(--cream) !important; font-weight: 700; }
+.panel-finding { display: flex; flex-direction: column; gap: 8px; padding-top: 14px; border-top: 1px solid rgba(246, 235, 216, .18); }
+.panel-finding[hidden] { display: none; }
+.panel-finding-text { margin: 0; font-size: 15px; line-height: 1.45; color: var(--cream); font-weight: 600; }
+.panel-finding-track { position: relative; height: 6px; border-radius: 999px; background: rgba(246, 235, 216, .18); overflow: hidden; }
+.panel-finding-fill { display: block; height: 100%; width: 0; border-radius: 999px; background: var(--mint); transition: width .6s var(--ease); }
+.panel-finding-limit { position: absolute; left: 50%; top: -2px; bottom: -2px; width: 2px; background: var(--cream); opacity: .8; }
+.panel-finding.is-over .panel-finding-text { color: #F0A58F; }
+.panel-finding.is-over .panel-finding-fill { background: var(--tomato); }

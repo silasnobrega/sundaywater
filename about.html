@@ -13,6 +13,15 @@
     .about-sign { color: #1C3F36; font-weight: 800; margin-top: 8px; }
     .about-lines { list-style: none; margin: 0 0 16px; padding: 0; }
     .about-lines li { color: #1C3F36; font-size: 18px; line-height: 1.4; font-weight: 700; margin: 0 0 8px; }
+    .about-copy sup { font-size: .6em; line-height: 0; vertical-align: super; }
+    .about-copy sup a { color: #3E8F74; text-decoration: none; font-weight: 700; }
+    .pfas-list { margin: 8px 0 24px; padding: 0; border-top: 1.5px solid #1C3F36; }
+    .pfas-list > div { display: grid; grid-template-columns: minmax(150px, 190px) 1fr; gap: 6px 24px; padding: 16px 0; border-bottom: 1.5px solid #1C3F36; }
+    .pfas-list dt { font-family: 'Archivo', sans-serif; font-weight: 800; font-stretch: 75%; text-transform: uppercase; letter-spacing: .02em; font-size: 24px; line-height: 1; color: #1C3F36; }
+    .pfas-list dt span { display: block; font: 500 13px/1.3 'Archivo', sans-serif; font-stretch: 100%; text-transform: none; letter-spacing: 0; color: #5A6E64; margin-top: 6px; }
+    .pfas-list dd { margin: 0; font-size: 16px; line-height: 1.5; color: #3D564C; }
+    .pfas-list dd em { font-style: normal; font-weight: 700; color: #D9593D; }
+    @media (max-width: 600px) { .pfas-list > div { grid-template-columns: 1fr; gap: 6px; } }
     .about-purpose-break { display: none; }
     @media (max-width: 720px) {
       .about-purpose-break { display: inline; }
@@ -24,8 +33,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Playball&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png?v=4" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png?v=4">
-  <link rel="stylesheet" href="styles.css?v=93">
-  <script src="app.js?v=31" defer></script>
+  <link rel="stylesheet" href="styles.css?v=94">
+  <script src="app.js?v=32" defer></script>
 </head>
 <body>
 
@@ -72,6 +81,25 @@
         <p>And when you start looking for answers, things only seem to get more complicated.</p>
         <p>Between confusing water quality reports, countless filtration products, technical terminology, and expensive systems, it's difficult to know who to trust or where to begin.</p>
         <p>I started Sunday because I believe there should be a better way.</p>
+
+        <h2 class="clear-display">Why we do this</h2>
+        <p>Honestly, we got into this because of what we learned about the <strong>rules</strong>, not the water.</p>
+        <p>Our drinking water standards are mostly from the seventies and nineties. In 2024 the EPA finally admitted that forever chemicals (PFAS) are in the tap water of close to <strong>200 million Americans</strong> and set the first legal limits for six of them<sup><a href="sources.html#source-4" aria-label="Source 4">4</a>,<a href="sources.html#source-6" aria-label="Source 6">6</a></sup>. Then it gave utilities until <strong>2029</strong> to fix it.</p>
+        <p>Then it pushed that to <strong>2031</strong>, and took four of the six chemicals off the list entirely<sup><a href="sources.html#source-7" aria-label="Source 7">7</a></sup>.</p>
+        <p>So nobody is coming to fix it at the plant any time soon. <strong>The only place you can actually control what’s in your water is your own tap</strong>, and most people don’t know that.</p>
+        <p>That’s why we do this.</p>
+
+        <h2 class="clear-display">Forever chemicals, in plain English</h2>
+        <p>PFAS are man-made chemicals used since the 1940s in non-stick pans, waterproof coatings, firefighting foam and food packaging. They don’t break down, so they build up in water, soil and people. These are the six the EPA set out to limit in 2024, and what each has been linked to<sup><a href="sources.html#source-8" aria-label="Source 8">8</a>,<a href="sources.html#source-9" aria-label="Source 9">9</a></sup>:</p>
+        <dl class="pfas-list">
+          <div><dt>PFOA <span>Teflon, stain-proof fabric</span></dt><dd>Kidney and testicular cancer, high cholesterol, liver damage, weaker response to vaccines, high blood pressure in pregnancy, lower birth weight. Classified as carcinogenic to humans in 2023.</dd></div>
+          <div><dt>PFOS <span>Scotchgard, firefighting foam</span></dt><dd>Weakened immune system, high cholesterol, liver and thyroid effects, lower birth weight. Classified as possibly carcinogenic in 2023.</dd></div>
+          <div><dt>PFHxS <span>Firefighting foam, carpets</span></dt><dd>Thyroid disruption, liver effects, weakened immune response. <em>Dropped from the federal limits.</em></dd></div>
+          <div><dt>PFNA <span>Food packaging, textiles</span></dt><dd>Lower birth weight and developmental effects, liver damage, higher cholesterol, immune effects. <em>Dropped from the federal limits.</em></dd></div>
+          <div><dt>GenX (HFPO-DA) <span>The “safer” replacement for PFOA</span></dt><dd>Liver and kidney damage, immune and developmental effects in animal studies. <em>Dropped from the federal limits.</em></dd></div>
+          <div><dt>PFBS <span>Replacement for PFOS</span></dt><dd>Thyroid, kidney and reproductive effects in animal studies. <em>Dropped from the federal limits.</em></dd></div>
+        </dl>
+        <p>You can’t see, taste or smell any of them. A utility report tells you what left the plant. A test at your sink tells you what you’re drinking. And reverse osmosis at the kitchen tap is the stage that takes them out.</p>
 
         <h2 class="clear-display">A simpler approach to clean water</h2>
         <p>My goal was to build a company that makes water treatment straightforward, affordable, and accessible to everyday homeowners.</p>
